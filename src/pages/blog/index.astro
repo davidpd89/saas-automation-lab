@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const guides = await getCollection("guides");
+const pillars = await getCollection("pillars");
+const posts = [...pillars, ...guides];
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+---
+
+<BaseLayout
+  title="Blog de sistemas, SEO e IA para solopreneurs"
+  description="Ideas y guias para escalar negocios de servicios con automatizacion, IA, contenido SEO y sistemas operativos ligeros."
+>
+  <section class="section-header">
+    <p class="eyebrow">Fundamentos</p>
+    <h1>Estrategias de escalado y sistemas para solopreneurs</h1>
+    <p class="lede">Contenido informacional que sostiene las comparativas y guias transaccionales del laboratorio.</p>
+  </section>
+
+  <section class="grid grid-2">
+    {posts.map((entry) => {
+      const collectionPath = entry.collection === "guides" ? "guias" : entry.slug === "lab" ? "lab" : entry.slug;
+      const href = entry.collection === "guides"
+        ? withBase(`${collectionPath}/${entry.slug}/`)
+        : withBase(`${collectionPath}/`);
+
+      return (
+        <article class="card">
+          <p class="eyebrow">{entry.collection}</p>
+          <h2><a href={href}>{entry.data.title}</a></h2>
+          <p>{entry.data.seoDescription ?? entry.data.description}</p>
+        </article>
+      );
+    })}
+  </section>
+</BaseLayout>

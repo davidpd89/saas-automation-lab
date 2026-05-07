@@ -11,6 +11,7 @@ export async function GET({ site }: { site: URL }) {
 
   const paths = [
     "",
+    "blog/",
     "herramientas/",
     "comparativas/",
     "guias/",
