@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ToolCard from "../../components/ToolCard.astro";
+
+const tools = await getCollection("tools");
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+---
+
+<BaseLayout
+  title="Directorio de herramientas SaaS e IA para solopreneurs"
+  description="Reviews de herramientas de automatizacion, CRM, email marketing, prospeccion y creacion de contenido para negocios unipersonales."
+>
+  <section class="section-header">
+    <p class="eyebrow">Directorio critico</p>
+    <h1>Herramientas SaaS e IA para automatizar un negocio de servicios</h1>
+    <p class="lede">Fichas con precio, perfil ideal, rating editorial y transparencia de afiliacion.</p>
+  </section>
+
+  <section class="grid grid-3">
+    {tools.map(({ data, slug }) => (
+      <ToolCard
+        title={data.title}
+        description={data.description}
+        rating={data.rating}
+        toolId={data.toolId}
+        affiliateUrl={data.affiliateUrl}
+        href={withBase(`herramientas/${slug}/`)}
+      />
+    ))}
+  </section>
+</BaseLayout>

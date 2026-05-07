@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const primary = await getCollection("comparisons");
+const extra = await getCollection("comparativas");
+const comparisons = [...primary, ...extra];
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+---
+
+<BaseLayout
+  title="Comparativas SaaS 2026 para automatizacion e IA"
+  description="Comparativas de herramientas SaaS con veredictos por caso de uso, costes reales y criterios de seleccion para solopreneurs."
+>
+  <section class="section-header">
+    <p class="eyebrow">Batalla de herramientas</p>
+    <h1>Comparativas para decidir stack sin perder semanas probando</h1>
+    <p class="lede">Analisis orientado a ROI, curva de aprendizaje, integraciones y control tecnico.</p>
+  </section>
+
+  <section class="grid grid-2">
+    {comparisons.map(({ data, slug }) => (
+      <article class="card">
+        <p class="eyebrow">{data.searchIntent}</p>
+        <h2><a href={withBase(`comparativas/${slug}/`)}>{data.title}</a></h2>
+        <p>{data.seoDescription}</p>
+        <p><strong>Veredicto:</strong> {data.verdict}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

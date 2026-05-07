@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const labUrl = `${import.meta.env.BASE_URL}lab/`;
+---
+
+<BaseLayout
+  title="Quienes somos | SaaS Automation Lab"
+  description="Metodologia editorial y de pruebas de SaaS Automation Lab para evaluar herramientas de automatizacion."
+>
+  <article class="prose-page">
+    <p class="eyebrow">E-E-A-T</p>
+    <h1>Quienes somos</h1>
+    <p>SaaS Automation Lab es un proyecto editorial tecnico para analizar herramientas de automatizacion, CRM, email marketing, prospeccion y contenido con foco en solopreneurs.</p>
+    <p>La pieza central de confianza es el Lab, donde documentamos criterios, limitaciones y metodologia de evaluacion.</p>
+    <p><a class="btn btn-primary" href={labUrl}>Ver metodologia del Lab</a></p>
+  </article>
+</BaseLayout>

@@ -22,7 +22,9 @@ Base de la nueva web en Astro para afiliación SaaS/IA.
 git remote set-url origin https://github.com/davidpd89/saas-automation-lab.git
 ```
 
-3. Activar GitHub Pages con GitHub Actions en settings del repo.
+3. Activar GitHub Pages en settings del repo con fuente `Deploy from a branch`, rama `gh-pages`, carpeta `/`.
+
+Si GitHub Pages queda apuntando a `main`, GitHub intentara construir el codigo Astro con Jekyll y aparecera un run rojo llamado `pages build and deployment`.
 
 ## Nota de entorno local
 

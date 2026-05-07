@@ -5,7 +5,10 @@ import ComparisonTable from "../../components/ComparisonTable.astro";
 import AffiliateButton from "../../components/AffiliateButton.astro";
 
 export async function getStaticPaths() {
-  const items = await getCollection("comparisons");
+  const items = [
+    ...(await getCollection("comparisons")),
+    ...(await getCollection("comparativas"))
+  ];
   return items.map((item) => ({
     params: { slug: item.slug },
     props: { item }

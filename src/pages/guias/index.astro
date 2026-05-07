@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const guides = await getCollection("guides");
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+---
+
+<BaseLayout
+  title="Guias de automatizacion paso a paso para solopreneurs"
+  description="Tutoriales de proceso para automatizar onboarding, facturacion y prospeccion con herramientas SaaS e IA."
+>
+  <section class="section-header">
+    <p class="eyebrow">Tutoriales de proceso</p>
+    <h1>Guias accionables para convertir herramientas en sistemas</h1>
+    <p class="lede">Cada guia conecta escenario, persona, herramientas usadas y ahorro estimado.</p>
+  </section>
+
+  <section class="grid grid-2">
+    {guides.map(({ data, slug }) => (
+      <article class="card">
+        <p class="eyebrow">{data.persona} - {data.difficulty}</p>
+        <h2><a href={withBase(`guias/${slug}/`)}>{data.title}</a></h2>
+        <p>{data.seoDescription}</p>
+        <p><strong>Ahorro estimado:</strong> {data.timeSaved}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { item } = Astro.props;
+const { Content } = await item.render();
 ---
 
 <BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
@@ -26,5 +27,9 @@ const { item } = Astro.props;
     <GuideStep stepNumber={1} totalSteps={3} title="Disenar formulario de alta" summary="Define los campos que activan tu automatizacion." />
     <GuideStep stepNumber={2} totalSteps={3} title="Crear flujo n8n" summary="Conecta triggers, enrichment y asignacion de tareas." />
     <GuideStep stepNumber={3} totalSteps={3} title="Notificar por WhatsApp y CRM" summary="Entrega mensaje al cliente y crea su ficha comercial." />
+  </section>
+
+  <section class="prose-page">
+    <Content />
   </section>
 </BaseLayout>
