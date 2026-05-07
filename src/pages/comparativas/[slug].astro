@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { item } = Astro.props;
 const { Content } = await item.render();
+const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site ?? new URL("https://davidpd89.github.io")).toString();
 
 // Schema markup for comparison pages
 const comparisonSchema = {
@@ -24,12 +25,12 @@ const comparisonSchema = {
   "author": {
     "@type": "Person",
     "name": "David Porto",
-    "url": "https://davidportodiaz.com"
+    "url": "https://github.com/davidpd89"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Automatización SaaS e IA",
-    "url": "https://davidportodiaz.com/temp-saas-ai-affiliate-site"
+    "url": siteUrl
   },
   "dateModified": new Date().toISOString(),
   "mainEntity": {

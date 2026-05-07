@@ -1,17 +1,14 @@
 ---
 import { getCollection } from "astro:content";
 import LabLayout from "../layouts/LabLayout.astro";
-import type { CollectionEntry } from 'astro:content';
 
-export async function getStaticPaths() {
-  const labContent = await getCollection("pillars", ({ slug }) => slug === "lab");
-  return labContent.map((item) => ({
-    params: { slug: item.slug },
-    props: { item }
-  }));
+const pillars = await getCollection("pillars");
+const item = pillars.find((entry) => entry.slug === "lab");
+
+if (!item) {
+  throw new Error("Missing lab pillar content");
 }
 
-const { item } = Astro.props;
 const { Content } = await item.render();
 ---
 

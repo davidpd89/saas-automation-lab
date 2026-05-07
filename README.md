@@ -1,4 +1,4 @@
-# Temp SaaS/IA Affiliate Site
+# SaaS Automation Lab
 
 Base de la nueva web en Astro para afiliación SaaS/IA.
 
@@ -6,7 +6,7 @@ Base de la nueva web en Astro para afiliación SaaS/IA.
 
 - Estructura Astro creada.
 - Colecciones, rutas dinámicas, contenido semilla y componentes de afiliación implementados.
-- Workflow de GitHub Pages preparado.
+- Workflow de GitHub Pages preparado para publicar en `https://davidpd89.github.io/saas-automation-lab/`.
 
 ## Pendiente para publicar
 
@@ -16,10 +16,10 @@ Base de la nueva web en Astro para afiliación SaaS/IA.
 & "C:\Users\pblac\AppData\Local\Microsoft\WinGet\Packages\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\bin\gh.exe" auth login
 ```
 
-2. Crear repo temporal y conectar remote:
+2. Conectar este checkout local al repo correcto:
 
 ```powershell
-& "C:\Users\pblac\AppData\Local\Microsoft\WinGet\Packages\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\bin\gh.exe" repo create temp-saas-ai-affiliate-site --public --source . --remote origin --push
+git remote set-url origin https://github.com/davidpd89/saas-automation-lab.git
 ```
 
 3. Activar GitHub Pages con GitHub Actions en settings del repo.

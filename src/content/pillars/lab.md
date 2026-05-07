@@ -134,9 +134,7 @@ Aquí no solo recomendamos herramientas, las **probamos realmente** en escenario
 
 ¿Quieres que probemos una herramienta específica para tu caso de uso?
 
-**Email**: lab@davidportodiaz.com  
-**LinkedIn**: [davidportodiaz](https://linkedin.com/in/davidportodiaz)  
-**GitHub**: [davidpd89](https://github.com/davidpd89)
+**GitHub**: [saas-automation-lab](https://github.com/davidpd89/saas-automation-lab)
 
 ---
 

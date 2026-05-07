@@ -4,6 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ToolCard from "../components/ToolCard.astro";
 
 const tools = await getCollection("tools");
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 ---
 
 <BaseLayout
@@ -17,7 +18,7 @@ const tools = await getCollection("tools");
       con criterio practico y enfoque de negocio.
     </p>
     <p>
-      <a class="btn btn-primary" href="/automatizacion-solopreneurs-2026/">Ver pagina pilar principal</a>
+      <a class="btn btn-primary" href={withBase("automatizacion-solopreneurs-2026/")}>Ver pagina pilar principal</a>
     </p>
   </section>
 
@@ -32,7 +33,7 @@ const tools = await getCollection("tools");
             rating={data.rating}
             toolId={data.toolId}
             affiliateUrl={data.affiliateUrl}
-            href={`/herramientas/${slug}/`}
+            href={withBase(`herramientas/${slug}/`)}
           />
         ))
       }

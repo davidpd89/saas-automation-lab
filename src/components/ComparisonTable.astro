@@ -6,10 +6,16 @@ interface Row {
 }
 
 interface Props {
-  rows: Row[];
+  rows?: Row[];
+  toolsCompared?: string[];
 }
 
-const { rows } = Astro.props;
+const { rows, toolsCompared = [] } = Astro.props;
+const tableRows = rows ?? toolsCompared.map((tool) => ({
+  tool,
+  pricing: "Consultar plan",
+  bestFor: "Ver analisis"
+}));
 ---
 
 <div class="card">
@@ -23,7 +29,7 @@ const { rows } = Astro.props;
     </thead>
     <tbody>
       {
-        rows.map((row) => (
+        tableRows.map((row) => (
           <tr>
             <td>{row.tool}</td>
             <td>{row.pricing}</td>

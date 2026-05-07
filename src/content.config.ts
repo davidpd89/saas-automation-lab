@@ -43,6 +43,8 @@ const comparisons = defineCollection({
   })
 });
 
+const comparativas = comparisons;
+
 const guides = defineCollection({
   type: "content",
   schema: z.object({
@@ -72,4 +74,4 @@ const pillars = defineCollection({
   })
 });
 
-export const collections = { tools, comparisons, guides, pillars };
+export const collections = { tools, comparisons, comparativas, guides, pillars };

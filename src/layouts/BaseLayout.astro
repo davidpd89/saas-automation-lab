@@ -7,7 +7,14 @@ interface Props {
 }
 
 const { title, description = "Web de afiliación SaaS e IA para solopreneurs." } = Astro.props;
-const siteUrl = "https://davidpd89.github.io/temp-saas-ai-affiliate-site/";
+const basePath = import.meta.env.BASE_URL;
+const siteOrigin = Astro.site ?? new URL("https://davidpd89.github.io");
+const siteUrl = new URL(basePath, siteOrigin).toString();
+const currentPath = Astro.url.pathname.startsWith(basePath)
+  ? Astro.url.pathname.slice(basePath.length)
+  : Astro.url.pathname.replace(/^\/+/, "");
+const canonicalUrl = new URL(currentPath, siteUrl).toString();
+const withBase = (path = "") => `${basePath}${path.replace(/^\/+/, "")}`;
 ---
 
 <!doctype html>
@@ -17,7 +24,7 @@ const siteUrl = "https://davidpd89.github.io/temp-saas-ai-affiliate-site/";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={new URL(Astro.url.pathname, siteUrl).toString()} />
+    <link rel="canonical" href={canonicalUrl} />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -30,12 +37,12 @@ const siteUrl = "https://davidpd89.github.io/temp-saas-ai-affiliate-site/";
     <header>
       <div class="container">
         <nav aria-label="Principal">
-          <a href="/">Inicio</a>
-          <a href="/herramientas/n8n-cloud/">Herramientas</a>
-          <a href="/comparativas/n8n-vs-make-vs-zapier/">Comparativas</a>
-          <a href="/guias/onboarding-automatizado-n8n-whatsapp/">Guias</a>
-          <a href="/automatizacion-solopreneurs-2026/">Pilar</a>
-          <a href="/lab/">Lab</a>
+          <a href={withBase()}>Inicio</a>
+          <a href={withBase("herramientas/n8n-cloud/")}>Herramientas</a>
+          <a href={withBase("comparativas/n8n-vs-make-vs-zapier/")}>Comparativas</a>
+          <a href={withBase("guias/onboarding-automatizado-n8n-whatsapp/")}>Guias</a>
+          <a href={withBase("automatizacion-solopreneurs-2026/")}>Pilar</a>
+          <a href={withBase("lab/")}>Lab</a>
         </nav>
       </div>
     </header>
