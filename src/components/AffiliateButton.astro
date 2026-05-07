@@ -1,0 +1,34 @@
+---
+interface Props {
+  url: string;
+  label: string;
+  toolId: string;
+}
+
+const { url, label, toolId } = Astro.props;
+---
+
+<a
+  class="btn btn-primary"
+  href={url}
+  target="_blank"
+  rel="nofollow sponsored"
+  aria-label={`Abrir ${toolId} en una nueva pestana`}
+  data-affiliate-tool={toolId}
+>
+  {label} ↗
+</a>
+
+<script>
+  const links = document.querySelectorAll("[data-affiliate-tool]");
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      const toolId = link.getAttribute("data-affiliate-tool");
+      window.dispatchEvent(
+        new CustomEvent("affiliate-click", {
+          detail: { toolId, timestamp: Date.now() }
+        })
+      );
+    });
+  });
+</script>

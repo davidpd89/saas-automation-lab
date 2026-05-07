@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ComparisonTable from "../../components/ComparisonTable.astro";
+
+export async function getStaticPaths() {
+  const items = await getCollection("comparisons");
+  return items.map((item) => ({
+    params: { slug: item.data.slug },
+    props: { item }
+  }));
+}
+
+const { item } = Astro.props;
+---
+
+<BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
+  <article>
+    <h1>{item.data.title}</h1>
+    <p>{item.data.verdict}</p>
+    <ComparisonTable
+      rows={[
+        { tool: "n8n", pricing: "Desde 20 EUR/mes", bestFor: "Escalabilidad tecnica" },
+        { tool: "Make", pricing: "Plan por operaciones", bestFor: "Automatizacion visual" },
+        { tool: "Zapier", pricing: "Plan por tareas", bestFor: "Rapidez inicial" }
+      ]}
+    />
+  </article>
+</BaseLayout>

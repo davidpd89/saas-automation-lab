@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Como evaluamos una herramienta?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "La evaluamos en escenarios reales y medimos ahorro de tiempo, tasa de error y facilidad de adopcion."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Los enlaces son de afiliado?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Si, cuando aplica lo indicamos con transparencia y mantenemos criterio editorial propio."
+      }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Lab: como probamos herramientas"
+  description="Metodologia de evaluacion para herramientas SaaS e IA, con foco en tiempo ahorrado y resultados de negocio."
+>
+  <h1>Como probamos las herramientas</h1>
+  <p>
+    Evaluamos cada stack en escenarios reales: onboarding de alumnos, seguimiento comercial y ejecucion de
+    automatizaciones con equipos pequenos.
+  </p>
+  <div class="grid grid-3">
+    <article class="card">
+      <h2>Escenarios reales</h2>
+      <p>Se prueba cada herramienta dentro de flujos completos, no en demos aisladas.</p>
+    </article>
+    <article class="card">
+      <h2>Criterios medibles</h2>
+      <p>Tiempo ahorrado, tasa de error, facilidad para no tecnicos y estabilidad semanal.</p>
+    </article>
+    <article class="card">
+      <h2>Transparencia afiliada</h2>
+      <p>Indicamos cuando un enlace es de afiliado y mantenemos recomendaciones editoriales independientes.</p>
+    </article>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</BaseLayout>

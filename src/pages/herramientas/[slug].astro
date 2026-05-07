@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateButton from "../../components/AffiliateButton.astro";
+
+export async function getStaticPaths() {
+  const items = await getCollection("tools");
+  return items.map((item) => ({
+    params: { slug: item.data.slug },
+    props: { item }
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await item.render();
+---
+
+<BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
+  <article>
+    <h1>{item.data.title}</h1>
+    <p>{item.data.description}</p>
+    <p><strong>Ideal para:</strong> {item.data.idealUser}</p>
+    <p><strong>Precio:</strong> {item.data.pricing}</p>
+    <p><strong>Rating:</strong> {item.data.rating}/10</p>
+    <AffiliateButton url={item.data.affiliateUrl} label="Ir a la herramienta" toolId={item.data.toolId} />
+  </article>
+  <section class="card">
+    <Content />
+  </section>
+</BaseLayout>

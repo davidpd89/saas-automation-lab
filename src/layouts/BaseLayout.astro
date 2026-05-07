@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Web de afiliación SaaS e IA para solopreneurs." } = Astro.props;
+const siteUrl = "https://davidpd89.github.io/temp-saas-ai-affiliate-site/";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, siteUrl).toString()} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Temp SaaS IA Affiliate Lab",
+      url: siteUrl,
+      description
+    })} />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav aria-label="Principal">
+          <a href="/">Inicio</a>
+          <a href="/herramientas/n8n-cloud/">Herramientas</a>
+          <a href="/comparativas/n8n-vs-make-vs-zapier/">Comparativas</a>
+          <a href="/guias/onboarding-automatizado-n8n-whatsapp/">Guias</a>
+          <a href="/automatizacion-solopreneurs-2026/">Pilar</a>
+          <a href="/lab/">Lab</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        <small>Proyecto base de afiliación SaaS/IA en Astro.</small>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener("affiliate-click", (event) => {
+        const detail = event.detail || {};
+        const key = "affiliate_click_log";
+        const previous = JSON.parse(localStorage.getItem(key) || "[]");
+        previous.push(detail);
+        localStorage.setItem(key, JSON.stringify(previous.slice(-100)));
+      });
+    </script>
+  </body>
+</html>

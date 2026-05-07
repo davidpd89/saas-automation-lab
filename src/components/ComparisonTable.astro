@@ -1,0 +1,36 @@
+---
+interface Row {
+  tool: string;
+  pricing: string;
+  bestFor: string;
+}
+
+interface Props {
+  rows: Row[];
+}
+
+const { rows } = Astro.props;
+---
+
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>Herramienta</th>
+        <th>Precio base</th>
+        <th>Mejor para</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((row) => (
+          <tr>
+            <td>{row.tool}</td>
+            <td>{row.pricing}</td>
+            <td>{row.bestFor}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

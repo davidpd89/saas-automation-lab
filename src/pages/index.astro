@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ToolCard from "../components/ToolCard.astro";
+
+const tools = await getCollection("tools");
+---
+
+<BaseLayout
+  title="Automatizacion SaaS e IA para Solopreneurs"
+  description="Comparativas y guias para elegir herramientas SaaS con enfoque real en conversion y ahorro de tiempo."
+>
+  <section>
+    <h1>Automatizacion SaaS e IA para Solopreneurs</h1>
+    <p>
+      Proyecto editorial y tecnico para ayudarte a elegir herramientas de automatizacion, CRM y marketing
+      con criterio practico y enfoque de negocio.
+    </p>
+    <p>
+      <a class="btn btn-primary" href="/automatizacion-solopreneurs-2026/">Ver pagina pilar principal</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Herramientas destacadas</h2>
+    <div class="grid grid-3">
+      {
+        tools.map(({ data }) => (
+          <ToolCard
+            title={data.title}
+            description={data.description}
+            rating={data.rating}
+            toolId={data.toolId}
+            affiliateUrl={data.affiliateUrl}
+            href={`/herramientas/${data.slug}/`}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
