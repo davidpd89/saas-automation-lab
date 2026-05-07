@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const guidesUrl = `${import.meta.env.BASE_URL}guias/`;
+const toolsUrl = `${import.meta.env.BASE_URL}herramientas/`;
+---
+
+<BaseLayout
+  title="Como escalar un negocio de servicios con IA sin empleados"
+  description="Pagina pilar sobre sistemas, automatizacion e IA para escalar servicios de alto valor sin aumentar estructura fija."
+>
+  <article class="prose-page">
+    <p class="eyebrow">Pilar estrategico</p>
+    <h1>Como escalar un negocio de servicios con IA sin contratar empleados</h1>
+    <p>La tesis del laboratorio es simple: un solopreneur no escala vendiendo mas horas, escala convirtiendo tareas repetidas en sistemas.</p>
+
+    <h2>Tareas prioritarias</h2>
+    <ul>
+      <li>Onboarding de clientes y alumnos.</li>
+      <li>Seguimiento de leads y propuestas.</li>
+      <li>Facturacion, cobros y recordatorios.</li>
+      <li>Soporte con documentacion propia y RAG.</li>
+      <li>Recopilacion de testimonios y casos de exito.</li>
+    </ul>
+
+    <h2>Stacks recomendados</h2>
+    <ul>
+      <li><strong>Coach:</strong> Webflow + Clientify + n8n.</li>
+      <li><strong>Formador:</strong> Thinkific + ConvertKit + Blym.</li>
+      <li><strong>Consultor B2B:</strong> lemlist + Make + Clientify.</li>
+    </ul>
+
+    <p>
+      <a class="btn btn-primary" href={guidesUrl}>Ver guias de proceso</a>
+      <a class="btn" href={toolsUrl}>Ver herramientas</a>
+    </p>
+  </article>
+</BaseLayout>

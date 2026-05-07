@@ -14,6 +14,20 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 const { Content } = await item.render();
 const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site ?? new URL("https://davidpd89.github.io")).toString();
+const faqItems = [
+  {
+    question: `Para quien es ${item.data.title}?`,
+    answer: item.data.description
+  },
+  {
+    question: `Cuanto cuesta ${item.data.title}?`,
+    answer: `El precio de referencia es ${item.data.pricing}. Verifica siempre la pagina oficial antes de contratar.`
+  },
+  {
+    question: "Esta recomendacion incluye enlaces de afiliado?",
+    answer: "Si. Algunos enlaces pueden generar una comision sin coste adicional para el lector."
+  }
+];
 
 // Schema markup for tool pages
 const toolSchema = {
@@ -47,10 +61,23 @@ const toolSchema = {
     "url": siteUrl
   }
 };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 ---
 
 <BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
   <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   
   <article class="max-w-4xl mx-auto px-4 py-8">
     <header class="mb-8">
@@ -99,6 +126,15 @@ const toolSchema = {
       <Content />
     </section>
 
+    <section class="mt-12 p-6 bg-gray-50 rounded-lg border">
+      <p class="eyebrow">E-E-A-T</p>
+      <h2>Como evaluamos esta herramienta</h2>
+      <p>
+        Revisamos encaje por perfil, claridad de precios, integraciones, curva de aprendizaje,
+        transparencia del programa de afiliados y utilidad real para solopreneurs de servicios.
+      </p>
+    </section>
+
     {item.data.affiliate && (
       <section class="mt-12 p-6 bg-gray-50 rounded-lg">
         <h2 class="text-lg font-semibold text-gray-900 mb-4">Información de Afiliación</h2>
@@ -118,5 +154,15 @@ const toolSchema = {
         </div>
       </section>
     )}
+
+    <section class="mt-12 p-6 bg-white rounded-lg border">
+      <h2>Preguntas frecuentes</h2>
+      {faqItems.map((faq) => (
+        <details>
+          <summary>{faq.question}</summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </section>
   </article>
 </BaseLayout>

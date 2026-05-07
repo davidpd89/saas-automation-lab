@@ -12,6 +12,8 @@ export async function GET({ site }: { site: URL }) {
   const paths = [
     "",
     "blog/",
+    "escalar-negocio-servicios-ia/",
+    "automatizacion-facturacion-cobros-consultores/",
     "herramientas/",
     "comparativas/",
     "guias/",

@@ -18,6 +18,13 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 const { Content } = await item.render();
 const siteUrl = new URL(import.meta.env.BASE_URL, Astro.site ?? new URL("https://davidpd89.github.io")).toString();
+const allTools = await getCollection("tools");
+const comparedTools = allTools.filter((tool) => item.data.toolsCompared?.includes(tool.data.toolId));
+const tableRows = comparedTools.map((tool) => ({
+  tool: tool.data.title,
+  pricing: tool.data.pricing,
+  bestFor: tool.data.idealUser
+}));
 
 // Schema markup for comparison pages
 const comparisonSchema = {
@@ -70,8 +77,28 @@ const comparisonSchema = {
 
     <section class="mb-12">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">Comparativa Detallada</h2>
-      <ComparisonTable toolsCompared={item.data.toolsCompared || []} />
+      <ComparisonTable rows={tableRows.length ? tableRows : undefined} toolsCompared={item.data.toolsCompared || []} />
     </section>
+
+    {comparedTools.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Probar herramientas comparadas</h2>
+        <div class="grid grid-3">
+          {comparedTools.map((tool) => (
+            <article class="card">
+              <h3>{tool.data.title}</h3>
+              <p>{tool.data.description}</p>
+              <AffiliateButton
+                url={tool.data.affiliateUrl}
+                label="Ver herramienta"
+                toolId={tool.data.toolId}
+                variant="outline"
+              />
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="mb-12">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">Casos de Uso por Perfil</h2>

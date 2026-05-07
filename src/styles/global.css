@@ -270,3 +270,32 @@ article {
 .space-x-6 > * + * {
   margin-left: 1.5rem;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.85rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+details {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 750;
+}

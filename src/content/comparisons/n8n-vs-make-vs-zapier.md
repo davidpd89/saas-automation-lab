@@ -1,6 +1,5 @@
 ---
 title: "n8n vs Make vs Zapier 2026: cual conviene segun tu caso"
-slug: "n8n-vs-make-vs-zapier"
 seoTitle: "Comparativa n8n vs Make vs Zapier (2026)"
 seoDescription: "Comparativa honesta para elegir plataforma de automatizacion segun perfil y objetivo."
 toolsCompared: ["n8n-cloud", "make-com", "zapier"]

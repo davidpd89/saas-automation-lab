@@ -1,6 +1,5 @@
 ---
 title: "n8n vs Make 2026: Automatización técnica vs visual"
-slug: "n8n-vs-make"
 seoTitle: "n8n vs Make 2026: Cuál elegir según tu nivel técnico"
 seoDescription: "Comparativa completa n8n vs Make: automatización técnica vs visual, costes, casos de uso y recomendaciones para 2026."
 toolsCompared: ["n8n-cloud", "make-com"]

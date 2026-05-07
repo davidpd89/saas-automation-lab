@@ -1,9 +1,8 @@
 ---
 title: "Clientify vs Brevo 2026: El mejor CRM para mercado hispano"
-slug: "clientify-vs-brevo"
 seoTitle: "Clientify vs Brevo 2026: CRM con WhatsApp vs Email Marketing"
 seoDescription: "Comparativa Clientify vs Brevo: cuál elegir para tu negocio en España y LATAM, análisis de WhatsApp, automatización y precios."
-toolsCompared: ["clientify"]
+toolsCompared: ["clientify", "brevo"]
 verdict: "Clientify es superior para negocios hispanos que priorizan WhatsApp y soporte en español, mientras que Brevo es mejor para empresas globales enfocadas principalmente en email marketing."
 searchIntent: "commercial"
 seoKeywords: ["clientify vs brevo", "crm hispano", "whatsapp marketing", "automatizacion"]

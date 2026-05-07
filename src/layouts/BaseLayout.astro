@@ -15,6 +15,20 @@ const currentPath = Astro.url.pathname.startsWith(basePath)
   : Astro.url.pathname.replace(/^\/+/, "");
 const canonicalUrl = new URL(currentPath, siteUrl).toString();
 const withBase = (path = "") => `${basePath}${path.replace(/^\/+/, "")}`;
+const breadcrumbParts = currentPath.split("/").filter(Boolean);
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
+    ...breadcrumbParts.map((part, index) => ({
+      "@type": "ListItem",
+      position: index + 2,
+      name: part.replace(/-/g, " "),
+      item: new URL(`${breadcrumbParts.slice(0, index + 1).join("/")}/`, siteUrl).toString()
+    }))
+  ]
+};
 ---
 
 <!doctype html>
@@ -32,6 +46,7 @@ const withBase = (path = "") => `${basePath}${path.replace(/^\/+/, "")}`;
       url: siteUrl,
       description
     })} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </head>
   <body>
     <header>

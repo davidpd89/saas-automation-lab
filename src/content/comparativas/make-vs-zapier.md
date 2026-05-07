@@ -1,6 +1,5 @@
 ---
 title: "Make vs Zapier 2026: Cuál ahorra más dinero para tu negocio"
-slug: "make-vs-zapier"
 seoTitle: "Make vs Zapier 2026: Comparativa completa de precios y rendimiento"
 seoDescription: "Análisis detallado Make vs Zapier: costes reales, límites y cuál elegir para automatizar tu negocio en 2026."
 toolsCompared: ["make-com", "zapier"]
