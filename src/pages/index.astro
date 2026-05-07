@@ -25,14 +25,14 @@ const tools = await getCollection("tools");
     <h2>Herramientas destacadas</h2>
     <div class="grid grid-3">
       {
-        tools.map(({ data }) => (
+        tools.map(({ data, slug }) => (
           <ToolCard
             title={data.title}
             description={data.description}
             rating={data.rating}
             toolId={data.toolId}
             affiliateUrl={data.affiliateUrl}
-            href={`/herramientas/${data.slug}/`}
+            href={`/herramientas/${slug}/`}
           />
         ))
       }

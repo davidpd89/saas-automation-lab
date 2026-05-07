@@ -1141,3 +1141,403 @@ Estructura Astro (src/, collections, layouts).
 
 Un primer commit con 2–3 páginas reales (n8n, comparativa n8n/Make/Zapier, guía de onboarding) siguiendo los esquemas ampliados.
 
+
+
+Bloque prompts 1-169:
+
+Estrategias de Monetización Digital y Arquitectura de Sistemas Web para la Economía de la Automatización en 2026El panorama del emprendimiento digital en 2026 se caracteriza por una convergencia sin precedentes entre la inteligencia artificial generativa, la automatización de procesos y la soberanía del dato. La evolución de la Web hacia un entorno donde las búsquedas ya no solo devuelven enlaces, sino soluciones ejecutables a través de la Search Generative Experience (SGE), obliga a los creadores de contenido a replantear sus modelos de monetización hacia la especialización técnica y la autoridad tópica. I. Análisis de Viabilidad y Selección del Micro-nicho GanadorLa apuesta por este micro-nicho se justifica por la convergencia de tres factores sistémicos. En primer lugar, la barrera de entrada técnica es lo suficientemente alta para alejar a redactores de IA genérica, pero accesible para un perfil que domine el desarrollo web y la lógica de automatización. Comparativa de Candidatos a Micro-nicho 2026Métrica de EvaluaciónIA para Solopreneurs (Ganador)IA para Agencias SMBIA para EcommerceRentabilidad de AfiliaciónAlta (Recurrencia lifetime) Muy Alta (Ticket alto) Media (Márgenes bajos) Dificultad SEO (ES)Media-Baja (Nicho virgen) Muy Alta (Saturación) Extrema (Competencia global) Estabilidad (3-5 años)Muy Alta (Crecimiento No-code) Media (Riesgo de absorción) Alta (Digitalización) Este micro-nicho se fundamenta en la necesidad crítica de automatizar tareas que no generan valor directo: gestión de facturación, onboarding de alumnos y prospección comercial. II. Ecosistema de Afiliación y Selección del Núcleo de IngresosEn 2026, la selección de programas de afiliación no debe basarse únicamente en el porcentaje de comisión, sino en la "pegajosidad" (stickiness) de la herramienta. Catálogo de Programas de Afiliación Recomendados (Mayo 2026)ProgramaPropuesta de ValorComisiónCookiePlataforman8n (Cloud)Automatización técnica y flujos IA30% recurrente (1er año)30 días Propia BlymContenido SEO escalable sin créditos 30% recurrente (Lifetime) 30 días Tolt ClientifyCRM + WhatsApp (España/Latam) 15% (un pago) o recurrente 60 días Propia Make.comAutomatización visual compleja 35% recurrente (12 meses)30 díasWise PayoutlemlistProspección y ventas frías 25% recurrente (12 meses) 30 días PartnerStack ConvertKitEmail marketing para creadores 30% recurrente (Lifetime) 90 días Propia WebflowDesarrollo web premium 50% (primeros 12 meses) 90 días Propia ThinkificVenta de formación online 30% recurrente (Lifetime) 90 días PartnerStack III. Arquitectura Técnica: Blueprint Astro + GitHub Pages 2026Para un sitio de alto rendimiento en 2026, Astro es la opción superior debido a su arquitectura de "islas" y el sistema de Content Collections, que permite validar datos de afiliados en tiempo de compilación. Estructura de Carpetas/
+├── public/                 # Assets (imágenes, CNAME para dominio custom)
+├── src/
+│   ├── components/         # Islas de interactividad (Tablas, Cards)
+│   ├── content/            # Colecciones de Markdown/MDX 
+│   │   ├── tools/          # Fichas de herramientas (.md)
+│   │   ├── comparisons/    # Comparativas (.md)
+│   │   ├── guides/         # Tutoriales de proceso (.md)
+│   │   └── pillars/        # Páginas de autoridad (.md)
+│   ├── layouts/            # Plantillas (ToolLayout, GuideLayout) 
+│   └── content.config.ts   # Esquemas Zod (VALIDACIÓN) 
+├── astro.config.mjs        # Configuración de site, base y static
+└──.github/workflows/      # CI/CD (deploy.yml)Esquemas de Colecciones (Zod)La validación técnica asegura que ninguna página de "dinero" se publique sin su enlace de afiliado o datos de SEO. TypeScript// src/content.config.ts
+import { defineCollection, z, reference } from 'astro:content';
+
+const tools = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    toolId: z.string(),
+    affiliateUrl: z.string().url(),
+    pricing: z.string(),
+    idealUser: z.enum(['Coach', 'Consultor', 'Formador']),
+    rating: z.number().min(1).max(10),
+    featured: z.boolean().default(false),
+  })
+});
+
+const guides = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    difficulty: z.enum(),
+    toolsUsed: z.array(reference('tools')), // Interlinking automático
+    timeSaved: z.string(),
+    primaryCTA: z.string().optional(),
+  })
+});
+
+export const collections = { tools, guides };
+IV. Repositorios GitHub de Referencia (2025-2026)Para la implementación, se recomienda utilizar patrones de estos repositorios líderes:Starlight (withastro/starlight): El mejor framework para las guías de proceso y documentación técnica.Trendspotter (Lexington Themes): Referencia principal para layouts de directorios y rejillas de herramientas SaaS. Astro Paper (satnaing/astro-paper): Estándar para blogs minimalistas centrados en accesibilidad y SEO.Stellar (ekmas/stellar): Patrón para el uso avanzado de MDX en comparativas dinámicas.Astro Boilerplate (fleek-tools/astro-boilerplate): Estructura base limpia para despliegues estáticos rápidos.Combinación Recomendada: Estructura técnica de Astro Boilerplate con componentes de navegación y búsqueda de Starlight.V. Componentes Clave y LayoutsComponenteProps EsperadasPlantilla de UsoConsideración SEOToolCardtitle, summary, rating, affiliateUrlPáginas Pilararia-label en el CTA de afiliado. ComparisonTabletoolsData (array), featuresComparativas X vs YMarcado <th> para accesibilidad.GuideStepnumber, title, codeSnippet (JSON)Guías de ProcesoDatos estructurados HowTo automáticos. AffiliateButtonurl, label, size, variantToda la webrel="sponsored nofollow". VI. Esqueletos de Contenido (MD/MDX) para 15 URLs InicialesEjemplo: Ficha de Herramienta (/tools/n8n-cloud.md)title: "n8n Cloud: Precios y funciones para solopreneurs en 2026"
+toolId: "n8n"
+affiliateUrl: "https://n8n.io/..."
+pricing: "Desde €20/mes"
+idealUser: "Consultor"
+rating: 9.8Contexto de AutomatizaciónCuándo tiene sentido usar esta herramienta[Análisis de volumen de tareas vs coste]Ventajas / LimitacionesFAQEjemplo: Comparativa (/comparisons/make-vs-zapier.md)title: "Make vs Zapier 2026: La batalla por la rentabilidad"
+toolsCompared: ["make", "zapier"]
+verdict: "Make para flujos complejos, Zapier para 0 mantenimiento"Matriz Comparativa de CostesCasos de Uso EspecíficosVII. Configuración de Build y Deploy (GitHub Pages)astro.config.mjs (Optimizado 2026)JavaScriptimport { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+import sitemap from '@astrojs/sitemap';
+
+export default defineConfig({
+  site: 'https://usuario.github.io',
+  base: '/nombre-repo', // REQUERIDO para subdirectorios de GH Pages
+  output: 'static',
+  trailingSlash: 'always',
+  integrations: [tailwind(), sitemap()],
+});
+.github/workflows/deploy.ymlYAMLon:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: withastro/action@v6 # Acción oficial recomendada
+VIII. Sistema de Diseño Mínimo (Tailwind 4)Tipografía: Headings en Inter Tight (Tecnológico) y Body en Source Serif 4 (Legibilidad en guías largas). Colores: Fondos neutros (#F8FAFC), CTAs en Azul Cobalto (#2563EB) para destacar la acción de afiliado. Layout: Ancho de lectura limitado a max-w-prose para evitar fatiga en tutoriales técnicos. IX. Plan Operativo de 90 DíasFase 1 (Día 1-20): Setup de Astro, configuración de esquemas Zod y despliegue del esqueleto en GH Pages.Fase 2 (Día 21-60): Publicación de las 7 fichas de herramientas base y las 3 comparativas principales.Fase 3 (Día 61-90): Lanzamiento de 5 guías de proceso que conecten el stack y promoción en LinkedIn/Comunidades.
+
+1) Validación profunda de programas de afiliación SaaS (Mayo 2026)
+Analiza el estado actual de estos programas para creadores individuales en mayo 2026: n8n, Make, Webflow, Thinkific, ConvertKit, lemlist, Clientify y Blym.
+
+Para cada uno, documenta:
+
+Modelo económico actual:
+
+% exacto de comisión por plan, si es recurrente, lifetime o solo primer año.
+
+Estructura de pagos (mínimo, frecuencia, método).
+
+Atribución y cookies:
+
+Duración de la cookie.
+
+Si existe post‑view, last‑click u otros modelos.
+
+Cómo gestionan atribución cuando intervienen varias redes (propio + PartnerStack/Impact).
+
+Plataforma y panel:
+
+Si usan plataforma propia, PartnerStack, Impact, FirstPromoter, etc.
+
+Calidad del dashboard (reporting, retraso en datos, tracking de trials vs pagos).
+
+Elegibilidad y restricciones:
+
+Requisitos para ser aceptado (web mínima, país, tipo de creador, tráfico).
+
+Limitaciones geográficas o de idioma.
+
+Políticas frente a tráfico incentivado, PPC brand bidding, etc.
+
+Documentación oficial:
+
+URLs del programa de afiliados, términos actualizados, FAQ de afiliados y página de soporte/manager de afiliación.
+
+Cambios últimos 6–12 meses:
+
+Subidas/bajadas de comisiones, cambios de cookie, cierre de campañas, migraciones de plataforma.
+
+Señales de estabilidad o riesgo (por ejemplo, recortes generales de afiliación en el sector).
+
+Tendencias y encaje con nuestro proyecto:
+
+¿Están apostando más por creadores nicho/B2B, por influencers masivos o por redes grandes?
+
+Qué tipo de contenidos promocionales parecen priorizar (comparativas, reviews largas, UGC, YouTube, etc.).
+
+2) Benchmark SEO avanzado: comparativas SaaS “n8n vs Make vs Zapier 2026”
+Investiga las 15 mejores URLs para búsquedas tipo “n8n vs make vs zapier 2026” en Google.es (incluye variaciones sin año).
+
+Para cada una, extrae:
+
+Arquitectura de contenido:
+
+H1–H3 principales, longitud total aproximada, secciones recurrentes.
+
+Tipo de enfoque: técnico profundo, marketing superficial, tabla comparativa, casos de uso.
+
+E‑E‑A‑T en práctica:
+
+Señales de experiencia (capturas propias, flujos reales, métricas, “así lo usamos en X proyecto”).
+
+Cómo presentan a los autores (bio, experiencia, enlaces externos).
+
+Fuentes externas citadas (docs oficiales, benchmarks, casos reales).
+
+Formato de comparación:
+
+Tablas (qué columnas usan), sistemas de scores, resúmenes “para quién es cada uno”.
+
+Presencia de secciones tipo “cuándo elegir X vs Y vs Z”.
+
+Multimedia y demo:
+
+Uso de screenshots, vídeos, gifs, mini demos, diagramas de flujos.
+
+Si incluyen embeds (por ej., vídeos YouTube, sandboxes).
+
+Integración de afiliación:
+
+Cómo integran enlaces de afiliado de forma transparente (copy, disclosures, iconos).
+
+Ubicación y frecuencia de CTAs (hero, tabla, final, sidebar).
+
+SERP & features:
+
+Presencia de featured snippets, People Also Ask, videos, AI Overviews.
+
+Qué tipo de página captura esas features (formato, dominio, tipo de marca).
+
+Gaps y oportunidades:
+
+Qué no están cubriendo (coste real con volumen, límites, escenarios solopreneur, español, automatización con IA).
+
+Dónde ves posibilidad de superarles en profundidad, claridad o enfoque específico a solopreneurs.
+
+3) Checklist E‑E‑A‑T específica para sitio de afiliación SaaS técnico (español, 2026)
+Diseña una checklist accionable de E‑E‑A‑T aplicada a un sitio de afiliación SaaS/IA en español.
+
+Cubre:
+
+Experiencia (Experience)
+Tipos de pruebas reales mínimas por herramienta (workflows implementados, capturas, resultados medibles).
+
+Cómo documentar experiencia sin violar datos sensibles (anonimización, mocks).
+
+Frecuencia mínima de actualización de cada ficha/guía para que siga considerándose “experiencia viva”.
+
+Expertise técnica
+Profundidad técnica mínima por tipo de contenido (ficha, comparativa, guía).
+
+Cómo referenciar docs oficiales, SDKs, APIs y ejemplos de código sin convertirse en documentación duplicada.
+
+Criterios para no parecer “AI slop”: señales textuales y estructurales que diferencian contenido experto de refritos.
+
+Autoridad temática
+Estrategia de clusters y linking interno para construir autoridad (pilares → comparativas → guías → fichas).
+
+Tipos de menciones/colaboraciones externas que pesan más (podcasts, guest posts, repos GitHub, talks).
+
+Cómo aprovechar presencia en otras plataformas (LinkedIn, YouTube, foros) como señales de autoridad.
+
+Confianza (Trustworthiness)
+Formato y ubicación de la declaración de afiliación para máxima claridad y mínima fricción.
+
+Cómo publicar la metodología de testing (página “Cómo probamos las herramientas”) y qué debe incluir.
+
+Políticas de corrección/erratas y log público de cambios.
+
+Schema y señalización técnica 2026
+Qué tipos de schema usar en este contexto concreto: Review, Product, FAQPage, HowTo, Organization, Person.
+
+Buenas prácticas de marcado para comparativas (evitar spam de ratings inventados).
+
+Recomendaciones para AI visibility: sitemaps bien estructurados, relaciones claras entre entidades y, si aplica, archivos tipo llms.txt o similares.
+
+4) CRO avanzado para CTAs de afiliación SaaS (2026)
+Analiza las mejores prácticas actuales de conversión en CTAs para afiliación SaaS/IA en B2B/solopreneur.
+
+Investiga:
+
+Copy y psicología
+Frameworks y patrones de copy que más convierten en SaaS B2B/creadores (p. ej. beneficio + tiempo, “prueba sin riesgo”, etc.).
+
+Palabras y estructuras que funcionan mejor en mercado hispano (micro‑copy concreto de botones y micro‑textos alrededor).
+
+Diferencias de copy entre mobile y desktop (longitud, claridad, uso de emojis/símbolos, etc.).
+
+Diseño y UX
+Patrones de color y contraste que se usan en sitios B2B de alto rendimiento (no solo “botón verde/azul”).
+
+Ubicación y número de CTAs óptimos por página para comparativas y guías.
+
+Uso de micro‑interacciones (hover, pulsación, pequeños shifts) que correlaciona con mejor CTR sin parecer agresivo.
+
+Confianza y reducción de fricción
+Cómo combinar botones con elementos de confianza (“Enlace de afiliado”, “Prueba gratuita”, logos de la herramienta, garantías).
+
+Mensajes que reducen la ansiedad antes del clic (claridad sobre pruebas gratuitas, tarjetas requeridas, cancelación).
+
+Formatos efectivos de prueba social cerca de CTAs (número de usuarios, testimonios, logos).
+
+Testing y métricas
+Tipos de A/B tests específicos para CTAs de afiliación (color, copy, ubicación, formato).
+
+Métricas clave más allá del CTR: ratio clic→trial, clic→alta de pago, churn de usuarios afiliados, etc.
+
+Diferencias de comportamiento según fuente de tráfico (orgánico, newsletter, redes).
+
+5) Tendencias de contenido SaaS/IA 2026 aplicadas a afiliación
+Investiga las tendencias emergentes más relevantes para contenido sobre herramientas SaaS/IA, enfocadas a afiliación:
+
+Formatos
+Demos interactivas embebidas, tours guiados y “playgrounds” que permiten probar flujos sin salir de la página.
+
+Calculadoras de ROI adaptables a solopreneurs (tiempo ahorrado, coste mensual neto, etc.).
+
+Comparativas con datos actualizados en tiempo casi real (precio, límites de uso, features clave).
+
+Contenidos tipo “workflow gallery” o “recipes” que muestren automatizaciones listas para copiar.
+
+Ángulos y narrativas
+IA vs herramientas tradicionales: cómo se está contando el choque “agente vs SaaS clásico”.
+
+Historias de “unicornio unipersonal” y reducción de trabajo manual con IA, con métricas concretas.
+
+Enfoques por vertical: coaches, consultores, formadores, agencias, etc. (qué narrativas pegan mejor en cada caso).
+
+Distribución
+Comunidades y canales donde se discute automatización y solopreneurs (Slack, Discord, subreddits, LinkedIn).
+
+Plataformas emergentes para contenido técnico (por ejemplo, Gamma, Notion templates, repos públicos).
+
+Estrategias de link building que siguen funcionando en 2026 para sitios de afiliados técnicos (guest posts, colaboraciones, assets enlazables).
+
+6) Competencia directa en automatización para solopreneurs
+Identifica 5 competidores reales que estén ya trabajando automatización + SaaS para solopreneurs/coaches/consultores (no generalistas de SaaS).
+
+Para cada uno:
+
+Contenido:
+
+Qué temas cubren (automatización, IA, CRM, email, cursos), profundidad y formatos.
+
+Estructura de clusters: tienen pilares, comparativas, Casos de estudio, workflows, etc.
+
+Monetización:
+
+Qué herramientas SaaS/IA promocionan y cómo (reviews, comparativas, banners).
+
+Si venden además servicios propios (consultoría, implementación) o productos digitales.
+
+Autoridad y tráfico:
+
+Estimación de tráfico orgánico y principales keywords.
+
+Perfil de backlinks y menciones (herramientas que les enlazan, blogs, comunidades).
+
+Diferenciadores:
+
+Qué hacen especialmente bien (p. ej. demos, flujos reales, comunidad).
+
+Qué les falta (idioma, enfoque específico, profundidad técnica).
+
+Huecos para nosotros:
+
+Oportunidades claras de posicionarnos mejor (verticalizar, más detalle, mejor UX, foco en español, etc.).
+
+7) Casos de uso de automatización por industria (concretos y medibles)
+Para cada vertical:
+
+Coaches y formadores:
+Onboarding, seguimiento, escalabilidad de programas y cursos.
+
+Consultores B2B:
+Prospección, gestión de pipeline, propuestas, facturación.
+
+Agencias digitales:
+Gestión de clientes, briefings, reporting, tareas repetitivas.
+
+E‑commerce (solo como referencia futura):
+Atención al cliente, post‑venta, remarketing.
+
+Para cada caso de uso:
+
+Flujos concretos de automatización (paso a paso, herramientas implicadas).
+
+KPIs medibles (tiempo ahorrado, reducción de errores, mejora de conversión, churn).
+
+Errores comunes en la implementación (sobrecarga de tools, automatizar “demasiado”, falta de control).
+
+ROI típico y plazo para recuperarlo según tamaño del negocio.
+
+8) Cambios recientes en precios, features e integraciones
+Monitoriza los últimos 3–6 meses para las herramientas del núcleo (n8n, Make, Webflow, Thinkific, ConvertKit, lemlist, Clientify, Blym):
+
+Precios y planes:
+
+Subidas/bajadas, nuevos planes intermedios, cambios en free tiers, límites.
+
+Features:
+
+Nuevas funcionalidades relevantes para solopreneurs (IA integrada, plantillas, agentes, integraciones clave).
+
+Features deprecadas o movidas a planes superiores.
+
+Integraciones:
+
+Nuevas conexiones relevantes (Zapier/Make, CRMs, WhatsApp, plataformas de cursos).
+
+APIs nuevas o cambios de versión que puedan afectar a las guías.
+
+Restricciones:
+
+Cambios geográficos, de compliance o de política de uso (por ejemplo relativos a privacidad, marketing, IA).
+
+Objetivo: tener una tabla de “estado actual” para que nuestras fichas y comparativas nazcan ya actualizadas.
+
+9) Opiniones y narrativa de usuarios reales (2025–2026)
+Recoge insights recientes sobre las herramientas clave, buscando:
+
+Dónde:
+
+Reddit (r/automation, r/solopreneur, r/SaaS, hilos específicos de cada herramienta).
+
+X/Twitter (threads y hilos con experiencias, problemas, hacks).
+
+LinkedIn (posts de consultores/coaches contando cómo las usan).
+
+Foros/comunidades oficiales de las propias herramientas.
+
+Qué sacar:
+
+Problemas reales que están resolviendo (no claims de marketing).
+
+Frustraciones comunes (UX, pricing, soporte, límites).
+
+Comparaciones espontáneas (“me fui de X a Y porque…”).
+
+Casos de éxito bien documentados (datos, capturas, proceso).
+
+Esto debe alimentar secciones tipo “Lo que dicen los usuarios” y la parte de pros/contras realistas (no solo la ficha oficial).
+
+10) Tendencias tecnológicas 2026 que afectan a automatización y afiliación
+Analiza cómo tendencias como:
+
+Agentes de IA autónomos y workflows agentic.
+
+No‑code/low‑code avanzado.
+
+Integración con LLMs (ChatGPT, Claude, etc.) y acciones nativas.
+
+Automatización de voz/vídeo, transcripción + acción.
+
+Nuevas exigencias de privacidad y regulación (cookies, tracking, datos de clientes).
+
+impactan:
+
+Las herramientas de nuestro núcleo (qué están haciendo ya y qué les falta).
+
+Las oportunidades de contenido para nuestra web (nuevos flujos, nuevas comparativas, nuevos “stack del futuro”).
+
+La estabilidad de ciertos modelos (por ejemplo, si algunos flujos de n8n/Make se van a mover a agentes integrados en plataformas).
+
+Aparición de nuevos programas de afiliación interesantes en el mundo “agents/agentic SaaS”.
+
+El objetivo es detectar por dónde se está moviendo el queso para que la web nazca ya mirando a 2027, no a 2023.

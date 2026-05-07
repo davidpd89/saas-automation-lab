@@ -6,7 +6,7 @@ import GuideStep from "../../components/GuideStep.astro";
 export async function getStaticPaths() {
   const items = await getCollection("guides");
   return items.map((item) => ({
-    params: { slug: item.data.slug },
+    params: { slug: item.slug },
     props: { item }
   }));
 }

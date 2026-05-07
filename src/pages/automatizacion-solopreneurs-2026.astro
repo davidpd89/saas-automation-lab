@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pillars = await getCollection("pillars");
-const pillar = pillars.find((item) => item.data.slug === "automatizacion-solopreneurs-2026");
+const pillar = pillars.find((item) => item.slug === "automatizacion-solopreneurs-2026");
 ---
 
 <BaseLayout

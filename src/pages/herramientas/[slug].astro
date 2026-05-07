@@ -6,7 +6,7 @@ import AffiliateButton from "../../components/AffiliateButton.astro";
 export async function getStaticPaths() {
   const items = await getCollection("tools");
   return items.map((item) => ({
-    params: { slug: item.data.slug },
+    params: { slug: item.slug },
     props: { item }
   }));
 }

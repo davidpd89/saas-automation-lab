@@ -6,7 +6,7 @@ import ComparisonTable from "../../components/ComparisonTable.astro";
 export async function getStaticPaths() {
   const items = await getCollection("comparisons");
   return items.map((item) => ({
-    params: { slug: item.data.slug },
+    params: { slug: item.slug },
     props: { item }
   }));
 }

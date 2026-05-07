@@ -2,7 +2,7 @@
 title: "Make.com: automatizacion visual para ejecutar rapido"
 slug: "make-com"
 toolId: "make-com"
-description: "Make destaca por su interfaz visual para diseñar escenarios complejos sin mucho codigo."
+description: "Make destaca por su interfaz visual para disenar escenarios complejos sin mucho codigo."
 seoTitle: "Make.com en 2026: cuando elegirlo para automatizar"
 seoDescription: "Guia de Make.com para coaches y consultores: pros, contras y comparativa real."
 affiliateUrl: "https://www.make.com/en/register?pc=tu-id"

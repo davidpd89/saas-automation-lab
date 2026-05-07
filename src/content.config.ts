@@ -7,7 +7,6 @@ const tools = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    slug: z.string(),
     toolId: z.string(),
     description: z.string(),
     seoTitle: z.string(),
@@ -35,7 +34,6 @@ const comparisons = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    slug: z.string(),
     seoTitle: z.string(),
     seoDescription: z.string(),
     toolsCompared: z.array(z.string()),
@@ -49,7 +47,6 @@ const guides = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    slug: z.string(),
     seoTitle: z.string(),
     seoDescription: z.string(),
     difficulty: z.enum(["Basico", "Intermedio", "Avanzado"]),
@@ -66,7 +63,6 @@ const pillars = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    slug: z.string(),
     description: z.string(),
     seoTitle: z.string(),
     seoDescription: z.string(),
