@@ -1,0 +1,14 @@
+# SaaS Automation Lab
+
+Proyecto editorial en espanol sobre automatizacion SaaS e IA para solopreneurs de servicios.
+
+## Secciones principales
+- Inicio: https://davidpd89.github.io/saas-automation-lab/
+- Herramientas: https://davidpd89.github.io/saas-automation-lab/herramientas/
+- Comparativas: https://davidpd89.github.io/saas-automation-lab/comparativas/
+- Guias: https://davidpd89.github.io/saas-automation-lab/guias/
+- Lab y metodologia: https://davidpd89.github.io/saas-automation-lab/lab/
+- Transparencia legal: https://davidpd89.github.io/saas-automation-lab/legal/
+
+## Criterio editorial
+Las paginas priorizan utilidad practica, precios verificables, casos de uso por perfil y transparencia de afiliacion.

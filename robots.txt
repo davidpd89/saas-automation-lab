@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davidpd89.github.io/saas-automation-lab/sitemap.xml
