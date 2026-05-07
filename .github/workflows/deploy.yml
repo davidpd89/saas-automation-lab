@@ -37,7 +37,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git worktree add ../gh-pages gh-pages
+          git fetch origin gh-pages
+          git worktree add -B gh-pages ../gh-pages origin/gh-pages
           rm -rf ../gh-pages/*
           cp -R dist/. ../gh-pages/
           touch ../gh-pages/.nojekyll
