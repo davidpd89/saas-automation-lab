@@ -97,13 +97,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/hubspot/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/convertkit/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/convertkit/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/hubspot/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -151,6 +151,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/pipedrive/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/reclaim-ai/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -169,19 +175,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/pipedrive/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/webflow/</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -217,13 +217,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/comparativas/make-vs-zapier/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/comparativas/make-vs-zapier/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

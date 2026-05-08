@@ -14,8 +14,8 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Blym: Contenido SEO optimizado con IA para 2026: https://davidpd89.github.io/saas-automation-lab/herramientas/blym/ - Plataforma de generación de contenido SEO optimizado con IA para escalar producción de artículos.
 - Brevo: https://davidpd89.github.io/saas-automation-lab/herramientas/brevo/ - Suite de email marketing, CRM ligero, SMS y automatizacion para negocios que priorizan comunicaciones multicanal.
 - Clientify: CRM con WhatsApp para coaches y consultores: https://davidpd89.github.io/saas-automation-lab/herramientas/clientify/ - CRM español con integración nativa de WhatsApp y automatización para solopreneurs.
-- HubSpot: CRM integral para servicios B2B: https://davidpd89.github.io/saas-automation-lab/herramientas/hubspot/ - CRM y suite de marketing para solopreneurs que empiezan a convertir operaciones comerciales en sistema.
 - ConvertKit: Email marketing para creadores y formadores: https://davidpd89.github.io/saas-automation-lab/herramientas/convertkit/ - Plataforma de email marketing diseñada específicamente para creadores de contenido y formadores online.
+- HubSpot: CRM integral para servicios B2B: https://davidpd89.github.io/saas-automation-lab/herramientas/hubspot/ - CRM y suite de marketing para solopreneurs que empiezan a convertir operaciones comerciales en sistema.
 - Instantly: prospeccion cold email a escala: https://davidpd89.github.io/saas-automation-lab/herramientas/instantly/ - Herramienta para escalar campanas de email frio con infraestructura, secuencias y control de entregabilidad.
 - Jasper AI: copy y contenido asistido por IA: https://davidpd89.github.io/saas-automation-lab/herramientas/jasper-ai/ - Herramienta de generacion de copy y contenido de marca para equipos que necesitan volumen editorial con control.
 - lemlist: Prospección automatizada y email personalizado: https://davidpd89.github.io/saas-automation-lab/herramientas/lemlist/ - Herramienta líder en prospección B2B con personalización a escala y seguimiento automático.
@@ -23,12 +23,12 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Make.com: automatizacion visual para ejecutar rapido: https://davidpd89.github.io/saas-automation-lab/herramientas/make-com/ - Make destaca por su interfaz visual para disenar escenarios complejos sin mucho codigo.
 - n8n Cloud: automatizacion flexible para equipos pequenos: https://davidpd89.github.io/saas-automation-lab/herramientas/n8n-cloud/ - Analisis de n8n para crear flujos de negocio con control tecnico y buen coste.
 - Notion: base de conocimiento para sistemas y RAG: https://davidpd89.github.io/saas-automation-lab/herramientas/notion/ - Workspace y base documental para organizar procesos, SOPs y conocimiento reutilizable en automatizaciones.
+- Pipedrive: CRM de ventas para cerrar oportunidades: https://davidpd89.github.io/saas-automation-lab/herramientas/pipedrive/ - CRM centrado en pipeline comercial para equipos pequenos y consultores que necesitan visibilidad de cierres.
 - Reclaim.ai: agenda inteligente para solopreneurs: https://davidpd89.github.io/saas-automation-lab/herramientas/reclaim-ai/ - Herramienta de planificacion inteligente para proteger foco, reuniones y bloques de trabajo profundo.
 - Synthesia: video con avatares IA para formacion: https://davidpd89.github.io/saas-automation-lab/herramientas/synthesia/ - Plataforma de video IA para crear material formativo, onboarding y documentacion visual sin grabar desde cero.
 - Thinkific: Plataforma para crear y vender cursos online: https://davidpd89.github.io/saas-automation-lab/herramientas/thinkific/ - Plataforma LMS completa para formadores que quieren vender cursos online con control total.
-- Pipedrive: CRM de ventas para cerrar oportunidades: https://davidpd89.github.io/saas-automation-lab/herramientas/pipedrive/ - CRM centrado en pipeline comercial para equipos pequenos y consultores que necesitan visibilidad de cierres.
-- Webflow: Desarrollo web visual para sitios premium: https://davidpd89.github.io/saas-automation-lab/herramientas/webflow/ - Plataforma de diseño web visual para crear sitios profesionales sin código.
 - Zapier: conexiones rapidas para procesos estandar: https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/ - Zapier permite automatizar procesos comunes de forma muy rapida para equipos no tecnicos.
+- Webflow: Desarrollo web visual para sitios premium: https://davidpd89.github.io/saas-automation-lab/herramientas/webflow/ - Plataforma de diseño web visual para crear sitios profesionales sin código.
 
 ## Comparativas
 - n8n vs Make vs Zapier 2026: cual conviene segun tu caso: https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make-vs-zapier/ - n8n para escalado tecnico, Make para ejecucion visual y Zapier para rapidez inicial.
@@ -36,8 +36,8 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Clientify vs HubSpot 2026: CRM hispano o suite global: https://davidpd89.github.io/saas-automation-lab/comparativas/clientify-vs-hubspot/ - Clientify encaja mejor si WhatsApp y soporte hispano son claves; HubSpot si necesitas suite global y reporting avanzado.
 - ConvertKit vs MailerLite 2026: email marketing para creadores: https://davidpd89.github.io/saas-automation-lab/comparativas/convertkit-vs-mailerlite/ - ConvertKit para creadores con embudos avanzados; MailerLite para newsletters y automatizaciones simples.
 - lemlist vs Instantly 2026: prospeccion B2B y cold email: https://davidpd89.github.io/saas-automation-lab/comparativas/lemlist-vs-instantly/ - lemlist para campañas mas personalizadas; Instantly para volumen y control de infraestructura cold email.
-- n8n vs Make 2026: Automatización técnica vs visual: https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make/ - n8n es superior para automatizaciones técnicas complejas y control total, mientras que Make brilla en velocidad de implementación visual y facilidad de uso.
 - Make vs Zapier 2026: Cuál ahorra más dinero para tu negocio: https://davidpd89.github.io/saas-automation-lab/comparativas/make-vs-zapier/ - Make es más rentable para volúmenes altos de automatización, mientras que Zapier es mejor para principiantes y empresas que priorizan facilidad de uso sobre coste.
+- n8n vs Make 2026: Automatización técnica vs visual: https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make/ - n8n es superior para automatizaciones técnicas complejas y control total, mientras que Make brilla en velocidad de implementación visual y facilidad de uso.
 
 ## Guias
 - Como crear un agente de soporte IA con documentacion propia: https://davidpd89.github.io/saas-automation-lab/guias/agente-ia-soporte-24-7/ - Soporte tecnico y preventa con documentacion propia
