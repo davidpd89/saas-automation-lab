@@ -16,8 +16,8 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Clientify: CRM con WhatsApp para coaches y consultores: https://davidpd89.github.io/saas-automation-lab/herramientas/clientify/ - CRM español con integración nativa de WhatsApp y automatización para solopreneurs.
 - ConvertKit: Email marketing para creadores y formadores: https://davidpd89.github.io/saas-automation-lab/herramientas/convertkit/ - Plataforma de email marketing diseñada específicamente para creadores de contenido y formadores online.
 - HubSpot: CRM integral para servicios B2B: https://davidpd89.github.io/saas-automation-lab/herramientas/hubspot/ - CRM y suite de marketing para solopreneurs que empiezan a convertir operaciones comerciales en sistema.
-- Instantly: prospeccion cold email a escala: https://davidpd89.github.io/saas-automation-lab/herramientas/instantly/ - Herramienta para escalar campanas de email frio con infraestructura, secuencias y control de entregabilidad.
 - Jasper AI: copy y contenido asistido por IA: https://davidpd89.github.io/saas-automation-lab/herramientas/jasper-ai/ - Herramienta de generacion de copy y contenido de marca para equipos que necesitan volumen editorial con control.
+- Instantly: prospeccion cold email a escala: https://davidpd89.github.io/saas-automation-lab/herramientas/instantly/ - Herramienta para escalar campanas de email frio con infraestructura, secuencias y control de entregabilidad.
 - lemlist: Prospección automatizada y email personalizado: https://davidpd89.github.io/saas-automation-lab/herramientas/lemlist/ - Herramienta líder en prospección B2B con personalización a escala y seguimiento automático.
 - MailerLite: email marketing sencillo para creadores: https://davidpd89.github.io/saas-automation-lab/herramientas/mailerlite/ - Plataforma de email marketing ligera para newsletters, automatizaciones basicas y embudos sencillos.
 - Make.com: automatizacion visual para ejecutar rapido: https://davidpd89.github.io/saas-automation-lab/herramientas/make-com/ - Make destaca por su interfaz visual para disenar escenarios complejos sin mucho codigo.
@@ -27,11 +27,11 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Reclaim.ai: agenda inteligente para solopreneurs: https://davidpd89.github.io/saas-automation-lab/herramientas/reclaim-ai/ - Herramienta de planificacion inteligente para proteger foco, reuniones y bloques de trabajo profundo.
 - Synthesia: video con avatares IA para formacion: https://davidpd89.github.io/saas-automation-lab/herramientas/synthesia/ - Plataforma de video IA para crear material formativo, onboarding y documentacion visual sin grabar desde cero.
 - Thinkific: Plataforma para crear y vender cursos online: https://davidpd89.github.io/saas-automation-lab/herramientas/thinkific/ - Plataforma LMS completa para formadores que quieren vender cursos online con control total.
-- Zapier: conexiones rapidas para procesos estandar: https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/ - Zapier permite automatizar procesos comunes de forma muy rapida para equipos no tecnicos.
 - Webflow: Desarrollo web visual para sitios premium: https://davidpd89.github.io/saas-automation-lab/herramientas/webflow/ - Plataforma de diseño web visual para crear sitios profesionales sin código.
+- Zapier: conexiones rapidas para procesos estandar: https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/ - Zapier permite automatizar procesos comunes de forma muy rapida para equipos no tecnicos.
 
 ## Comparativas
-- n8n vs Make vs Zapier 2026: cual conviene segun tu caso: https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make-vs-zapier/ - n8n para escalado tecnico, Make para ejecucion visual y Zapier para rapidez inicial.
+- n8n vs Make vs Zapier en 2026: cual elegir segun tu caso real: https://davidpd89.github.io/saas-automation-lab/comparativas/n8n-vs-make-vs-zapier/ - n8n para escalado tecnico, Make para ejecucion visual y Zapier para rapidez inicial.
 - Clientify vs Brevo 2026: El mejor CRM para mercado hispano: https://davidpd89.github.io/saas-automation-lab/comparativas/clientify-vs-brevo/ - Clientify es superior para negocios hispanos que priorizan WhatsApp y soporte en español, mientras que Brevo es mejor para empresas globales enfocadas principalmente en email marketing.
 - Clientify vs HubSpot 2026: CRM hispano o suite global: https://davidpd89.github.io/saas-automation-lab/comparativas/clientify-vs-hubspot/ - Clientify encaja mejor si WhatsApp y soporte hispano son claves; HubSpot si necesitas suite global y reporting avanzado.
 - ConvertKit vs MailerLite 2026: email marketing para creadores: https://davidpd89.github.io/saas-automation-lab/comparativas/convertkit-vs-mailerlite/ - ConvertKit para creadores con embudos avanzados; MailerLite para newsletters y automatizaciones simples.
@@ -41,9 +41,9 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 
 ## Guias
 - Como crear un agente de soporte IA con documentacion propia: https://davidpd89.github.io/saas-automation-lab/guias/agente-ia-soporte-24-7/ - Soporte tecnico y preventa con documentacion propia
-- Onboarding automatizado con n8n y WhatsApp: Guía paso a paso: https://davidpd89.github.io/saas-automation-lab/guias/onboarding-automatizado-n8n-whatsapp/ - Un coach vende cursos online y pasa 10 horas semanales en onboarding manual de alumnos
 - Facturación y cobros automatizados con n8n: Reduce morosidad 40%: https://davidpd89.github.io/saas-automation-lab/guias/facturacion-automatizada-n8n/ - Un consultor pierde 15 horas/mes gestionando facturas y tiene 20% de morosidad
 - Prospección automatizada con lemlist: De email frío a llamada agendada: https://davidpd89.github.io/saas-automation-lab/guias/prospeccion-automatizada-lemlist/ - Un consultor B2B necesita prospectar 50 empresas mensuales pero solo tiene tiempo para 10 llamadas
+- Onboarding automatizado con n8n y WhatsApp: guia paso a paso: https://davidpd89.github.io/saas-automation-lab/guias/onboarding-automatizado-n8n-whatsapp/ - Un coach vende cursos online y quiere reducir tareas manuales despues del pago
 
 ## Nota de precision
 Precios, comisiones, cookies y condiciones comerciales deben verificarse con fuentes oficiales antes de citarse como datos definitivos.

@@ -109,13 +109,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/instantly/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/jasper-ai/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/jasper-ai/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/instantly/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -175,13 +175,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/webflow/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/webflow/</loc>
+    <loc>https://davidpd89.github.io/saas-automation-lab/herramientas/zapier/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -235,12 +235,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://davidpd89.github.io/saas-automation-lab/guias/onboarding-automatizado-n8n-whatsapp/</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://davidpd89.github.io/saas-automation-lab/guias/facturacion-automatizada-n8n/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -248,6 +242,12 @@
   </url>
   <url>
     <loc>https://davidpd89.github.io/saas-automation-lab/guias/prospeccion-automatizada-lemlist/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://davidpd89.github.io/saas-automation-lab/guias/onboarding-automatizado-n8n-whatsapp/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
