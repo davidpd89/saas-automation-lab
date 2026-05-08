@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import MascotImage from "../../components/MascotImage.astro";
+import comparativasOgImage from "../../assets/automatiza-sin-humo-og-comparativas.webp";
 
 const primary = await getCollection("comparisons");
 const extra = await getCollection("comparativas");
@@ -11,10 +13,16 @@ const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+
 <BaseLayout
   title="Comparativas SaaS 2026 para automatización e IA"
   description="Comparativas de herramientas SaaS con veredictos por caso de uso, costes reales y criterios de selección para negocios de servicios."
+  ogImage={comparativasOgImage}
 >
   <section class="section-header">
     <p class="eyebrow">Batalla de herramientas</p>
     <h1>Comparativas SaaS con decisión final, coste real y límites por perfil</h1>
+    <MascotImage
+      type="comparativas"
+      class="page-mascot"
+      customAlt="Comparativas SaaS con flujos visuales para elegir herramientas de automatizacion"
+    />
     <p class="lede">Análisis orientado a ROI, curva de aprendizaje, integraciones y control técnico.</p>
   </section>
 

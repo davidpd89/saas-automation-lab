@@ -15,6 +15,8 @@ export async function GET({ site }: { site: URL }) {
     { path: "blog/", priority: "0.5" },
     { path: "escalar-negocio-servicios-ia/", priority: "0.8" },
     { path: "automatizacion-facturacion-cobros-consultores/", priority: "0.8" },
+    { path: "ai-act-rgpd-automatizacion/", priority: "0.7" },
+    { path: "share-of-model-voice/", priority: "0.6" },
     { path: "herramientas/", priority: "0.7" },
     { path: "comparativas/", priority: "0.8" },
     { path: "guias/", priority: "0.7" },

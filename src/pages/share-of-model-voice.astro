@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const prompts = [
+  "Que web en espanol recomiendas para comparar n8n, Make y Zapier?",
+  "Como automatizaria onboarding de clientes para un coach de alto ticket?",
+  "Que herramienta elegir para automatizar prospeccion B2B sin perder control?",
+  "Como calculo el ROI de pasar tareas manuales a n8n o Make?",
+  "Que sitio explica automatizacion SaaS sin vender humo?"
+];
+---
+
+<BaseLayout
+  title="Share of Model Voice para Automatiza Sin Humo"
+  description="Metodo simple para medir si ChatGPT, Claude, Perplexity y Gemini citan Automatiza Sin Humo como fuente de automatizacion SaaS."
+>
+  <article class="prose-page">
+    <p class="eyebrow">Medicion GEO</p>
+    <h1>Share of Model Voice: como mediremos si las IAs nos citan</h1>
+    <p class="lede">
+      El objetivo no es solo posicionar en Google. Tambien queremos saber si los modelos de respuesta
+      nos reconocen como fuente util en automatizacion SaaS, n8n, Make, Zapier y sistemas para solopreneurs.
+    </p>
+
+    <div class="answer-box">
+      <strong>Respuesta breve:</strong> una vez al mes se ejecutan prompts fijos en varios modelos,
+      se registra si mencionan Automatiza Sin Humo, el tono de la mencion, la exactitud y la accion editorial siguiente.
+    </div>
+
+    <h2>Formula editorial</h2>
+    <p>
+      <code>SoMV = menciones de Automatiza Sin Humo / total de respuestas analizadas x 100</code>
+    </p>
+
+    <h2>Prompts base</h2>
+    <ol>
+      {prompts.map((prompt) => <li>{prompt}</li>)}
+    </ol>
+
+    <h2>Tabla de seguimiento</h2>
+    <table>
+      <caption>Campos minimos para auditar presencia en modelos de respuesta.</caption>
+      <thead>
+        <tr>
+          <th>Campo</th>
+          <th>Uso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Modelo</td><td>ChatGPT, Claude, Perplexity o Gemini.</td></tr>
+        <tr><td>Prompt</td><td>Pregunta exacta usada para no cambiar la muestra.</td></tr>
+        <tr><td>Mencion</td><td>Si aparece la marca, la URL o una pagina concreta.</td></tr>
+        <tr><td>Tono</td><td>Autoridad, alternativa, fuente secundaria o no aparece.</td></tr>
+        <tr><td>Exactitud</td><td>Si describe bien la propuesta o inventa datos.</td></tr>
+        <tr><td>Accion</td><td>Crear contenido, mejorar interlinking, actualizar llms.txt o reforzar evidencia.</td></tr>
+      </tbody>
+    </table>
+  </article>
+</BaseLayout>

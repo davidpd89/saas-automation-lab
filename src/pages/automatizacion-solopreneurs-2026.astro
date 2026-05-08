@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 
 const pillars = await getCollection("pillars");
 const pillar = pillars.find((item) => item.slug === "automatizacion-solopreneurs-2026");
@@ -11,6 +12,11 @@ const pillar = pillars.find((item) => item.slug === "automatizacion-solopreneurs
   description={pillar?.data.seoDescription ?? "Guia principal para automatizar un negocio unipersonal en 2026."}
 >
   <h1>{pillar?.data.title ?? "Automatizacion para solopreneurs en 2026"}</h1>
+  <MascotImage
+    type="resultados"
+    class="page-mascot"
+    customAlt="Mapa del stack de automatizacion para solopreneurs con SaaS IA CRM y email"
+  />
   <p>{pillar?.data.description}</p>
   <ul>
     {pillar?.data.sections.map((section) => <li>{section}</li>)}

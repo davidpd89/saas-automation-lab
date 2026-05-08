@@ -1,41 +1,61 @@
 ---
 import { Image } from "astro:assets";
-import homeImage from "../assets/images/home/automatizacion-ia-solopreneurs-nano-banana.avif";
-import comparativasImage from "../assets/images/comparativas/comparativa-n8n-make-zapier-2026.avif";
-import guiasImage from "../assets/images/guias/guia-paso-a-paso-automatizacion-procesos.avif";
-import herramientasImage from "../assets/images/herramientas/analisis-herramienta-ia-opiniones.avif";
-import nosotrosImage from "../assets/images/nosotros/david-saas-automation-lab-equipo.avif";
-import resultadosImage from "../assets/images/resultados/ahorro-tiempo-dinero-automatizacion-ia.avif";
+import homeImage from "../assets/automatiza-sin-humo-hero-automatizacion-saas-ia.webp";
+import comparativasImage from "../assets/automatiza-sin-humo-comparativa-n8n-make-zapier.webp";
+import guiasImage from "../assets/automatiza-sin-humo-guia-onboarding-automatizado-clientes.webp";
+import herramientasImage from "../assets/automatiza-sin-humo-herramientas-saas-automatizacion.webp";
+import labImage from "../assets/automatiza-sin-humo-lab-metodologia-workflows.webp";
+import stackImage from "../assets/automatiza-sin-humo-mapa-stack-automatizacion-negocio.webp";
+import legalImage from "../assets/automatiza-sin-humo-transparencia-editorial-afiliados.webp";
+import consultorImage from "../assets/automatiza-sin-humo-consultor-b2b-prospeccion-crm.webp";
+import formadorImage from "../assets/automatiza-sin-humo-formador-cursos-email-automatizado.webp";
+import coachImage from "../assets/automatiza-sin-humo-coach-onboarding-seguimiento.webp";
 
-const mascotMap = {
+const visualMap = {
   home: {
     src: homeImage,
-    defaultAlt: "Nano Banana en el laboratorio de automatizacion IA para solopreneurs de servicios"
+    defaultAlt: "Sistema visual de automatizacion SaaS e IA para negocios de servicios sin caos"
   },
   comparativas: {
     src: comparativasImage,
-    defaultAlt: "Comparativa visual n8n vs Make vs Zapier 2026 para automatizacion SaaS"
+    defaultAlt: "Comparativa visual n8n Make y Zapier para automatizacion SaaS en 2026"
   },
   guias: {
     src: guiasImage,
-    defaultAlt: "Guia paso a paso de automatizacion de procesos con herramientas SaaS e IA"
+    defaultAlt: "Guia de onboarding automatizado para clientes con flujos SaaS e IA"
   },
   herramientas: {
     src: herramientasImage,
-    defaultAlt: "Analisis de herramienta IA con criterios de opiniones, precios y automatizacion"
+    defaultAlt: "Mapa visual de herramientas SaaS para automatizar procesos de negocio"
   },
   nosotros: {
-    src: nosotrosImage,
-    defaultAlt: "David en SaaS Automation Lab evaluando herramientas de automatizacion e IA"
+    src: labImage,
+    defaultAlt: "Metodologia del laboratorio para probar workflows reales de automatizacion"
   },
   resultados: {
-    src: resultadosImage,
-    defaultAlt: "Ahorro de tiempo y dinero con automatizacion IA para negocios de servicios"
+    src: stackImage,
+    defaultAlt: "Mapa de stack de automatizacion para escalar un negocio de servicios con IA"
+  },
+  legal: {
+    src: legalImage,
+    defaultAlt: "Transparencia editorial y criterios de afiliacion para recomendaciones SaaS"
+  },
+  consultor: {
+    src: consultorImage,
+    defaultAlt: "Consultor B2B organizando prospeccion CRM y automatizaciones de seguimiento"
+  },
+  formador: {
+    src: formadorImage,
+    defaultAlt: "Formador conectando cursos email marketing y automatizacion evergreen"
+  },
+  coach: {
+    src: coachImage,
+    defaultAlt: "Coach automatizando onboarding seguimiento y experiencia de cliente"
   }
 };
 
 interface Props {
-  type: keyof typeof mascotMap;
+  type: keyof typeof visualMap;
   customAlt?: string;
   class?: string;
   loading?: "lazy" | "eager";
@@ -51,7 +71,7 @@ const {
   priority = false,
   width
 } = Astro.props;
-const mascot = mascotMap[type];
+const visual = visualMap[type];
 const displayWidth = width ?? (type === "home" ? 560 : 720);
 const sizes =
   type === "home"
@@ -61,10 +81,10 @@ const sizes =
 
 <figure class={`mascot-container ${className}`}>
   <Image
-    src={mascot.src}
-    alt={customAlt ?? mascot.defaultAlt}
+    src={visual.src}
+    alt={customAlt ?? visual.defaultAlt}
     format="avif"
-    quality={72}
+    quality={76}
     width={displayWidth}
     sizes={sizes}
     loading={loading}
@@ -72,5 +92,5 @@ const sizes =
     fetchpriority={priority ? "high" : "auto"}
     class="mascot-img"
   />
-  <figcaption class="sr-only">Nano Banana es la entidad visual de SaaS Automation Lab.</figcaption>
+  <figcaption class="sr-only">Imagen editorial de Automatiza Sin Humo con estetica de laboratorio, negocio y workflows reales.</figcaption>
 </figure>

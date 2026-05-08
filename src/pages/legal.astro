@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 ---
 
 <BaseLayout
@@ -9,6 +10,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <article class="prose-page">
     <p class="eyebrow">Legal y confianza</p>
     <h1>Transparencia de afiliacion y privacidad</h1>
+    <MascotImage
+      type="legal"
+      class="page-mascot"
+      customAlt="Transparencia editorial afiliados privacidad y criterios de recomendacion en Automatiza Sin Humo"
+    />
     <div class="notice">
       <strong>Resumen claro:</strong> SaaS Automation Lab puede incluir enlaces de afiliado.
       Si te registras desde algunos enlaces, podemos recibir una comision sin coste adicional para ti.

@@ -5,6 +5,8 @@ import ComparisonTable from "../../components/ComparisonTable.astro";
 import AffiliateButton from "../../components/AffiliateButton.astro";
 import StructuredData from "../../components/StructuredData.astro";
 import MascotImage from "../../components/MascotImage.astro";
+import comparativasOgImage from "../../assets/automatiza-sin-humo-og-comparativas.webp";
+import RoiCalculator from "../../components/RoiCalculator.astro";
 
 export async function getStaticPaths() {
   const items = [
@@ -62,7 +64,7 @@ const comparisonSchema = {
 };
 ---
 
-<BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
+<BaseLayout title={item.data.seoTitle} description={item.data.seoDescription} ogImage={comparativasOgImage}>
   <StructuredData data={comparisonSchema} />
 
   <article class="max-w-4xl mx-auto px-4 py-8">
@@ -140,6 +142,7 @@ const comparisonSchema = {
 
     <section class="mb-12">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">Coste real y limites</h2>
+      {item.slug === "n8n-vs-make-vs-zapier" && <RoiCalculator compact={true} />}
       <div class="notice">
         <p>
           <strong>Importante:</strong> Los costes son orientativos y deben validarse con la pagina oficial.

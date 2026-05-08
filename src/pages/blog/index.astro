@@ -6,6 +6,20 @@ const guides = await getCollection("guides");
 const pillars = await getCollection("pillars");
 const posts = [...pillars, ...guides];
 const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+const staticPosts = [
+  {
+    eyebrow: "Privacidad",
+    title: "AI Act, RGPD y automatizacion comercial",
+    description: "Checklist minima para publicar guias de automatizacion con datos personales, IA y lead scoring.",
+    href: withBase("ai-act-rgpd-automatizacion/")
+  },
+  {
+    eyebrow: "GEO",
+    title: "Share of Model Voice",
+    description: "Metodo para medir si ChatGPT, Claude, Perplexity y Gemini citan Automatiza Sin Humo.",
+    href: withBase("share-of-model-voice/")
+  }
+];
 ---
 
 <BaseLayout
@@ -19,6 +33,13 @@ const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+
   </section>
 
   <section class="grid grid-2">
+    {staticPosts.map((post) => (
+      <article class="card">
+        <p class="eyebrow">{post.eyebrow}</p>
+        <h2><a href={post.href}>{post.title}</a></h2>
+        <p>{post.description}</p>
+      </article>
+    ))}
     {posts.map((entry) => {
       const collectionPath = entry.collection === "guides" ? "guias" : entry.slug === "lab" ? "lab" : entry.slug;
       const href = entry.collection === "guides"

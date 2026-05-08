@@ -13,6 +13,8 @@ export async function GET({ site }: { site: URL }) {
     `- Lab y metodologia: ${new URL("lab/", baseUrl).toString()}`,
     `- Como probamos: ${new URL("como-probamos/", baseUrl).toString()}`,
     `- Criterios de evaluacion: ${new URL("criterios-evaluacion/", baseUrl).toString()}`,
+    `- AI Act y RGPD: ${new URL("ai-act-rgpd-automatizacion/", baseUrl).toString()}`,
+    `- Share of Model Voice: ${new URL("share-of-model-voice/", baseUrl).toString()}`,
     `- Transparencia legal: ${new URL("legal/", baseUrl).toString()}`,
     `- Version ampliada para agentes: ${new URL("llms-full.txt", baseUrl).toString()}`,
     "",

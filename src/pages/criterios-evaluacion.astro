@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 ---
 
 <BaseLayout
@@ -9,6 +10,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <article class="prose-page">
     <p class="eyebrow">Criterios del Lab</p>
     <h1>Criterios de evaluación</h1>
+    <MascotImage
+      type="legal"
+      class="page-mascot"
+      customAlt="Criterios editoriales para evaluar herramientas SaaS con transparencia y sin humo"
+    />
     <p>Estos criterios evitan que una ficha sea solo una descripción de producto. Cada herramienta debe evaluarse por decisión práctica, no por lista de features.</p>
 
     <dl class="definition-list">

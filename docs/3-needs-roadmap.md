@@ -6,17 +6,18 @@ Fecha: 2026-05-08
 
 Implementado:
 
-- Assets movidos a `src/assets/images/...` por tipo de pagina.
-- Componente `MascotImage.astro` con `astro:assets`, salida AVIF optimizada, `alt` contextual y `figcaption` accesible para consolidar la entidad visual "Nano Banana".
+- Assets visuales consolidados en `src/assets/` con naming SEO de Automatiza Sin Humo.
+- Componente `MascotImage.astro` con `astro:assets`, salida AVIF optimizada, `alt` contextual y `figcaption` accesible para mantener una estetica editorial tech/lab.
 - Imagen hero con `loading="eager"` y prioridad alta para LCP.
 - Imagenes contextuales en home, comparativas, guias, herramientas, Lab, quienes somos y paginas de resultados.
+- Patron visual documentado en `docs/visual-system.md`.
 
 Necesitamos despues:
 
 - Sustituir las imagenes de marca por capturas reales cuando existan workflows propios.
 - Crear capturas anotadas por herramienta: n8n, Make, Zapier, Clientify, Kit/Brevo, lemlist y Thinkific.
 - Crear diagramas Mermaid o capturas de arquitectura para guias tecnicas.
-- Definir naming para futuras imagenes: `tema-intencion-herramienta-ano.avif`.
+- Mantener naming para futuras imagenes: `automatiza-sin-humo-intencion-contexto.webp`.
 
 ## Monetizacion y afiliados
 
@@ -43,12 +44,14 @@ Implementado base:
 - Tablas HTML semanticas.
 - `llms.txt` y `llms-full.txt`.
 - JSON-LD por tipo de pagina.
+- Calculadora ROI inicial en home y en la comparativa principal.
+- Pagina `/share-of-model-voice/` para medir menciones en modelos.
+- Pagina `/ai-act-rgpd-automatizacion/` con checklist minima.
 
 Necesitamos crear:
 
-- Calculadora de coste real n8n vs Make vs Zapier.
-- Comparativa sobre privacidad, RGPD y AI Act en automatizacion.
-- Pagina o bloque de "Share of Model Voice": como mediremos menciones de SaaS Automation Lab en respuestas de IA.
+- Alimentar calculadora con precios oficiales verificados y fecha de revision.
+- Ampliar comparativa sobre privacidad, RGPD y AI Act con fuentes oficiales y ejemplos reales.
 - Deep links a documentacion oficial en fichas clave.
 
 ## E-E-A-T y evidencia
@@ -82,7 +85,7 @@ Necesitamos:
 
 Necesidades futuras:
 
-- Calculadora ROI interactiva.
+- Mejorar calculadora ROI con datos oficiales, tracking anonimo y escenarios guardables.
 - Plantillas JSON descargables de n8n.
 - Lead magnet "stack minimo por perfil".
 - CTAs segmentados: tecnico, dueno de negocio, formador.

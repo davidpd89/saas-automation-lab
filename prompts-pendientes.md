@@ -8,11 +8,11 @@ Estos son los prompts que siguen mereciendo respuesta externa. Los prompts antig
 
 Valida con fuentes oficiales, en mayo de 2026, los programas de afiliacion de n8n, Make, Zapier, Clientify, Brevo, Kit/ConvertKit, lemlist, Webflow, Thinkific y Blym. Para cada uno confirma URL oficial, comision, cookie, plataforma, metodo de pago, minimo de cobro, restricciones de trafico y cambios recientes. Separa estrictamente: oficial, secundario fiable y no verificado.
 
-## 2. DNS y GitHub Pages para automatizasinhumo.com
+## 2. Benchmark SERP para comparativas SaaS 2026
 
-Comprueba la configuracion recomendada en 2026 para apuntar un dominio apex `automatizasinhumo.com` y opcionalmente `www.automatizasinhumo.com` a GitHub Pages. Devuelve registros DNS exactos, pasos en GitHub Pages, tiempos de propagacion, HTTPS y errores comunes.
+Analiza los 10 mejores resultados en Google.es para `n8n vs Make vs Zapier`, `n8n vs Make`, `Make vs Zapier` y variantes sin ano. Extrae H1-H3, longitud aproximada, tablas, capturas, schema, CTAs, disclosures, autoridad de autor, gaps y oportunidades para superarles con utilidad real.
 
-## 3. Diagnostico interactivo de la home
+## 3. Auditoria del diagnostico interactivo de la home
 
 Audita un diagnostico guiado para una web B2B afiliada de automatizacion SaaS. Recomienda numero de preguntas, arbol de decision, microcopy, accesibilidad, SEO/AEO, medicion de eventos y CTAs posteriores sin perjudicar Core Web Vitals.
 
@@ -20,9 +20,9 @@ Audita un diagnostico guiado para una web B2B afiliada de automatizacion SaaS. R
 
 Crea un arbol de decision para recomendar n8n, Make o Zapier segun volumen mensual, nivel tecnico, privacidad, coste, necesidad de self-hosting, integraciones, logs y mantenimiento. Devuelve matriz lista para implementar en Astro.
 
-## 5. Calculadora ROI
+## 5. Benchmark de precios para calculadora ROI
 
-Disena una calculadora ROI para comparar trabajo manual, n8n Cloud, n8n self-hosted, Make y Zapier. Define inputs, formulas, limites de planes, coste de mantenimiento, output visual y disclaimers para evitar claims exagerados.
+Valida precios, limites y unidades de cobro actuales en mayo de 2026 para n8n Cloud, n8n self-hosted, Make y Zapier. Devuelve rangos seguros para una calculadora editorial, fuente oficial de cada dato, fecha de consulta y disclaimers necesarios.
 
 ## 6. Evidencia visual E-E-A-T
 
@@ -34,7 +34,7 @@ Investiga que obligaciones afectan en 2026 a consultores B2B europeos que usan a
 
 ## 8. Share of Model Voice
 
-Propone un sistema manual y otro semi-automatizado para medir Share of Model Voice de Automatiza Sin Humo / SaaS Automation Lab en ChatGPT, Claude, Perplexity y Gemini. Define prompts de prueba, frecuencia, tabla de seguimiento, scoring y acciones para mejorar menciones.
+Ejecuta o simula una auditoria mensual de Share of Model Voice de Automatiza Sin Humo / SaaS Automation Lab en ChatGPT, Claude, Perplexity y Gemini. Usa 10 prompts de prueba, registra menciones, tono, exactitud, enlaces y acciones editoriales.
 
 ## 9. Competidores hispanos y huecos accionables
 

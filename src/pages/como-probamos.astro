@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 
 const labUrl = `${import.meta.env.BASE_URL}lab/`;
 const criteriosUrl = `${import.meta.env.BASE_URL}criterios-evaluacion/`;
@@ -12,6 +13,11 @@ const criteriosUrl = `${import.meta.env.BASE_URL}criterios-evaluacion/`;
   <article class="prose-page">
     <p class="eyebrow">Metodología pública</p>
     <h1>Cómo probamos herramientas SaaS e IA</h1>
+    <MascotImage
+      type="nosotros"
+      class="page-mascot"
+      customAlt="Metodologia de laboratorio para probar workflows SaaS e IA con evidencias reales"
+    />
     <p class="lede">Una recomendación solo es útil si explica el contexto: para quién sirve, qué problema resuelve, cuánto cuesta escalar y qué fricciones aparecen al usarla.</p>
 
     <h2>1. Escenario de negocio</h2>

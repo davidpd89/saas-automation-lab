@@ -1,0 +1,118 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<section class={`roi-calculator ${compact ? "roi-calculator-compact" : ""}`} aria-labelledby="roi-title" data-roi-calculator>
+  <div class="roi-copy">
+    <p class="eyebrow">Calculadora ROI</p>
+    <h2 id="roi-title">Coste real de automatizar frente a seguir en manual</h2>
+    <p>
+      Estima ahorro mensual con volumen, coste/hora y tiempo por tarea. Es una aproximacion editorial:
+      los precios reales deben validarse en la pagina oficial de cada herramienta.
+    </p>
+  </div>
+
+  <form class="roi-form">
+    <label>
+      Tareas al mes
+      <input type="number" min="1" step="1" value="500" data-roi-input="tasks" />
+    </label>
+    <label>
+      Coste/hora humana (€)
+      <input type="number" min="0" step="1" value="35" data-roi-input="hourly" />
+    </label>
+    <label>
+      Minutos por tarea manual
+      <input type="number" min="1" step="1" value="6" data-roi-input="minutes" />
+    </label>
+    <label>
+      Mantenimiento mensual (h)
+      <input type="number" min="0" step="0.5" value="2" data-roi-input="maintenance" />
+    </label>
+  </form>
+
+  <div class="roi-results" aria-live="polite">
+    <article class="card roi-summary">
+      <p class="eyebrow">Manual</p>
+      <strong data-roi-output="manual">-</strong>
+      <span>coste mensual estimado</span>
+    </article>
+    <article class="card">
+      <h3>n8n Cloud</h3>
+      <p><strong data-roi-output="n8nCloud">-</strong> ahorro neto/mes</p>
+      <small>Base estimada: 50 €/mes. Cuenta ejecuciones completas, no cada paso.</small>
+    </article>
+    <article class="card">
+      <h3>n8n self-hosted</h3>
+      <p><strong data-roi-output="n8nSelf">-</strong> ahorro neto/mes</p>
+      <small>Base estimada: 19 €/mes + mantenimiento. Mejor control, mas responsabilidad.</small>
+    </article>
+    <article class="card">
+      <h3>Make</h3>
+      <p><strong data-roi-output="make">-</strong> ahorro neto/mes</p>
+      <small>Base estimada por tramos de operaciones. Buen equilibrio visual/coste.</small>
+    </article>
+    <article class="card">
+      <h3>Zapier</h3>
+      <p><strong data-roi-output="zapier">-</strong> ahorro neto/mes</p>
+      <small>Base estimada por tareas. Rapido al inicio, sensible al volumen.</small>
+    </article>
+  </div>
+
+  <p class="trust-note">
+    Disclaimer: esta calculadora no es una promesa de ahorro. No incluye impuestos, cambios de plan,
+    costes de implementacion ni limites especiales de cada cuenta.
+  </p>
+</section>
+
+<script>
+  const calculators = document.querySelectorAll("[data-roi-calculator]");
+  const money = new Intl.NumberFormat("es-ES", {
+    style: "currency",
+    currency: "EUR",
+    maximumFractionDigits: 0
+  });
+
+  const planCost = {
+    n8nCloud: 50,
+    n8nSelf: 19,
+    make: (tasks) => (tasks <= 10000 ? 9 : tasks <= 50000 ? 59 : 99),
+    zapier: (tasks) => (tasks <= 10000 ? 250 : tasks <= 50000 ? 500 : 900)
+  };
+
+  calculators.forEach((calculator) => {
+    const input = (name) => calculator.querySelector(`[data-roi-input="${name}"]`);
+    const output = (name) => calculator.querySelector(`[data-roi-output="${name}"]`);
+
+    const calculate = () => {
+      const tasks = Number(input("tasks")?.value || 0);
+      const hourly = Number(input("hourly")?.value || 0);
+      const minutes = Number(input("minutes")?.value || 0);
+      const maintenance = Number(input("maintenance")?.value || 0);
+      const manual = tasks * (minutes / 60) * hourly;
+      const maintenanceCost = maintenance * hourly;
+
+      const values = {
+        manual,
+        n8nCloud: manual - planCost.n8nCloud,
+        n8nSelf: manual - planCost.n8nSelf - maintenanceCost,
+        make: manual - planCost.make(tasks) - maintenanceCost * 0.25,
+        zapier: manual - planCost.zapier(tasks)
+      };
+
+      Object.entries(values).forEach(([key, value]) => {
+        const target = output(key);
+        if (target) target.textContent = money.format(Math.max(value, 0));
+      });
+    };
+
+    calculator.querySelectorAll("input").forEach((field) => {
+      field.addEventListener("input", calculate);
+    });
+    calculate();
+  });
+</script>

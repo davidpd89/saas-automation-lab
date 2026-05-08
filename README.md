@@ -49,6 +49,10 @@ CNAME www   davidpd89.github.io
 
 GitHub recomienda verificar el dominio en la cuenta para reducir riesgos de takeover.
 
+## Sistema visual
+
+El patron estetico permanente vive en `docs/visual-system.md`: editorial tech sobrio, laboratorio visual, workflows reales, fondos oscuros y acentos cian, turquesa y verde.
+
 ## Desarrollo local
 
 ```powershell

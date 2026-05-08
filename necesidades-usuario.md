@@ -14,8 +14,8 @@ Este fichero separa lo que una IA puede proponer de lo que necesitamos que aport
 
 ## Accesos y registros
 
-- Configurar DNS de `automatizasinhumo.com` en el proveedor del dominio.
-- Verificar el dominio en GitHub Pages desde la cuenta `davidpd89` cuando GitHub lo permita.
+- Verificar el dominio en GitHub Pages desde la cuenta `davidpd89` si GitHub lo sigue solicitando.
+- Pegar en Spaceship el TXT de verificacion que GitHub muestre, si aparece en la UI de Pages o Verified domains.
 - Confirmar en que programas de afiliacion tienes cuenta aprobada.
 - IDs reales de afiliado para sustituir los placeholders `tu-id`.
 - URL oficial de cada dashboard de afiliacion.
@@ -44,6 +44,7 @@ Este fichero separa lo que una IA puede proponer de lo que necesitamos que aport
 ## Producto y conversion
 
 - Decidir si el diagnostico interactivo pedira email en algun momento o sera 100% libre.
+- Confirmar si la calculadora ROI sera anonima o si mas adelante guardara eventos/respuestas.
 - Definir lead magnet principal: plantilla JSON, checklist AI Act, calculadora ROI, mapa de stack o mini curso.
 - Elegir herramienta de analitica: Plausible, GA4, Umami u otra.
 - Definir eventos clave: diagnostico completado, guia visitada, click afiliado, descarga, email capturado.

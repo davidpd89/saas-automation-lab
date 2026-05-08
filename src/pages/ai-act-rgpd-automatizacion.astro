@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="AI Act, RGPD y automatizacion para consultores B2B"
+  description="Checklist editorial para evaluar riesgos de privacidad, AI Act, lead scoring y automatizaciones comerciales en negocios de servicios."
+>
+  <article class="prose-page">
+    <p class="eyebrow">Privacidad y control</p>
+    <h1>AI Act, RGPD y automatizacion comercial: checklist minima</h1>
+    <p class="lede">
+      Esta pagina no sustituye asesoramiento legal. Sirve como filtro operativo antes de recomendar
+      agentes, lead scoring, CRM, email automatizado o workflows con datos personales.
+    </p>
+
+    <div class="answer-box">
+      <strong>Respuesta breve:</strong> si una automatizacion perfila personas, puntua leads, decide prioridades
+      comerciales o usa IA generativa con datos personales, debe tener transparencia, minimizacion de datos,
+      supervision humana y registros suficientes para revisar errores.
+    </div>
+
+    <h2>Datos que no conviene automatizar sin control</h2>
+    <ul>
+      <li>Datos sensibles o inferencias sobre salud, religion, ideologia, menores o situacion financiera.</li>
+      <li>Scoring opaco que afecte acceso a empleo, credito, servicios esenciales o decisiones relevantes.</li>
+      <li>Listas compradas o enriquecimiento masivo sin base legal clara.</li>
+      <li>Mensajes que oculten que el usuario interactua con un sistema automatizado o IA.</li>
+    </ul>
+
+    <h2>Checklist antes de publicar una guia</h2>
+    <dl class="definition-list">
+      <dt>Base legal</dt>
+      <dd>Explicar si el flujo usa consentimiento, interes legitimo, contrato u otra base que debe validar el negocio.</dd>
+      <dt>Minimizacion</dt>
+      <dd>Recoger solo los campos necesarios para ejecutar el workflow.</dd>
+      <dt>Supervision humana</dt>
+      <dd>Permitir que una persona revise decisiones sensibles, puntuaciones o respuestas generadas por IA.</dd>
+      <dt>Logs</dt>
+      <dd>Conservar registros de ejecucion, errores y cambios relevantes sin exponer datos personales.</dd>
+      <dt>Residencia y proveedor</dt>
+      <dd>Comparar cloud vs self-hosted solo con claims verificables en documentacion oficial.</dd>
+    </dl>
+  </article>
+</BaseLayout>
