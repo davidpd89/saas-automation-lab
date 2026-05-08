@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import GuideStep from "../../components/GuideStep.astro";
 import StructuredData from "../../components/StructuredData.astro";
+import MascotImage from "../../components/MascotImage.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("guides");
@@ -39,6 +40,11 @@ const howToSchema = {
   <article class="prose-page">
     <p class="eyebrow">Guia de proceso</p>
     <h1>{item.data.title}</h1>
+    <MascotImage
+      type="guias"
+      class="page-mascot"
+      customAlt={`Ilustracion SEO de guia paso a paso: ${item.data.title}`}
+    />
     <div class="answer-box">
       <strong>Respuesta breve:</strong> {item.data.expectedResult ?? `Este flujo busca ahorrar ${item.data.timeSaved} en un escenario de ${item.data.persona}.`}
     </div>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import MascotImage from "../components/MascotImage.astro";
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -40,6 +41,11 @@ const labSchema = {
       <h1 class="text-4xl font-bold text-gray-900 mb-4">
         {frontmatter.title}
       </h1>
+      <MascotImage
+        type="nosotros"
+        class="page-mascot"
+        customAlt="David y SaaS Automation Lab documentando metodologia de pruebas E-E-A-T"
+      />
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
         {frontmatter.description}
       </p>

@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import homeImage from "../assets/images/home/automatizacion-ia-solopreneurs-nano-banana.avif";
+import comparativasImage from "../assets/images/comparativas/comparativa-n8n-make-zapier-2026.avif";
+import guiasImage from "../assets/images/guias/guia-paso-a-paso-automatizacion-procesos.avif";
+import herramientasImage from "../assets/images/herramientas/analisis-herramienta-ia-opiniones.avif";
+import nosotrosImage from "../assets/images/nosotros/david-saas-automation-lab-equipo.avif";
+import resultadosImage from "../assets/images/resultados/ahorro-tiempo-dinero-automatizacion-ia.avif";
+
+const mascotMap = {
+  home: {
+    src: homeImage,
+    defaultAlt: "Nano Banana en el laboratorio de automatizacion IA para solopreneurs de servicios"
+  },
+  comparativas: {
+    src: comparativasImage,
+    defaultAlt: "Comparativa visual n8n vs Make vs Zapier 2026 para automatizacion SaaS"
+  },
+  guias: {
+    src: guiasImage,
+    defaultAlt: "Guia paso a paso de automatizacion de procesos con herramientas SaaS e IA"
+  },
+  herramientas: {
+    src: herramientasImage,
+    defaultAlt: "Analisis de herramienta IA con criterios de opiniones, precios y automatizacion"
+  },
+  nosotros: {
+    src: nosotrosImage,
+    defaultAlt: "David en SaaS Automation Lab evaluando herramientas de automatizacion e IA"
+  },
+  resultados: {
+    src: resultadosImage,
+    defaultAlt: "Ahorro de tiempo y dinero con automatizacion IA para negocios de servicios"
+  }
+};
+
+interface Props {
+  type: keyof typeof mascotMap;
+  customAlt?: string;
+  class?: string;
+  loading?: "lazy" | "eager";
+  priority?: boolean;
+  width?: number;
+}
+
+const {
+  type,
+  customAlt,
+  class: className = "",
+  loading = "lazy",
+  priority = false,
+  width
+} = Astro.props;
+const mascot = mascotMap[type];
+const displayWidth = width ?? (type === "home" ? 560 : 720);
+const sizes =
+  type === "home"
+    ? "(max-width: 760px) 92vw, 520px"
+    : "(max-width: 920px) 92vw, 720px";
+---
+
+<figure class={`mascot-container ${className}`}>
+  <Image
+    src={mascot.src}
+    alt={customAlt ?? mascot.defaultAlt}
+    format="avif"
+    quality={72}
+    width={displayWidth}
+    sizes={sizes}
+    loading={loading}
+    decoding="async"
+    fetchpriority={priority ? "high" : "auto"}
+    class="mascot-img"
+  />
+  <figcaption class="sr-only">Nano Banana es la entidad visual de SaaS Automation Lab.</figcaption>
+</figure>

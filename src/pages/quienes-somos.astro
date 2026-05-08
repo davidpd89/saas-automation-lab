@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 const labUrl = `${import.meta.env.BASE_URL}lab/`;
 ---
 
@@ -10,6 +11,11 @@ const labUrl = `${import.meta.env.BASE_URL}lab/`;
   <article class="prose-page">
     <p class="eyebrow">E-E-A-T</p>
     <h1>Quienes somos</h1>
+    <MascotImage
+      type="nosotros"
+      class="page-mascot"
+      customAlt="David Porto y SaaS Automation Lab como entidad editorial de automatizacion SaaS e IA"
+    />
     <p>SaaS Automation Lab es un proyecto editorial tecnico para analizar herramientas de automatizacion, CRM, email marketing, prospeccion y contenido con foco en solopreneurs de servicios.</p>
     <p>La evaluacion la firma David Porto, creador del proyecto y responsable de convertir cada recomendacion en una pieza verificable: caso de uso, perfil, limites, precio de referencia y relacion con otros workflows.</p>
     <h2>Por que podemos opinar</h2>

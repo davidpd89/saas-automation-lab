@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 
 const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 ---
@@ -11,6 +12,11 @@ const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+
   <section>
     <p class="eyebrow">Pilar operativo</p>
     <h1>Automatizacion de facturacion y cobros para consultores</h1>
+    <MascotImage
+      type="resultados"
+      class="page-mascot"
+      customAlt="ROI de automatizar facturacion, cobros y recordatorios para consultores B2B"
+    />
     <p>
       La facturacion no deberia ocupar el mismo espacio mental que vender, entregar y mejorar el servicio.
       Este pilar organiza el stack minimo para reducir tareas administrativas, recordatorios manuales y

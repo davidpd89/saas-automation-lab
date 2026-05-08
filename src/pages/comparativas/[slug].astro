@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import AffiliateButton from "../../components/AffiliateButton.astro";
 import StructuredData from "../../components/StructuredData.astro";
+import MascotImage from "../../components/MascotImage.astro";
 
 export async function getStaticPaths() {
   const items = [
@@ -68,6 +69,11 @@ const comparisonSchema = {
     <header class="text-center mb-12">
       <p class="eyebrow">Comparativa money</p>
       <h1 class="text-4xl font-bold text-gray-900 mb-4">{item.data.title}</h1>
+      <MascotImage
+        type="comparativas"
+        class="page-mascot"
+        customAlt={`Imagen SEO de la comparativa ${item.data.title} con foco en decision SaaS 2026`}
+      />
 
       <div class="answer-box mb-8">
         <h2 class="text-2xl font-semibold text-green-900 mb-2">Veredicto rapido</h2>

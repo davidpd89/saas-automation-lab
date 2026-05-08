@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MascotImage from "../components/MascotImage.astro";
 const guidesUrl = `${import.meta.env.BASE_URL}guias/`;
 const toolsUrl = `${import.meta.env.BASE_URL}herramientas/`;
 ---
@@ -11,6 +12,11 @@ const toolsUrl = `${import.meta.env.BASE_URL}herramientas/`;
   <article class="prose-page">
     <p class="eyebrow">Pilar estrategico</p>
     <h1>Como escalar un negocio de servicios con IA sin contratar empleados</h1>
+    <MascotImage
+      type="resultados"
+      class="page-mascot"
+      customAlt="Ahorro de tiempo y dinero al escalar un negocio de servicios con automatizacion IA"
+    />
     <p>La tesis del laboratorio es simple: un solopreneur no escala vendiendo mas horas, escala convirtiendo tareas repetidas en sistemas.</p>
 
     <h2>Tareas prioritarias</h2>

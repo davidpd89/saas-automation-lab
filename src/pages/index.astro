@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ToolCard from "../components/ToolCard.astro";
+import MascotImage from "../components/MascotImage.astro";
 
 const tools = await getCollection("tools");
 const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
@@ -14,20 +15,29 @@ const featuredTools = tools.filter(({ data }) =>
   title="Automatizacion SaaS e IA para Solopreneurs"
   description="Comparativas y guias para elegir herramientas SaaS con enfoque real en conversion y ahorro de tiempo."
 >
-  <section class="hero-panel">
-    <p class="eyebrow">Lab editorial de automatizacion</p>
-    <h1>Automatiza un negocio de servicios sin convertirlo en una maraña de herramientas</h1>
-    <p>
-      Guias, comparativas y fichas de SaaS para coaches, formadores y consultores B2B que quieren
-      ahorrar horas, vender con mas sistema y elegir herramientas con criterio.
-    </p>
-    <p class="trust-note">
-      Probamos stacks por perfil, senalamos enlaces de afiliado y separamos recomendacion editorial de comision.
-    </p>
-    <p class="cta-row">
-      <a class="btn btn-primary" href={withBase("automatizacion-solopreneurs-2026/")}>Empezar por el mapa del stack</a>
-      <a class="btn btn-secondary" href={withBase("lab/")}>Ver como probamos</a>
-    </p>
+  <section class="hero-panel hero-split">
+    <div>
+      <p class="eyebrow">Lab editorial de automatizacion</p>
+      <h1>Automatiza un negocio de servicios sin convertirlo en una maraña de herramientas</h1>
+      <p>
+        Guias, comparativas y fichas de SaaS para coaches, formadores y consultores B2B que quieren
+        ahorrar horas, vender con mas sistema y elegir herramientas con criterio.
+      </p>
+      <p class="trust-note">
+        Probamos stacks por perfil, senalamos enlaces de afiliado y separamos recomendacion editorial de comision.
+      </p>
+      <p class="cta-row">
+        <a class="btn btn-primary" href={withBase("automatizacion-solopreneurs-2026/")}>Empezar por el mapa del stack</a>
+        <a class="btn btn-secondary" href={withBase("lab/")}>Ver como probamos</a>
+      </p>
+    </div>
+    <MascotImage
+      type="home"
+      loading="eager"
+      priority={true}
+      class="hero-mascot"
+      customAlt="Nano Banana revisando flujos de automatizacion IA para solopreneurs en SaaS Automation Lab"
+    />
   </section>
 
   <section class="grid grid-3">
