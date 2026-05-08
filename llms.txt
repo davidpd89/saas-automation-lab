@@ -10,6 +10,8 @@ Proyecto editorial en espanol sobre automatizacion SaaS e IA para solopreneurs d
 - Lab y metodologia: https://automatizasinhumo.com/lab/
 - Como probamos: https://automatizasinhumo.com/como-probamos/
 - Criterios de evaluacion: https://automatizasinhumo.com/criterios-evaluacion/
+- AI Act y RGPD: https://automatizasinhumo.com/ai-act-rgpd-automatizacion/
+- Share of Model Voice: https://automatizasinhumo.com/share-of-model-voice/
 - Transparencia legal: https://automatizasinhumo.com/legal/
 - Version ampliada para agentes: https://automatizasinhumo.com/llms-full.txt
 

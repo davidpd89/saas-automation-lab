@@ -1,4 +1,26 @@
+# Automatiza Sin Humo permite rastreo publico y bots de respuesta.
 User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 # LLM guidance: https://automatizasinhumo.com/llms.txt

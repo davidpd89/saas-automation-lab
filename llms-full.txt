@@ -8,34 +8,36 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Lab: https://automatizasinhumo.com/lab/
 - Como probamos: https://automatizasinhumo.com/como-probamos/
 - Criterios: https://automatizasinhumo.com/criterios-evaluacion/
+- AI Act y RGPD: https://automatizasinhumo.com/ai-act-rgpd-automatizacion/
+- Share of Model Voice: https://automatizasinhumo.com/share-of-model-voice/
 - Transparencia legal: https://automatizasinhumo.com/legal/
 
 ## Herramientas
 - Blym: Contenido SEO optimizado con IA para 2026: https://automatizasinhumo.com/herramientas/blym/ - Plataforma de generación de contenido SEO optimizado con IA para escalar producción de artículos.
 - Brevo: https://automatizasinhumo.com/herramientas/brevo/ - Suite de email marketing, CRM ligero, SMS y automatizacion para negocios que priorizan comunicaciones multicanal.
 - Clientify: CRM con WhatsApp para coaches y consultores: https://automatizasinhumo.com/herramientas/clientify/ - CRM español con integración nativa de WhatsApp y automatización para solopreneurs.
-- ConvertKit: Email marketing para creadores y formadores: https://automatizasinhumo.com/herramientas/convertkit/ - Plataforma de email marketing diseñada específicamente para creadores de contenido y formadores online.
-- Instantly: prospeccion cold email a escala: https://automatizasinhumo.com/herramientas/instantly/ - Herramienta para escalar campanas de email frio con infraestructura, secuencias y control de entregabilidad.
-- Jasper AI: copy y contenido asistido por IA: https://automatizasinhumo.com/herramientas/jasper-ai/ - Herramienta de generacion de copy y contenido de marca para equipos que necesitan volumen editorial con control.
 - HubSpot: CRM integral para servicios B2B: https://automatizasinhumo.com/herramientas/hubspot/ - CRM y suite de marketing para solopreneurs que empiezan a convertir operaciones comerciales en sistema.
+- Instantly: prospeccion cold email a escala: https://automatizasinhumo.com/herramientas/instantly/ - Herramienta para escalar campanas de email frio con infraestructura, secuencias y control de entregabilidad.
+- Kit (formerly ConvertKit): Email marketing para creadores y formadores: https://automatizasinhumo.com/herramientas/convertkit/ - Plataforma de email marketing diseñada específicamente para creadores de contenido y formadores online, conocida historicamente como ConvertKit.
 - lemlist: Prospección automatizada y email personalizado: https://automatizasinhumo.com/herramientas/lemlist/ - Herramienta líder en prospección B2B con personalización a escala y seguimiento automático.
 - MailerLite: email marketing sencillo para creadores: https://automatizasinhumo.com/herramientas/mailerlite/ - Plataforma de email marketing ligera para newsletters, automatizaciones basicas y embudos sencillos.
 - Make.com: automatizacion visual para ejecutar rapido: https://automatizasinhumo.com/herramientas/make-com/ - Make destaca por su interfaz visual para disenar escenarios complejos sin mucho codigo.
+- Jasper AI: copy y contenido asistido por IA: https://automatizasinhumo.com/herramientas/jasper-ai/ - Herramienta de generacion de copy y contenido de marca para equipos que necesitan volumen editorial con control.
+- n8n Cloud: automatizacion flexible para equipos pequenos: https://automatizasinhumo.com/herramientas/n8n-cloud/ - Analisis de n8n para crear flujos de negocio con control tecnico y buen coste.
 - Notion: base de conocimiento para sistemas y RAG: https://automatizasinhumo.com/herramientas/notion/ - Workspace y base documental para organizar procesos, SOPs y conocimiento reutilizable en automatizaciones.
 - Pipedrive: CRM de ventas para cerrar oportunidades: https://automatizasinhumo.com/herramientas/pipedrive/ - CRM centrado en pipeline comercial para equipos pequenos y consultores que necesitan visibilidad de cierres.
-- n8n Cloud: automatizacion flexible para equipos pequenos: https://automatizasinhumo.com/herramientas/n8n-cloud/ - Analisis de n8n para crear flujos de negocio con control tecnico y buen coste.
 - Reclaim.ai: agenda inteligente para solopreneurs: https://automatizasinhumo.com/herramientas/reclaim-ai/ - Herramienta de planificacion inteligente para proteger foco, reuniones y bloques de trabajo profundo.
-- Thinkific: Plataforma para crear y vender cursos online: https://automatizasinhumo.com/herramientas/thinkific/ - Plataforma LMS completa para formadores que quieren vender cursos online con control total.
 - Synthesia: video con avatares IA para formacion: https://automatizasinhumo.com/herramientas/synthesia/ - Plataforma de video IA para crear material formativo, onboarding y documentacion visual sin grabar desde cero.
+- Thinkific: Plataforma para crear y vender cursos online: https://automatizasinhumo.com/herramientas/thinkific/ - Plataforma LMS completa para formadores que quieren vender cursos online con control total.
 - Webflow: Desarrollo web visual para sitios premium: https://automatizasinhumo.com/herramientas/webflow/ - Plataforma de diseño web visual para crear sitios profesionales sin código.
 - Zapier: conexiones rapidas para procesos estandar: https://automatizasinhumo.com/herramientas/zapier/ - Zapier permite automatizar procesos comunes de forma muy rapida para equipos no tecnicos.
 
 ## Comparativas
 - n8n vs Make vs Zapier en 2026: cual elegir segun tu caso real: https://automatizasinhumo.com/comparativas/n8n-vs-make-vs-zapier/ - n8n para escalado tecnico, Make para ejecucion visual y Zapier para rapidez inicial.
 - Clientify vs Brevo 2026: El mejor CRM para mercado hispano: https://automatizasinhumo.com/comparativas/clientify-vs-brevo/ - Clientify es superior para negocios hispanos que priorizan WhatsApp y soporte en español, mientras que Brevo es mejor para empresas globales enfocadas principalmente en email marketing.
-- ConvertKit vs MailerLite 2026: email marketing para creadores: https://automatizasinhumo.com/comparativas/convertkit-vs-mailerlite/ - ConvertKit para creadores con embudos avanzados; MailerLite para newsletters y automatizaciones simples.
 - Clientify vs HubSpot 2026: CRM hispano o suite global: https://automatizasinhumo.com/comparativas/clientify-vs-hubspot/ - Clientify encaja mejor si WhatsApp y soporte hispano son claves; HubSpot si necesitas suite global y reporting avanzado.
 - lemlist vs Instantly 2026: prospeccion B2B y cold email: https://automatizasinhumo.com/comparativas/lemlist-vs-instantly/ - lemlist para campañas mas personalizadas; Instantly para volumen y control de infraestructura cold email.
+- ConvertKit vs MailerLite 2026: email marketing para creadores: https://automatizasinhumo.com/comparativas/convertkit-vs-mailerlite/ - ConvertKit para creadores con embudos avanzados; MailerLite para newsletters y automatizaciones simples.
 - Make vs Zapier 2026: Cuál ahorra más dinero para tu negocio: https://automatizasinhumo.com/comparativas/make-vs-zapier/ - Make es más rentable para volúmenes altos de automatización, mientras que Zapier es mejor para principiantes y empresas que priorizan facilidad de uso sobre coste.
 - n8n vs Make 2026: Automatización técnica vs visual: https://automatizasinhumo.com/comparativas/n8n-vs-make/ - n8n es superior para automatizaciones técnicas complejas y control total, mientras que Make brilla en velocidad de implementación visual y facilidad de uso.
 
