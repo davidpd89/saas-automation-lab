@@ -1,65 +1,83 @@
 ---
-title: "Onboarding automatizado con n8n y WhatsApp: Guía paso a paso"
+title: "Onboarding automatizado con n8n y WhatsApp: guia paso a paso"
 slug: "onboarding-automatizado-n8n-whatsapp"
 seoTitle: "Automatizar onboarding de alumnos con n8n y WhatsApp 2026"
-seoDescription: "Guía completa para automatizar el onboarding de clientes usando n8n, WhatsApp y CRM. Ahorra 10 horas semanales."
+seoDescription: "Guia completa para automatizar onboarding de clientes con n8n, WhatsApp y CRM: alta, bienvenida, accesos y seguimiento."
 difficulty: "Intermedio"
 persona: "Coach"
-scenario: "Un coach vende cursos online y pasa 10 horas semanales en onboarding manual de alumnos"
+scenario: "Un coach vende cursos online y quiere reducir tareas manuales despues del pago"
 toolsUsed: ["n8n-cloud", "clientify"]
-timeSaved: "10 horas/semana"
+timeSaved: "Ahorro pendiente de medir segun volumen"
 featured: true
 searchIntent: "transactional"
 ---
 
-## Problema resuelto
+## Objetivo
 
-Como coach o formador, probablemente inviertes horas cada semana en tareas repetitivas de onboarding:
-- Enviar accesos a plataformas tras el pago
-- Dar la bienvenida manualmente por WhatsApp
-- Recordar fechas de inicio de cursos
-- Gestionar formularios de datos iniciales
-- Seguimiento de primeros pasos
+Reducir el onboarding manual de alumnos despues del pago: alta, bienvenida, acceso, ficha en CRM y primer seguimiento.
 
-Esta guía te enseñará a automatizar todo el proceso usando **n8n + Clientify + WhatsApp**.
+Como coach o formador, probablemente repites tareas como:
 
-## Stack tecnológico necesario
+- Enviar accesos a plataformas tras el pago.
+- Dar la bienvenida manualmente por WhatsApp.
+- Recordar fechas de inicio.
+- Gestionar formularios de datos iniciales.
+- Hacer seguimiento de los primeros pasos.
 
-- **n8n Cloud**: Orquestación de flujos de automatización
-- **Clientify**: CRM con WhatsApp nativo
-- **Plataforma de pagos**: Stripe, PayPal o similar
-- **Google Sheets/Notion**: Base de datos de alumnos (opcional)
+## Stack necesario
 
-## Diagrama del flujo completo
+- **n8n Cloud**: orquestacion del flujo.
+- **Clientify**: CRM con WhatsApp y seguimiento comercial.
+- **Plataforma de pagos**: Stripe, PayPal o similar.
+- **Google Sheets o Notion**: base auxiliar opcional.
 
+## Diagrama del flujo
+
+```text
+Pago confirmado
+↓
+Webhook en n8n
+↓
+Validacion de datos
+↓
+Contacto en CRM
+↓
+WhatsApp de bienvenida
+↓
+Accesos y seguimiento
 ```
-Pago Confirmado → n8n detecta → Clientify crea contacto → WhatsApp da bienvenida → Plataforma envía accesos → Seguimiento automático
+
+## Resumen del flujo en 3 fases
+
+1. Captura del pago y datos del alumno.
+2. Creacion del contacto, etiquetas y acceso.
+3. Bienvenida, recordatorio y seguimiento inicial.
+
+## Implementacion paso a paso
+
+### Paso 1: configurar webhook de pagos en n8n
+
+1. Crea un nuevo workflow en n8n Cloud.
+2. Anade un nodo Webhook.
+3. Configura tu plataforma de pagos para enviar notificaciones a esa URL.
+
+```json
+{
+  "path": "/payment-webhook",
+  "httpMethod": "POST",
+  "responseMode": "onReceived"
+}
 ```
 
-## Paso 1: Configurar webhook de pagos en n8n
+### Paso 2: validar y procesar datos del pago
 
-1. **Crear nuevo workflow en n8n Cloud**
-2. **Añadir nodo Webhook**:
-   ```json
-   {
-     "path": "/payment-webhook",
-     "httpMethod": "POST",
-     "responseMode": "onReceived"
-   }
-   ```
-3. **Configurar en tu plataforma de pagos** para enviar notificaciones a esta URL
-
-## Paso 2: Validar y procesar datos del pago
-
-Añade un nodo **Function** para procesar los datos:
+Anade un nodo de codigo para comprobar que el pago se ha completado y extraer datos utiles.
 
 ```javascript
-// Validar que el pago fue exitoso
-if ($input.first().json.status !== 'completed') {
+if ($input.first().json.status !== "completed") {
   return [];
 }
 
-// Extraer datos del cliente
 const customer = {
   name: $input.first().json.customer.name,
   email: $input.first().json.customer.email,
@@ -71,113 +89,71 @@ const customer = {
 return [customer];
 ```
 
-## Paso 3: Crear contacto en Clientify
+### Paso 3: crear contacto en Clientify
 
-1. **Añadir nodo HTTP Request**
-2. **Configurar para API de Clientify**:
-   ```json
-   {
-     "method": "POST",
-     "url": "https://api.clientify.com/v1/contacts",
-     "headers": {
-       "Authorization": "Bearer TU_API_KEY",
-       "Content-Type": "application/json"
-     },
-     "body": {
-       "name": "{{ $json.name }}",
-       "email": "{{ $json.email }}",
-       "phone": "{{ $json.phone }}",
-       "tags": ["alumno-{{ $json.product }}", "onboarding-activo"]
-     }
-   }
-   ```
+El objetivo es que cada nuevo alumno entre con etiquetas claras para poder medir y hacer seguimiento.
 
-## Paso 4: Enviar mensaje de bienvenida por WhatsApp
-
-1. **Añadir otro nodo HTTP Request**
-2. **Configurar para WhatsApp API**:
-   ```json
-   {
-     "method": "POST",
-     "url": "https://graph.facebook.com/v18.0/YOUR_PHONE_ID/messages",
-     "headers": {
-       "Authorization": "Bearer YOUR_WHATSAPP_TOKEN",
-       "Content-Type": "application/json"
-     },
-     "body": {
-       "messaging_product": "whatsapp",
-       "to": "{{ $json.phone }}",
-       "type": "template",
-       "template": {
-         "name": "bienvenida_curso",
-         "language": {"code": "es"},
-         "components": [{
-           "type": "body",
-           "parameters": [
-             {"type": "text", "text": "{{ $json.name }}"},
-             {"type": "text", "text": "{{ $json.product }}"}
-           ]
-         }]
-       }
-     }
-   }
-   ```
-
-## Paso 5: Crear accesos en plataforma de cursos
-
-Dependiendo de tu plataforma, usa el nodo correspondiente:
-
-**Para Thinkific:**
-```javascript
-// Usar API de Thinkific para crear usuario
-const thinkifyResponse = await fetch('https://api.thinkific.com/api/public/v1/users', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer TU_TOKEN_THINKIFIC',
-    'Content-Type': 'application/json'
+```json
+{
+  "method": "POST",
+  "url": "https://api.clientify.com/v1/contacts",
+  "headers": {
+    "Authorization": "Bearer TU_API_KEY",
+    "Content-Type": "application/json"
   },
-  body: JSON.stringify({
-    first_name: $json.name.split(' ')[0],
-    last_name: $json.name.split(' ').slice(1).join(' '),
-    email: $json.email
-  })
-});
-
-return await thinkifyResponse.json();
+  "body": {
+    "name": "{{ $json.name }}",
+    "email": "{{ $json.email }}",
+    "phone": "{{ $json.phone }}",
+    "tags": ["alumno-{{ $json.product }}", "onboarding-activo"]
+  }
+}
 ```
 
-## Paso 6: Programar seguimiento automático
+### Paso 4: enviar bienvenida por WhatsApp
 
-Añade un nodo **Wait** y luego un **Schedule Trigger** para seguimiento:
+Usa una plantilla aprobada y evita mensajes opacos si hay IA o automatizacion en la conversacion.
 
-```javascript
-// Esperar 24 horas antes del primer seguimiento
-// Luego enviar recordatorio de primeros pasos
-const followUpMessage = `
-Hola {{ $json.name }},
-
-¿Cómo va tu progreso en {{ $json.product }}?
-
-Recuerda que tienes disponibles:
-- Módulo 1: Fundamentos
-- Comunidad privada
-- Sesión de bienvenida esta semana
-
-¿Necesitas ayuda con algo?
-`;
+```json
+{
+  "method": "POST",
+  "url": "https://graph.facebook.com/v18.0/YOUR_PHONE_ID/messages",
+  "headers": {
+    "Authorization": "Bearer YOUR_WHATSAPP_TOKEN",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "messaging_product": "whatsapp",
+    "to": "{{ $json.phone }}",
+    "type": "template",
+    "template": {
+      "name": "bienvenida_curso",
+      "language": { "code": "es" }
+    }
+  }
+}
 ```
 
-## Consideraciones de seguridad y privacidad
+### Paso 5: crear accesos
 
-- **RGPD compliance**: Guarda consentimientos explícitos
-- **Encriptación de datos**: Usa HTTPS en todas las conexiones
-- **Backups automáticos**: Configura backups de Clientify
-- **Logs de actividad**: Mantén registro de todas las automatizaciones
+Si usas Thinkific u otro LMS, conecta el alta del usuario a partir del email y el producto comprado. Mantiene un log de errores para no dejar alumnos sin acceso.
 
-## Resumen de beneficios
+### Paso 6: programar seguimiento
 
-✅ **Ahorro de 10+ horas semanales** en tareas manuales  
-✅ **Onboarding consistente** para todos los alumnos  
-✅ **Mejor experiencia inicial** con respuestas inmediatas  
-✅ **Escalabilidad sin límites** para crecimiento del negocio  
-✅ **Datos centralizados** para análisis y mejoras
+Anade un nodo Wait y un mensaje de seguimiento 24-48 horas despues. El contenido debe ayudar, no parecer una secuencia automatica sin contexto.
+
+## Seguridad y privacidad
+
+- Guarda consentimientos explicitos.
+- Usa HTTPS en todas las conexiones.
+- No guardes API keys en texto visible.
+- Mantiene logs de actividad y errores.
+- Documenta cuando hay IA o automatizacion en el primer punto de contacto.
+
+## Beneficios esperables si el flujo esta bien configurado
+
+- Menos tareas manuales tras cada venta.
+- Onboarding mas consistente.
+- Menos olvidos en accesos y seguimientos.
+- Mejor trazabilidad en CRM.
+- Escalabilidad limitada por coste, soporte, calidad de datos y cumplimiento RGPD.

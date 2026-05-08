@@ -108,12 +108,12 @@ const comparisonSchema = {
             <article class="card">
               <h3>{tool.data.title}</h3>
               <p>{tool.data.description}</p>
-              <AffiliateButton
-                url={tool.data.affiliateUrl}
-                label="Ver herramienta"
-                toolId={tool.data.toolId}
-                variant="outline"
-              />
+          <AffiliateButton
+            url={tool.data.affiliateUrl}
+            label="Ver limites y precio real"
+            toolId={tool.data.toolId}
+            variant="outline"
+          />
             </article>
           ))}
         </div>
@@ -159,17 +159,22 @@ const comparisonSchema = {
     </section>
 
     <section class="bg-gray-50 rounded-lg p-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Stack recomendado</h2>
-      <div class="grid grid-2">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Stack recomendado segun perfil</h2>
+      <div class="grid grid-3">
         <div class="card">
-          <h3>Para empezar sin friccion</h3>
-          <p>Make + ConvertKit + Webflow</p>
-          <p class="text-sm text-gray-600">Automatizacion visual, email marketing y web profesional.</p>
+          <h3>Coach</h3>
+          <p>Make + Clientify + WhatsApp</p>
+          <p class="text-sm text-gray-600">Facilidad visual, CRM conversacional y seguimiento simple.</p>
         </div>
         <div class="card">
-          <h3>Para control tecnico</h3>
-          <p>n8n + Clientify + Thinkific</p>
-          <p class="text-sm text-gray-600">Control de flujos, CRM con seguimiento y entrega formativa.</p>
+          <h3>Consultor tecnico</h3>
+          <p>n8n + Clientify + Notion</p>
+          <p class="text-sm text-gray-600">Control de APIs, logs, conocimiento interno y trazabilidad.</p>
+        </div>
+        <div class="card">
+          <h3>Formador</h3>
+          <p>Thinkific + Kit/MailerLite + Make</p>
+          <p class="text-sm text-gray-600">Entrega evergreen, email y automatizacion de bienvenida.</p>
         </div>
       </div>
     </section>

@@ -16,6 +16,6 @@ const { title, description, rating, toolId, affiliateUrl, href } = Astro.props;
 <article class="card">
   <h3><a href={href}>{title}</a></h3>
   <p>{description}</p>
-  <p><strong>Rating:</strong> {rating}/10</p>
-  <AffiliateButton url={affiliateUrl} label="Ver herramienta" toolId={toolId} />
+  <p><strong>Veredicto:</strong> nota {rating}/10 según encaje, coste, curva, integraciones y riesgo operativo.</p>
+  <AffiliateButton url={affiliateUrl} label="Ver límites y precio real" toolId={toolId} />
 </article>

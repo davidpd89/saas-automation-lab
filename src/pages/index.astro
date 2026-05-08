@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ToolCard from "../components/ToolCard.astro";
 import MascotImage from "../components/MascotImage.astro";
+import DiagnosticChat from "../components/DiagnosticChat.astro";
 
 const tools = await getCollection("tools");
 const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
@@ -12,19 +13,20 @@ const featuredTools = tools.filter(({ data }) =>
 ---
 
 <BaseLayout
-  title="Automatizacion SaaS e IA para Solopreneurs"
-  description="Comparativas y guias para elegir herramientas SaaS con enfoque real en conversion y ahorro de tiempo."
+  title="Automatización SaaS e IA para negocios de servicios"
+  description="Diagnóstico, comparativas y guías para elegir herramientas SaaS con foco en workflows reales, coste y ahorro de tiempo."
 >
   <section class="hero-panel hero-split">
     <div>
-      <p class="eyebrow">Lab editorial de automatizacion</p>
-      <h1>Automatiza un negocio de servicios sin convertirlo en una maraña de herramientas</h1>
+      <p class="eyebrow">Laboratorio de automatización SaaS probado con workflows reales</p>
+      <h1>Automatiza tu negocio de servicios con un stack que puedas mantener</h1>
       <p>
-        Guias, comparativas y fichas de SaaS para coaches, formadores y consultores B2B que quieren
-        ahorrar horas, vender con mas sistema y elegir herramientas con criterio.
+        Probamos herramientas SaaS e IA con workflows reales de captación, onboarding, CRM,
+        email y seguimiento para que elijas sin perder semanas comparando.
       </p>
       <p class="trust-note">
-        Probamos stacks por perfil, senalamos enlaces de afiliado y separamos recomendacion editorial de comision.
+        La comisión no decide el ranking. Cada recomendación debe tener caso de uso,
+        límites, coste estimado y alternativa.
       </p>
       <p class="cta-row">
         <a class="btn btn-primary" href={withBase("automatizacion-solopreneurs-2026/")}>Empezar por el mapa del stack</a>
@@ -39,6 +41,8 @@ const featuredTools = tools.filter(({ data }) =>
       customAlt="Nano Banana revisando flujos de automatizacion IA para solopreneurs en SaaS Automation Lab"
     />
   </section>
+
+  <DiagnosticChat />
 
   <section class="grid grid-3">
     <article class="card">

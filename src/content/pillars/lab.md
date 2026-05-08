@@ -1,142 +1,65 @@
 ---
-title: "Nuestro Lab: Cómo probamos las herramientas de automatización"
+title: "Como probamos herramientas SaaS e IA: metodologia, escenarios y limites"
 slug: "lab"
-description: "Metodología de testing real y transparente para validar herramientas SaaS e IA que recomendamos."
-seoTitle: "Lab de Testing: Cómo evaluamos herramientas SaaS e IA"
-seoDescription: "Conoce nuestra metodología de testing riguroso para herramientas de automatización. Pruebas reales, métricas verificables y criterios objetivos."
-sections: ["metodología", "criterios", "limitaciones", "resultados"]
+description: "Metodo de evaluacion para validar herramientas SaaS e IA con casos de uso, costes, limites y alternativas."
+seoTitle: "Como probamos herramientas SaaS e IA"
+seoDescription: "Metodologia de SaaS Automation Lab para evaluar herramientas de automatizacion: casos de uso, coste estimado, limites, alternativas y fecha de revision."
+sections: ["metodologia", "criterios", "limitaciones", "resultados"]
 featured: true
 searchIntent: "informational"
 ---
 
-# Nuestro Laboratorio de Automatización
+No publicamos una recomendacion principal sin caso de uso, coste estimado, limites, alternativa y fecha de revision.
 
-Aquí no solo recomendamos herramientas, las **probamos realmente** en escenarios de negocio reales con solopreneurs como tú.
+## Metodo de evaluacion
 
-## 🧪 Nuestra Metodología de Testing
+### 1. Caso de uso
 
-### Fase 1: Configuración Real (2 semanas)
-- **Implementación completa** de cada herramienta en un escenario real
-- **Integraciones** con 2-3 herramientas complementarias del stack
-- **Documentación** de cada paso con screenshots y tiempos
+Partimos de un proceso concreto: onboarding de alumnos, prospeccion B2B, soporte con base de conocimiento, facturacion recurrente o nurturing. Si no hay proceso definido, no hay recomendacion fuerte.
 
-### Fase 2: Estrés y Límites (1 semana)
-- **Volúmenes de uso** 10x superiores al estándar
-- **Casos extremos**: datos masivos, workflows complejos, timeouts
-- **Recuperación de errores** y soporte técnico
+### 2. Stack y configuracion
 
-### Fase 3: ROI y Costes (2 semanas)
-- **Medición exacta** de tiempo ahorrado vs tiempo invertido
-- **Análisis TCO** (Total Cost of Ownership) a 6 meses
-- **Comparación** con alternativas manuales
+Documentamos que herramientas intervienen, que datos entran, que resultado deberia salir y que integraciones pueden fallar. Cuando haya capturas propias, deben mostrar flujo, configuracion, ejecucion y resultado.
 
-### Fase 4: Validación Humana (1 semana)
-- **Test con 3 solopreneurs reales** diferentes perfiles
-- **Feedback cualitativo** sobre curva de aprendizaje
-- **Medición de satisfacción** y frustración
+### 3. Coste y mantenimiento
 
-## 📏 Criterios de Evaluación
+Valoramos precio mensual, coste por volumen, tiempo de configuracion, soporte necesario, riesgo operativo y coste de cambiar de herramienta.
 
-### Para Solopreneurs Técnicos (90% peso)
-- **Control técnico**: Acceso a APIs, código personalizable
-- **Escalabilidad**: Límites reales de uso y costes
-- **Integraciones**: Calidad y cantidad de conexiones nativas
-- **Rendimiento**: Velocidad de ejecución y fiabilidad
+### 4. Limites visibles
 
-### Para Solopreneurs No-Técnicos (10% peso)
-- **Curva de aprendizaje**: Tiempo hasta primer valor
-- **Soporte en español**: Calidad y disponibilidad
-- **Documentación**: Claridad y ejemplos prácticos
-- **Comunidad**: Recursos disponibles y resolución de dudas
+Una herramienta puede ser buena y aun asi no ser adecuada para un perfil. Por eso cada ficha debe explicar cuando no elegirla.
 
-## 🚫 Lo que NO Probamos
+## Criterios que pesan en la nota
 
-### Limitaciones Conocidas
-- **Soporte Enterprise**: No evaluamos planes corporativos (>100 usuarios)
-- **Integraciones Legacy**: No probamos sistemas antiguos (<2015)
-- **Industrias Reguladas**: Sector financiero, salud, gobierno
-- **Alta Disponibilidad**: No testeamos requisitos 99.99% uptime
+- Encaje por perfil: coach, formador, consultor B2B o agencia pequena.
+- Coste de escalado: tareas, contactos, alumnos, ejecuciones o usuarios.
+- Control tecnico: APIs, webhooks, logs, exportacion de datos y depuracion.
+- Tiempo hasta primer valor: cuanto tarda en generar un resultado util.
+- Riesgo operativo: privacidad, RGPD, AI Act, bloqueos, cambios de API y dependencia de terceros.
+- Transparencia comercial: precios, limites, afiliacion y restricciones.
 
-### Sesgos Potenciales
-- **Preferencia por APIs**: Valoramos herramientas con acceso programático
-- **Enfoque hispano**: Priorizamos soporte en español
-- **Automatización vs Manual**: Sesgo hacia soluciones escalables
+## Lo que todavia no afirmamos como prueba cerrada
 
-## 📊 Resultados Reales
+Los datos de ROI, respuesta, ahorro o recuperacion economica solo deben publicarse como resultado definitivo cuando tengan dataset, fecha, configuracion y limitaciones visibles. Hasta entonces los tratamos como casos simulados o hipotesis de trabajo.
 
-### Casos de Test Actuales
+## Protocolo visual del Lab
 
-#### Onboarding Automatizado (n8n + Clientify + WhatsApp)
-- **Tiempo manual**: 45 min/alumno × 20 alumnos = 15 horas/mes
-- **Tiempo automatizado**: 5 min configuración inicial
-- **Ahorro real**: 14.5 horas/mes (96.7% reducción)
-- **ROI**: 300% en primer mes
+Las futuras capturas deben incluir:
 
-#### Prospección B2B (lemlist + n8n enrichment)
-- **Tasa respuesta manual**: 8% (50 emails/día)
-- **Tasa respuesta automatizada**: 22% (200 emails/día)
-- **Coste por lead**: €12.5 manual vs €3.2 automatizado
-- **Calidad lead**: Score 7.2/10 vs 6.1/10
+- Pantalla de creacion del flujo.
+- Configuracion de nodos o pasos.
+- Log de ejecucion o prueba.
+- Resultado final anonimo.
+- Fecha, version y nota breve de contexto.
 
-#### Facturación Recurrente (n8n + Stripe + Clientify)
-- **Morosidad manual**: 22% (seguimiento inconsistente)
-- **Morosidad automatizada**: 8% (recordatorios sistemáticos)
-- **Tiempo gestión**: 8 horas/mes vs 1 hora/mes
-- **Recuperación**: €4,500/mes adicionales
+## Transparencia comercial
 
-## 🔬 Herramientas del Lab
+Algunos enlaces pueden ser afiliados. La comision ayuda a financiar el proyecto, pero no compra posiciones, ratings ni veredictos. Si una herramienta paga comision pero no encaja, debe aparecer con sus limites o quedar fuera de la recomendacion principal.
 
-### Stack de Testing
-- **n8n Cloud**: Orquestación y workflows complejos
-- **Clientify**: CRM con WhatsApp nativo
-- **lemlist**: Prospección B2B personalizada
-- **ConvertKit**: Email marketing para creadores
-- **Make.com**: Automatización visual rápida
-- **Webflow**: Desarrollo web sin código
-- **Thinkific**: Plataformas LMS
-- **Blym**: Contenido SEO optimizado
+## Proximos tests prioritarios
 
-### Métricas que Medimos
-- **Tiempo de configuración**: Desde signup hasta primer valor
-- **Tiempo de ejecución**: Velocidad de workflows reales
-- **Tasa de error**: Fallos por 1,000 ejecuciones
-- **Coste real**: Incluyendo integraciones y soporte
-- **Satisfacción**: Net Promoter Score (NPS) después de 30 días
-
-## 📈 Próximos Tests
-
-### Q3 2026
-- **Agentes de IA autónomos**: vs automatización tradicional
-- **Integraciones con LLMs**: ChatGPT, Claude, Gemini
-- **Automatización de voz**: Comandos y transcripción
-- **No-code avanzado**: Límites de plataformas visuales
-
-### Q4 2026
-- **Multi-tenant**: Herramientas para gestionar múltiples clientes
-- **Compliance automático**: RGPD y regulaciones sectoriales
-- **Predictive workflows**: IA que anticipa próximos pasos
-- **Cost optimization**: Automatización de selección de planes
-
-## 🤝 Transparencia Total
-
-### Nuestros Principios
-1. **Independencia radical**: No aceptamos pagos por reviews positivos
-2. **Datos públicos**: Compartimos métricas reales y metodología
-3. **Actualización constante**: Re-evaluamos cada herramienta trimestralmente
-4. **Feedback abierto**: Publicamos críticas y limitaciones
-
-### Conflicto de Intereses
-- **Afiliados**: Ganamos comisión si te registras vía nuestros enlaces
-- **No exclusividad**: Recomendamos la mejor herramienta, no la que más paga
-- **Divulgación completa**: Todo método y criterio está documentado
-
-## 📬 Contacto del Lab
-
-¿Quieres que probemos una herramienta específica para tu caso de uso?
-
-**GitHub**: [saas-automation-lab](https://github.com/davidpd89/saas-automation-lab)
-
----
-
-*Última actualización: Mayo 2026*  
-*Próxima revisión: Agosto 2026*
+- Calculadora ROI n8n Cloud vs n8n self-hosted vs Make vs Zapier.
+- Comparativa de privacidad cloud vs self-hosted.
+- Checklist EU AI Act para automatizaciones con IA.
+- Plantilla JSON de onboarding para coaches y formadores.
+- Sistema mensual de Share of Model Voice en ChatGPT, Claude, Gemini y Perplexity.

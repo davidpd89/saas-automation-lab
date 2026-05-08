@@ -1,0 +1,1092 @@
+Estrategias de Autoridad Técnica y Gobernanza Agéntica: El Futuro de la Afiliación B2B en 2026En mayo de 2026, la Web ha transitado definitivamente de un modelo de "búsqueda de enlaces" a uno de "orquestación de respuestas". La visibilidad ya no se mide únicamente por el ranking orgánico, sino por el Share of Model Voice (SoMV): la frecuencia con la que agentes como ChatGPT, Claude o Perplexity citan tu contenido como fuente de verdad técnica.I. Validación Oficial de Programas de Afiliación (Mayo 2026)La profesionalización del sector SaaS ha llevado a modelos de comisión más estrictos pero de mayor recurrencia. ProgramaEstadoComisiónCookieRequisitos CríticosMakeOficial35% recurrente (12 meses)30-90 díasMínimo 3 usuarios de pago para primer cobro; pagos vía Wise.n8n (Cloud)Oficial30% recurrente (1er año)30 díasProhibido el tráfico de anuncios (PPC) con links directos.lemlistSecundario22% - 25% recurrente (12 meses)30 díasComisión vinculada al plan (Anual = 22%); PartnerStack.BlymOficial30% recurrente (Lifetime)No aplicaEnfoque en agencias y consultores SEO; plataforma Tolt.ZapierVerificadoBounty / Tiered (Variable)30 díasEnfoque en volumen; muy selectivo con nuevos afiliados técnicos.II. El Cambio de Marca: Kit (f. ConvertKit) y SEO 2026La transición de ConvertKit a Kit en 2024 ha completado su ciclo de búsqueda en 2026.Estrategia de Naming: Debes usar el término "Kit (formerly ConvertKit)" en H1 y meta-títulos para capturar el 25% de búsquedas que aún usan el nombre antiguo.Riesgo de Canibalización: Los slugs deben priorizar /kit-opiniones/, pero el contenido debe incluir un bloque de "Historia y Evolución" para mantener la autoridad tópica sobre los términos históricos.Condiciones: 30% de comisión recurrente de por vida mientras la cuenta esté activa.III. Calculadora ROI: n8n vs. Make vs. ZapierPara dominar la SERP técnica, implementaremos una calculadora interactiva basada en el coste por volumen de operaciones.Input / VolumenZapier (Professional)Make (Core)n8n Cloudn8n Self-hosted10k tareas~$250/mes$9/mes$50/mes €19/mes (VPS)50k tareas~$500/mes$59/mes $150/mes€19/mes (VPS)Mantenimiento0h (Cloud)0.5h/mes0h (Managed)2-4h/mes (DevOps)VeredictoRapidez extremaROI intermedioEscalabilidad IAControl total / Soberanía Nota: Zapier cobra por cada "paso"; n8n cobra por "ejecución completa" del flujo.IV. AI Act y Gobernanza para Consultores B2BA partir de agosto de 2026, el cumplimiento de la EU AI Act es obligatorio para cualquier consultor que despliegue agentes en la UE.Clasificación de Riesgo: Las automatizaciones que realicen Lead Scoring o perfiles de comportamiento para contratación/crédito se consideran de Alto Riesgo.Obligaciones de Transparencia: Es obligatorio informar al usuario mediante un aviso legal visible en el primer punto de contacto (WhatsApp/Email) si está interactuando con una IA.Logs y Auditoría: Debes conservar logs de las decisiones tomadas por la IA durante al menos 6 meses.Supervisión Humana: Todo sistema agéntico debe incluir un "botón de parada" o mecanismo de intervención manual.V. Protocolo de Evidencia Visual E-E-A-T (El Lab)Para evitar penalizaciones por contenido sintético, SaaS Automation Lab utilizará un protocolo de captura real: Formato: Capturas de pantalla de flujos en producción con marca de agua dinámica de "Nano Banana Lab". Metadatos: Conservar metadatos EXIF originales para demostrar que la imagen no es de stock ni generada por un tercero. Anonimización: Uso de Blur selectivo en n8n/Make para ocultar API Keys y datos sensibles de clientes, manteniendo visible la lógica del nodo. Alt Text: alt="Prueba real en el Lab: n8n workflow para automatización de facturación en consultoría B2B, mayo 2026".VI. Sistema de Medición de Share of Model Voice (SoMV)Monitorizaremos la visibilidad del Lab en los principales LLMs:Método Manual: Prompt mensual en ChatGPT/Claude: "¿Qué sitio en español recomiendas para aprender a configurar n8n self-hosted?".Método Semi-automatizado: Uso de Semrush AI Toolkit o Scrunch AI para rastrear menciones de marca en respuestas generativas.Cálculo:$$SoMV = \frac{\text{Menciones de 'SaaS Automation Lab'}}{\text{Total de respuestas generadas}} \times 100$$VII. Estrategia de Imagen SEO: Nano BananaNano Banana no es solo una mascota, es una Entidad de Marca diseñada para GEO.Entidad Salience: Las imágenes deben co-tiparse con ImageObject en Schema.org, vinculando a Nano Banana con la organización.Ubicación: Centralizadas en src/assets/ para que Astro las optimice a AVIF con fetchpriority="high" en la primera sección del scroll.Prompt de Consistencia: "Nano Banana mascot in technical laboratory style, handling nodes, high-fidelity 4K, 3D clay style" para mantener coherencia visual en toda la web.VIII. Contenido de Utilidad Inmediata (Money Content)Piezas diseñadas para la retención y la conversión de afiliados:Calculadora de ROI Cloud vs. Self-hosted: Para n8n.Plantilla JSON: Onboarding de Coaches: Descargable tras registro.Diagrama Mermaid: Ciclo de Vida del Lead: En guías de CRM. Checklist EU AI Act para Solopreneurs: PDF de cumplimiento.Comparador de Latencias API: Datos en tiempo real de n8n vs. Make. IX. Análisis de Competidores Hispanos y GapsCompetidorError ComúnHueco para SaaS Automation LabRuben LopezFoco generalista Notion/No-codeProfundidad técnica en RAG y Agentes 2.0. Nico ManzanequeEnfoque consultoría artesanalEscalabilidad mediante plantillas JSON listas para usar.VA360 AcademyContenido protegido tras muro de pago Transparencia técnica total y guías "How-to" abiertas.Conclusión: SaaS Automation Lab debe actuar como una "API de conocimiento". Al implementar archivos como llms.txt y estructurar el contenido para la extractabilidad de datos, garantizamos que las IAs se conviertan en nuestro principal canal de adquisición en 2026.
+
+1. Validación de afiliados dudosos
+La salida debe separar tres capas: oficial, secundario fiable y no verificado.
+Para n8n y Make ya hay indicios oficiales claros de 30%/12 meses y 35%/12 meses respectivamente, con panel propio y condiciones de elegibilidad abiertas; Make además fija pagos por Wise, mínimo de 100 dólares y tres usuarios de pago únicos para retirar fondos.
+
+Para n8n, el programa oficial también deja claro que cualquiera puede aplicar y que el foco está en contenido, templates y educación; además, el ecosistema de partners se está ampliando con nodos verificados y expertos.
+
+Para lemlist, Thinkific, Webflow y Kit/ConvertKit la situación es más estable y claramente monetizable, con programas activos y cookies de 90 días en varias de esas plataformas.
+
+Blym sigue siendo el caso más débil: si no aparece una página oficial inequívoca, no debería entrar en una comparativa monetaria hasta validarlo manualmente.
+
+2. Kit vs ConvertKit
+La marca debe tratarse ya como Kit, no como ConvertKit, porque la web oficial del programa habla de “Kit Affiliate Program” y presenta una estructura de 50% durante 12 meses más escalado recurrente según estatus.
+
+En SEO conviene usar “Kit (formerly ConvertKit)” la primera vez en la ficha o en una nota histórica, pero el slug y el title principal deberían ir ya con Kit para evitar canibalización y desalineación con la marca actual.
+
+Para búsquedas antiguas, la solución es una redirección semántica: mantener menciones históricas de ConvertKit dentro del cuerpo, pero no centrar el contenido en esa marca salvo en una FAQ breve.
+
+3. Calculadora ROI
+La calculadora debe pedir pocos inputs, pero muy buenos:
+
+tareas al mes,
+
+coste/hora humana,
+
+tiempo medio por tarea,
+
+plan elegido,
+
+extras de operaciones,
+
+coste mensual de mantenimiento,
+
+y tiempo de soporte o administración.
+
+Las fórmulas clave son:
+
+coste total mensual,
+
+coste por tarea automatizada,
+
+ahorro bruto,
+
+ahorro neto,
+
+punto de equilibrio,
+
+y coste anual.
+
+Para Make, el help center ya aporta una base muy útil: comisión por suscripción, límites de cobro, y que el periodo de 12 meses empieza al registrarse el usuario, no al primer pago.
+
+Para n8n, la calculadora debe diferenciar con claridad cloud vs self-hosted, porque la parte “self-hosted” no es solo licencia: incluye tiempo de mantenimiento, infraestructura y riesgo operativo.
+
+4. AI Act y automatización
+Para un consultor B2B europeo, el foco no es solo “usar IA”, sino cómo se usa, para qué decide y con qué supervisión.
+Hay tres frentes prácticos: transparencia con usuarios, control humano sobre decisiones sensibles y trazabilidad de lo que hace el sistema.
+
+En automatización de leads, CRM y email, los riesgos principales son:
+
+perfiles o scoring excesivamente opacos,
+
+uso de datos personales sin base clara,
+
+automatizaciones que parezcan decisiones automatizadas con impacto significativo,
+
+y logging insuficiente para auditoría interna.
+
+Las herramientas con mejor encaje de privacidad suelen ser las que permiten más control técnico y residencia clara del dato; en esa lógica, n8n self-hosted y modelos más controlables suelen ser preferibles a cloud cerrado cuando hay sensibilidad regulatoria.
+
+5. Evidencia visual E-E-A-T
+El protocolo de capturas debe demostrar uso real, no decoración.
+Para cada herramienta conviene capturar:
+
+pantalla de creación del flujo,
+
+configuración de un nodo,
+
+logs o ejecución,
+
+resultado final,
+
+y, si aplica, limitaciones o error real corregido.
+
+En n8n, lo más valioso es enseñar workflows, nodos y ejecuciones; en Make, escenarios, ejecución y mapeo; en Zapier, Zaps y estados; en Brevo y Kit, automatizaciones, formularios y secuencias; en lemlist, secuencias y personalización; en Thinkific, panel de curso y afiliación.
+
+La regla editorial sería: cada captura debe enlazarse a una sección “cómo lo probamos” y llevar fecha, versión y una nota breve de contexto.
+
+6. Share of Model Voice
+Sí merece la pena medirlo manualmente, aunque sea con una rutina sencilla:
+
+1 vez al mes,
+
+10 prompts fijos,
+
+4 modelos,
+
+3 temas troncales,
+
+y un score de presencia.
+
+El objetivo no es solo “salir mencionado”, sino ver si el sistema te posiciona como:
+
+autoridad,
+
+alternativa comparativa,
+
+o simple fuente secundaria.
+
+El sistema más práctico es una tabla con columnas: prompt, respuesta resumida, mención, enlace, tono, exactitud, y acción correctiva.
+Si no apareces en respuestas sobre n8n vs Make vs Zapier o sobre automatización para consultores, el hueco ya te está indicando qué contenido falta.
+
+7. Privacidad: cloud vs self-hosted
+Aquí la diferencia editorial es muy potente:
+
+n8n self-hosted: más control técnico, mejor para claims de residencia y minimización.
+
+n8n Cloud: más simple para usuario, menos control operativo.
+
+Make y Zapier: más fáciles para generalistas, pero conviene ser muy prudente con afirmaciones de residencia o cumplimiento si no están explicitadas en fuentes oficiales.
+
+Los claims seguros para publicar son solo los que salen en páginas oficiales o ayuda oficial.
+Todo lo demás debe tratarse como “según documentación pública consultada” o directamente no afirmarse.
+
+8. Nano Banana y SEO visual
+La estrategia de imagen debe evitar parecer decorativa.
+Las imágenes deben tener función:
+
+capturar un flujo,
+
+ilustrar una comparativa,
+
+enseñar una interfaz,
+
+o explicar una secuencia.
+
+Los nombres de archivo deben ser descriptivos, con intención SEO, por ejemplo:
+
+n8n-workflow-leads-automation.png
+
+make-vs-zapier-cost-comparison.png
+
+kit-email-funnel-example.png
+
+El alt text debe describir el contenido funcional, no repetir la keyword a martillazos.
+Y cada imagen útil debe tener caption de contexto para reforzar E-E-A-T.
+
+9. Contenido con utilidad inmediata
+Los formatos con mejor valor en tu nicho son:
+
+calculadoras,
+
+checklists,
+
+plantillas JSON,
+
+diagramas Mermaid,
+
+scripts,
+
+comparadores,
+
+mini demos.
+
+Eso encaja muy bien con la estrategia de n8n, Make, Webflow, Thinkific, Kit y lemlist porque te permite vincular utilidad real con monetización, no solo opinión.
+
+10. Competidores hispanos y huecos
+En español hay una oportunidad clara en tres cosas:
+
+comparativas bien hechas con coste real,
+
+capturas y pruebas de uso,
+
+y contenido orientado a perfiles concretos, no a “todo el mundo”.
+
+Muchos competidores hispanos se quedan en contenido demasiado superficial, sin pruebas visuales ni metodología pública.
+Ahí está tu hueco: una web que enseñe, compare y además monetice con transparencia.
+
+Qué haría yo primero
+Si mañana tuviera que arrancar SaaS Automation Lab, haría esto:
+
+Página troncal n8n vs Make vs Zapier.
+
+Fichas monetizables de n8n, Make, Kit, Brevo, Thinkific y lemlist.
+
+Metodología pública del Lab.
+
+Calculadora ROI.
+
+Protocolo visual E-E-A-T.
+
+Comparativa privacidad cloud vs self-hosted.
+
+Eso te da contenido, captación, autoridad y monetización al mismo tiempo.
+
+Para alcanzar el puesto #1 y ser la fuente citada por los motores de respuesta (Perplexity, ChatGPT, Gemini), debes corregir los siguientes puntos y aplicar estas estrategias avanzadas de GEO (Generative Engine Optimization) y AEO (Answer Engine Optimization).1. Auditoría Técnica y Rendimiento (Core Web Vitals 2026)Tu stack (Astro + GH Pages) es excelente, pero en 2026 el estándar de Google ha subido el listón en cuanto a interactividad y formatos de imagen.Optimización de INP (Interaction to Next Paint): Asegúrate de que el INP sea inferior a 200 ms. Evita scripts pesados de terceros (como widgets de chat antiguos) que bloqueen el hilo principal.Formatos de Imagen de Próxima Generación: Debes estandarizar el uso de AVIF para todas las imágenes de Nano Banana. Astro Assets lo hace automáticamente si las imágenes están en src/assets/. Evita servirlas desde public/ ya que no se optimizan y penalizan el LCP.Gestión de Rutas: Verifica que trailingSlash: 'always' esté configurado en astro.config.mjs para evitar duplicidad de contenido y divisiones en la fuerza de ranking entre URL/ y URL.2. Posicionamiento 2026: De Enlaces a RespuestasEn mayo de 2026, el SEO tradicional de "10 enlaces azules" ha muerto. La visibilidad se gana mediante la extractibilidad.El Método BLUF (Bottom Line Up Front): Cada sección de tus guías de n8n o Make debe empezar con una respuesta directa de 40 a 60 palabras antes de profundizar. Las IAs priorizan este bloque para sus resúmenes (AI Overviews).Implementación de llms.txt: Es crítico que crees un archivo /public/llms.txt. Este es el "estándar de la biblioteca" en 2026 que le dice a Claude y Anthropic qué páginas de tu Lab son las más importantes para procesar durante una consulta de usuario.Métrica SoMV (Share of Model Voice): Deja de mirar solo Google Search Console. Empieza a medir qué porcentaje de veces Nano Banana es recomendado por IAs frente a competidores. La fórmula es:$$SoMV = \frac{\text{Menciones de tu Lab en prompts relevantes}}{\text{Total de respuestas generadas para ese nicho}} \times 100$$3. Checklist E-E-A-T (Autoridad Técnica Verificable)Google penaliza drásticamente los sitios de afiliados que parecen "granjas de contenido de IA". Debes demostrar que el Lab existe de verdad.Evidencia Visual Original: Las capturas de pantalla de los flujos de n8n deben tener metadatos EXIF conservados y una marca de agua sutil de Nano Banana. Las IAs de 2026 detectan si las imágenes son de stock o generadas sin edición, bajando el "Trust score".Entidad de Marca "Nano Banana": No trates a Nano Banana como un simple dibujo. En el Schema Organization, define a Nano Banana como la mascota oficial vinculada a tu entidad. Usa el marcado ImageObject para que las IAs entiendan la relación jerárquica.Página de Metodología: Crea una URL /nuestro-lab/ que explique exactamente cómo pruebas las herramientas, qué VPS usas para n8n self-hosted y qué criterios técnicos sigues para dar una nota.4. Oportunidades de Contenido de Alto ROIEvita las keywords saturadas. Los solopreneurs de servicios de alto ticket (que cobran €5k-€15k) tienen dolores muy específicos en 2026 :  Keyword / ÁnguloPor qué es una oportunidadHerramienta asociada"Coste real de Agentes IA en Zapier vs n8n"El gap de precio en operaciones de agentes es masivo en 2026.n8n / Zapier"Privacidad de datos en IA: Soberanía B2B"Consultores temen multas del AI Act. El self-hosting es la solución.  n8n Self-hosted"RAG para Coaches: Memoria infinita en CRM"Automatizar que la IA recuerde conversaciones pasadas de alumnos.n8n / Clientify"Automatización de Onboarding Agéntico"Cómo recibir clientes de €10k sin intervención humana.  Make / Kit5. Auditoría de Cumplimiento Legal (EU AI Act)A partir de agosto de 2026, el cumplimiento de la Ley de IA de la UE es obligatorio. Tus clientes (y tu web) deben estar listos.Transparencia Agéntica: Si implementas un chatbot en la web, debe haber un aviso legal inmediato: "Estás interactuando con un sistema de IA de SaaS Automation Lab".Logs y Auditoría: Si recomiendas flujos de Lead Scoring, advierte que son de "Alto Riesgo" y requieren logs de decisión conservados durante al menos 6 meses.6. Mejora de Conversión (CRO para Afiliados)En el mercado B2B de 2026, el "Prueba Gratis" ya no funciona igual.  CTAs Basados en Resultados: Cambia los botones genéricos por copys específicos como: "Ver mi panel de control en 30 segundos" o "Bajar plantilla JSON de n8n ahora".  Calculadora de ROI Embebida: Incluye una herramienta simple donde el usuario ponga cuántas tareas hace al mes y vea cuánto ahorra con n8n vs Zapier. Esto genera una intención transaccional altísima.Fallo detectado en tu URL actual: Snippets de rastreo indican que el acceso está limitado. Asegúrate de que no haya bloqueos en robots.txt para los user-agents de IA como ChatGPT-User o OAI-SearchBot, ya que en 2026 estos son más importantes para tu tráfico que los bots tradicionales de Google.
+
+La web tiene una idea con potencial: nicho claro, foco en automatización SaaS/IA para coaches, formadores y consultores B2B, transparencia de afiliación y una arquitectura tipo hub bastante lógica. La home ya declara bien el ángulo: guías, comparativas y fichas para negocios de servicios, con aviso de afiliación visible.
+
+El problema: el contenido todavía no demuestra suficiente experiencia propia. Hay demasiadas páginas con estructura repetida, ratings fuertes, claims de ahorro/ROI y comparativas que parecen plantillas. Para Google 2026, eso es peligroso: Google insiste en contenido útil, original, con análisis propio, valor añadido y no creado principalmente para rankings.
+
+Mi nota actual: 6/10 como MVP técnico, 4,5/10 como proyecto SEO competitivo, 7/10 como concepto si lo conviertes en laboratorio real.
+
+Prioridad 0: errores visibles que bajan confianza
+
+Hay un fallo transversal de tildes y caracteres: “automatizacion”, “Guias”, “Como probamos”, “Analisis”, “senalizados”, “comision”… Aparece en navegación, footer, títulos y textos principales. No es un detalle menor: en una web profesional en español, esto grita “generado deprisa”. El layout base confirma esos textos sin acentos en navegación y footer.
+
+También hay bugs de maquetación/contenido. En el índice de comparativas se ve la etiqueta “commercial” como si se hubiera filtrado una categoría interna. Eso hay que quitarlo ya.
+
+En la página del Lab hay doble H1: primero “Nuestro Lab: Cómo probamos…” y después “Nuestro Laboratorio de Automatización”. Además, se duplican las líneas de actualización con y sin acentos. Eso ensucia SEO semántico y da sensación de página ensamblada.
+
+En la comparativa “n8n vs Make vs Zapier” aparece doble encabezado de “Stack recomendado” y la tabla se renderiza como texto plano: “Herramienta Precio base Mejor para…”. Lo mismo ocurre en otras comparativas. Para SEO, UX y escaneo rápido, las tablas deben ser tablas HTML reales.
+
+Acción inmediata: antes de publicar más contenido, haría una pasada global de QA con estos puntos: tildes, H1 único, tablas reales, eliminación de etiquetas internas, duplicados de actualización, consistencia de “actualización/afiliación/automatización”, y revisión de todos los títulos visibles.
+
+Riesgo principal: contenido demasiado fino o templado
+
+La página pilar “Automatización para solopreneurs en 2026” es demasiado corta para competir como pilar. Ahora mismo tiene una introducción y un esquema muy básico. Para una keyword troncal, eso no aguanta frente a guías largas, comparativas con capturas, casos reales y análisis por intención de búsqueda.
+
+Las fichas de herramientas tienen el mismo patrón: “respuesta breve”, “para quién tiene sentido”, “límites”, “pros reales a validar”, “contras y riesgos”, “E-E-A-T”. Esa etiqueta “E-E-A-T” visible queda artificial. No debes decir “soy E-E-A-T”; debes demostrarlo con pruebas, capturas, datasets, metodología, fechas, escenarios y decisiones. La ficha de n8n y la de Clientify muestran esa estructura repetida.
+
+La guía de onboarding sí está mejor: baja más al flujo, incluye webhooks, CRM, WhatsApp, Thinkific y pasos accionables. Es el tipo de página que deberías usar como modelo. Aun así, necesita más control editorial, capturas, plantillas descargables, “antes/después” y advertencias reales de implementación.
+
+Mi recomendación: publica menos páginas, pero que cada una tenga prueba propia. Mejor 12 URLs sólidas que 80 fichas intercambiables.
+
+Ratings, ROI y claims: ahora mismo son el punto más frágil
+
+En home y fichas das notas como 9.5/10 para n8n, 9.2/10 para ConvertKit o 8.7/10 para Clientify. También en el Lab aparecen claims fuertes: ahorro de 14,5 horas/mes, ROI del 300%, respuesta de prospección del 22% frente al 8%, recuperación de 4.500 €/mes, etc.
+
+Eso puede ser potente, pero solo si se prueba. Ahora mismo falta una capa de evidencia: número de pruebas, fechas, configuración, límites, captura del flujo, coste real, tamaño de muestra, hipótesis, resultado y advertencia de sesgo.
+
+Tienes ya campos en el esquema de contenido para evidence y methodology, pero no se explotan con suficiente fuerza en las páginas finales. Eso es una oportunidad clara: la arquitectura ya prevé ese tipo de prueba, solo falta convertirlo en contenido visible.
+
+Cambio recomendado:
+
+Versión A:
+“Nota: 9.5/10 según 5 criterios: coste, curva de aprendizaje, control técnico, escalabilidad y riesgo operativo. Última prueba: mayo 2026.”
+
+Versión B:
+“Recomendado para consultores técnicos si aceptan una curva inicial de 6–10 horas. No lo elegiría para coaches sin soporte técnico.”
+
+Mini-racional: A mantiene formato de rating; B vende más confianza porque acepta límites. Para afiliación seria, B suele convertir mejor a medio plazo porque parece menos vendida.
+
+SEO técnico: base aceptable, pero incompleta
+
+La web tiene cosas bien: title, meta description, canonical, JSON-LD de Organization y Breadcrumb, y un layout base limpio. Eso es una buena base para Astro/GitHub Pages.
+
+Pero no he visto en el layout base metadatos Open Graph/Twitter completos: og:title, og:description, og:image, twitter:card, etc. Para compartir en LinkedIn, X, WhatsApp o comunidades, esto importa. Añade una imagen social por defecto y una específica para comparativas/guías.
+
+También revisaría sitemap, robots, Search Console e indexación. En una comprobación rápida con consulta tipo site: no he visto resultados claros de esa ruta. No lo tomaría como diagnóstico definitivo: hay que validarlo con URL Inspection de Search Console, que permite comprobar indexación, canonical elegido, renderizado y posibilidad de solicitar indexación.
+
+Google recuerda que no hay garantía de indexación, pero sí conviene facilitar rastreo, comprensión e indexado mediante buenas prácticas técnicas y contenido claro.
+
+Checklist técnico inmediato:
+
+Añadir sitemap.xml y robots.txt si no están.
+Registrar la propiedad en Search Console.
+Inspeccionar home, pilar principal, 3 comparativas y 3 guías.
+Añadir OG/Twitter cards.
+Validar JSON-LD en Rich Results Test.
+Medir Core Web Vitals: LCP ≤ 2,5 s, INP < 200 ms y CLS < 0,1 son los umbrales recomendados por Google.
+Datos estructurados: oportunidad grande
+
+Ahora usas Organization y Breadcrumb. Bien, pero se queda corto para lo que estás construyendo.
+
+Para fichas de herramientas, usaría SoftwareApplication. Google recomienda incluir, entre otros, categoría de aplicación, sistema/plataforma y, si hay precio mayor que cero, offers.priceCurrency. Si incluyes ratings o reviews, deben seguir las directrices de snippets de reseñas y estar respaldados por contenido visible.
+
+Para guías paso a paso, usaría HowTo solo cuando haya pasos reales y visibles. Para FAQs, FAQPage solo si hay preguntas-respuestas útiles, no relleno. Para comparativas, no forzaría schema raro: mejor una tabla HTML clara, autoría, fecha de actualización, criterios y enlaces internos.
+
+No metas schema que no coincida con el contenido visible. Google lo dice explícitamente para funciones de búsqueda e IA: los datos estructurados deben coincidir con el contenido visible.
+
+Afiliación: bastante bien, con dos ajustes
+
+Tienes una página de transparencia de afiliación y declaras que puede haber comisión sin coste adicional para el usuario. También indicas política de actualización y uso de rel="sponsored nofollow".
+
+El componente de botón de afiliado usa disclosure visible, rel="sponsored nofollow", target="_blank" y aria-label. Esto está bastante bien alineado con las recomendaciones de Google para enlaces pagados o patrocinados, donde se indica usar rel="sponsored" y, opcionalmente, nofollow.
+
+Ajustes:
+
+Añadiría noopener noreferrer a todos los enlaces con target="_blank", incluidos afiliados y enlaces al repo. El enlace del Lab al GitHub público abre en nueva pestaña, pero no veo rel en ese fragmento.
+
+También revisaría el tracking local. El layout registra clics de afiliación en localStorage, y la legal lo menciona. No parece grave si no sale del navegador ni identifica usuarios, pero conviene explicarlo de forma limpia: “guardamos localmente el último clic para depuración; no se envía a terceros”.
+
+UX y confianza: falta “laboratorio humano”
+
+Ahora mismo el nombre “SaaS Automation Lab” promete prueba, pero muchas páginas no enseñan el banco de pruebas. Enseña más cocina. Lo que diferencia esta web no debería ser “otra comparativa de n8n vs Make”, sino “he montado este flujo, estos son los errores, este es el coste real, esto es lo que no haría”.
+
+La página del Lab tiene una buena intención: fases, criterios, resultados, roadmap. Pero mezcla claims muy concretos con poca evidencia visible. Eso hace que parezca más marketing que investigación.
+
+Añadiría en cada review:
+
+“Probado con”: escenario, fecha, plan usado, volumen, integraciones.
+“Dónde falló”: bugs, límites, fricciones, soporte, pricing.
+“Para quién no”: este bloque vende mucha credibilidad.
+“Capturas o pseudo-capturas”: incluso si anonimizadas.
+“Plantilla descargable”: workflow n8n, escenario Make, checklist CRM.
+“Changelog”: qué cambió desde la última actualización.
+
+Esto alinea mejor la web con lo que Google pide: contenido original, análisis propio y valor sustancial frente a otras páginas.
+
+Posicionamiento: ahora está demasiado amplio
+
+El posicionamiento actual es “automatización SaaS/IA para negocios de servicios”. Es correcto, pero genérico. Para competir en 2026, yo bajaría un nivel.
+
+Tres posicionamientos posibles:
+
+A.
+“SaaS Automation Lab prueba herramientas de automatización e IA para coaches, formadores y consultores que venden servicios online.”
+
+Mejor para SEO de nicho y afiliación B2B.
+
+B.
+“El laboratorio que te dice qué automatizar, con qué herramienta y cuándo no merece la pena.”
+
+Mejor para marca, autoridad y confianza.
+
+C.
+“Comparativas y workflows reales de n8n, Make, Zapier, CRM y email marketing para negocios de servicios.”
+
+Mejor para capturar búsquedas transaccionales.
+
+Mi elección: usaría B como promesa de marca y C como arquitectura SEO. La A es clara, pero más plana.
+
+H1 propuesto para la home:
+
+Versión A:
+“Automatización con IA para coaches y consultores: workflows probados, costes reales y herramientas sin humo.”
+
+Versión B:
+“Elige tu stack SaaS sin perder semanas probando n8n, Make, Zapier, CRM y email marketing.”
+
+Mini-racional: A construye autoridad editorial; B ataca mejor el dolor práctico. Para home, usaría A si quieres marca; B si quieres conversión directa.
+
+SEO 2026: qué incorporaría ya
+
+Google está empujando fuerte AI Overviews y AI Mode. Sus propias guías dicen que no hay requisitos especiales más allá de los fundamentos SEO, pero sí recalcan rastreo permitido, contenido textual claro, buenas imágenes/vídeos, datos estructurados coherentes y contenido útil.
+
+Además, Google comunicó en mayo de 2026 mejoras orientadas a mostrar enlaces, voces auténticas, análisis en profundidad y contenido original en experiencias de búsqueda con IA.
+
+Traducido a tu web:
+
+No hagas solo “n8n vs Make vs Zapier”. Haz “n8n vs Make vs Zapier probados con un onboarding real de coach: coste, errores y decisión final”.
+
+No hagas solo “mejores CRM”. Haz “Clientify vs Brevo para un consultor español que vende sesiones: pipeline, email, WhatsApp, facturación y seguimiento”.
+
+No hagas solo fichas de herramientas. Haz “logs de prueba”: versión, fecha, flujo, coste, resultado, fallo, veredicto.
+
+No hagas contenido programático masivo si no añade experiencia real. Google define como abuso el contenido escalado creado en muchas páginas con poco valor y pensado principalmente para ranking.
+
+Keywords y clusters que atacaría
+
+Tu arquitectura debería organizarse en 5 clusters, no en una lista plana de herramientas.
+
+Primer cluster: automatización para coaches.
+Páginas: onboarding de alumnos, recordatorios WhatsApp/email, captación de leads, entrega de materiales, seguimiento post-sesión, CRM mínimo.
+
+Segundo cluster: automatización para consultores B2B.
+Páginas: prospección ética, CRM, propuestas, follow-up, facturación, reporting mensual.
+
+Tercer cluster: n8n / Make / Zapier en español.
+Páginas: comparativas por caso de uso, no solo por herramienta. Ejemplo: “mejor herramienta para automatizar onboarding”, “mejor herramienta para facturación”, “mejor herramienta para leads”.
+
+Cuarto cluster: CRM para solopreneurs.
+Clientify, Brevo, HubSpot, Pipedrive, Notion CRM, Airtable. Pero siempre con escenario.
+
+Quinto cluster: IA práctica para negocios de servicios.
+Agentes para soporte, resumen de llamadas, generación de propuestas, clasificación de leads, creación de contenido, análisis de clientes.
+
+Veo competencia actual con guías de n8n vs Make vs Zapier 2026, automatización con IA y herramientas para coaches. Eso confirma que el tema existe, pero también que tu ventaja no puede ser “otra guía general”; debe ser prueba aplicada y nicho.
+
+Comparativas: cómo hacer que posicionen mejor
+
+Ahora las comparativas tienen buen enfoque de intención comercial, pero les falta músculo. Ejemplo: “n8n vs Make vs Zapier 2026” da un veredicto rápido, pero debería ser una pieza de autoridad con tabla seria, casos de uso, costes simulados y decisión por perfil.
+
+Estructura ideal:
+
+Veredicto en 5 líneas.
+Tabla HTML real con precio, curva, mantenimiento, riesgo, mejor caso.
+“Probado con este workflow”.
+Resultado por herramienta.
+Coste real estimado a 1.000 / 10.000 / 50.000 operaciones.
+Qué herramienta elegir según perfil.
+Errores habituales.
+Stack recomendado.
+FAQ.
+Fecha de prueba y actualización.
+
+Y una norma: cada comparativa debe tener una frase incómoda. Ejemplo: “Zapier es caro, pero si perder una tarde configurando n8n te cuesta más que la suscripción, Zapier gana”. Esa frase parece humana y útil.
+
+Guías: convierte cada una en activo descargable
+
+La guía de onboarding ya tiene un flujo concreto y puede convertirse en lead magnet.
+
+Añadiría:
+
+Plantilla n8n descargable.
+Checklist en PDF: “onboarding de cliente en 30 minutos”.
+Calculadora: “horas ahorradas al mes”.
+Versión Make del mismo flujo.
+Versión Zapier del mismo flujo.
+Bloque “errores reales que romperán el flujo”.
+Bloque “qué datos no debes automatizar sin revisar RGPD”.
+
+Esto no solo mejora conversión; también genera señales de valor propio. Una guía con plantilla descargable es más enlazable que una guía genérica.
+
+Repo público: ahora ayuda poco, pero puede ser prueba de autoridad
+
+El repo público confirma que la web está en Astro y que es una base para afiliación SaaS/IA. También se ve que faltan descripción, website y topics, y que el README todavía tiene secciones de “pendiente”.
+
+Si vas a enlazarlo desde la web como prueba de transparencia, hay que adecentarlo:
+
+Añade descripción clara.
+Añade URL del sitio.
+Añade topics: astro, saas, automation, n8n, make, zapier, affiliate, seo.
+Limpia los pendientes internos.
+Crea carpeta /lab-tests con ejemplos anonimizados.
+Añade changelog público.
+Añade README en inglés o bilingüe si quieres captar fuera.
+
+Ahora mismo el repo dice “proyecto en construcción”. Bien para ti; peor para autoridad externa.
+
+Marca visual y copy
+
+“Nano Banana” puede ser simpático, pero en una web de autoridad sobre SaaS/automatización puede distraer. Si el objetivo es afiliación seria, el mascot debe ser secundario. No puede competir con la promesa profesional.
+
+La home debería enseñar antes:
+
+Qué problema resuelves.
+Para quién.
+Qué pruebas haces.
+Qué resultados puede esperar el lector.
+Qué herramientas cubres.
+Por qué fiarse de ti.
+
+Ahora abre bien, pero aún suena demasiado abstracta.
+
+Copy recomendado:
+
+“Probamos herramientas SaaS e IA con workflows reales para negocios de servicios: captación, onboarding, CRM, email, facturación y seguimiento. Sin rankings inflados. Sin stacks imposibles. Con costes, límites y decisión final.”
+
+Eso tiene más filo.
+
+Plan de ataque
+Semana 1: limpieza y credibilidad
+
+Corrige tildes globales, etiquetas filtradas, H1 duplicados, tablas rotas, updates duplicados y headings repetidos. Añade OG/Twitter cards, revisa sitemap/robots, configura Search Console y valida indexación de las URLs principales.
+
+Semanas 2–4: reescritura de páginas dinero
+
+Reescribe estas primero:
+
+Home.
+Pilar “Automatización para solopreneurs 2026”.
+n8n vs Make vs Zapier.
+Make vs Zapier.
+Clientify vs Brevo.
+Guía de onboarding.
+Página del Lab.
+
+Cada una debe tener prueba propia, fecha, escenario, criterio, límite y recomendación clara.
+
+Mes 2: crear autoridad
+
+Publica 5 pruebas reales:
+
+“Automaté el onboarding de un coach con n8n”.
+“Make vs Zapier para enviar leads desde formulario a CRM”.
+“Clientify para consultores: pipeline mínimo viable”.
+“Brevo vs ConvertKit para formadores”.
+“Cuánto cuesta de verdad automatizar un negocio de servicios”.
+
+Mes 3: activos y captación
+
+Añade calculadora, plantillas descargables, newsletter, formulario de diagnóstico, comparador interactivo y versión “stack recomendado según tu caso”.
+
+Resumen brutal
+
+Lo mejor: la idea tiene nicho, la arquitectura está bien pensada, Astro es buena elección, la transparencia de afiliación está bastante cuidada y hay una intención clara de laboratorio.
+
+Lo peor: ahora mismo hay demasiada huella de plantilla, errores visibles de idioma, claims sin suficiente prueba, tablas mal renderizadas y páginas finas para competir.
+
+La jugada ganadora no es publicar más fichas. Es convertir la web en un laboratorio real: menos URLs, más evidencia, más capturas, más “esto lo he probado y aquí falló”. Ahí sí puedes posicionar en 2026, porque la búsqueda con IA y Google van justo hacia lo que una web pequeña puede hacer mejor que un comparador grande: experiencia específica, voz propia y pruebas concretas.
+
+1. Optimizar para IA, no solo para Google
+Una de las mayores oportunidades nuevas es pensar la web como fuente para ChatGPT, Claude, Perplexity, Gemini y AI Overviews, no solo como página que espera clics orgánicos.
+
+Eso cambia el KPI: además de tráfico, importa tu visibilidad de marca y citation rate dentro de respuestas generadas por IA.
+
+Esto abre un mundo nuevo porque tu proyecto puede monetizar aunque reciba menos clics si se convierte en referencia repetida en comparativas, respuestas y resúmenes de modelos.
+
+En ese contexto, páginas con tablas claras, claims prudentes, experiencia real y estructura fácil de citar tienen más valor que el típico post largo SEO de 2022.
+
+2. Share of Model Voice como nuevo activo
+No habíamos contemplado del todo que podrías crear un sistema de Share of Model Voice propio y convertirlo en ventaja competitiva.
+
+Es decir: medir en qué prompts apareces, cómo te describen los modelos, qué competidores salen y qué piezas nuevas deberías publicar para ganar presencia.
+
+Esto no solo sirve internamente.
+También podría convertirse en un contenido diferencial del sitio: “qué herramientas recomienda cada IA para X caso”, “cómo cambia la visibilidad de n8n vs Make en modelos”, “qué marcas dominan AI search”.
+
+Eso es un ángulo más nuevo y menos saturado que la simple comparativa de afiliados tradicional.
+
+3. Convertir contenido en herramienta
+Otra gran oportunidad es pasar de artículos a activos interactivos: calculadoras, comparadores, sandboxes, mini demos, checklists dinámicas y plantillas que el usuario pueda usar al momento.
+
+Los demos interactivos y el contenido product-led están subiendo fuerte porque convierten mejor que una explicación estática y además cualifican al usuario.
+
+Para ti esto encaja muchísimo.
+Puedes hacer, por ejemplo:
+
+calculadora ROI n8n vs Make vs Zapier,
+
+selector “qué stack necesitas según tu perfil”,
+
+mini demo de un workflow,
+
+checklist RGPD para automatizaciones,
+
+generador de arquitectura de funnels o automatizaciones.
+
+Eso te saca del modelo “blog puro” y te mete en uno de micro-productos gratuitos que atraen tráfico, links y leads.
+
+4. Partner-led y no solo afiliación
+También hay una vía más grande que la afiliación pura: entrar en el mundo partner-led.
+
+En 2026 muchos SaaS B2B están empujando ecosistemas de partners, no solo links de afiliado, porque les interesa revenue más estable, co-selling y perfiles que puedan educar o implementar.
+
+Eso significa que tu web podría evolucionar a tres capas:
+
+afiliación clásica,
+
+referral / partner marketplace,
+
+y servicios ligeros o auditorías asociadas.
+
+No hace falta que montes una agencia; basta con posicionarte para derivar proyectos, stacks o implementaciones simples.
+
+5. Convertirte en “creator storefront” técnico
+Otra posibilidad que no habíamos desarrollado bastante es montar una especie de storefront editorial: una capa donde agrupas tus herramientas favoritas, recursos, packs, demos y recomendaciones por perfil.
+
+La tendencia 2026 va hacia hubs más curados, móviles y centrados en creators, no tanto hacia directorios infinitos.
+
+Eso abre varias rutas:
+
+stack para coaches,
+
+stack para consultores B2B,
+
+stack para formadores,
+
+stack para microagencias,
+
+stack para escritores/productores de contenido.
+
+Cada stack puede mezclar afiliados, recursos propios y herramientas gratuitas.
+Es mucho más defendible que “100 mejores herramientas IA”.
+
+6. Contenido multimodal y citable
+Otra oportunidad fuerte es construir contenido pensando en que YouTube, LinkedIn, Reddit y comunidades también alimentan reputación y descubrimiento.
+
+Las IAs y los usuarios no se fían solo de tu web: miran menciones, contexto externo y señales de autoridad distribuidas.
+
+Eso te permite un modelo más robusto:
+
+web para captación y monetización,
+
+LinkedIn para autoridad,
+
+YouTube o vídeo corto para demos,
+
+Reddit/comunidad para lenguaje real y pain points.
+
+La novedad aquí es que ya no debes ver eso como “marketing extra”, sino como parte del SEO/AEO del propio negocio.
+
+7. La oportunidad real no es llms.txt, sino contenido legible por IA
+Tener llms.txt puede estar bien como experimento, pero no parece la palanca decisiva por sí sola.
+
+Su adopción sigue siendo limitada y hay bastante debate sobre su impacto real; incluso hay análisis que muestran escasa correlación entre tenerlo y recibir más citas.
+
+Lo verdaderamente importante es otra cosa:
+
+HTML limpio,
+
+textos claros,
+
+tablas precisas,
+
+estructura semántica,
+
+FAQs útiles,
+
+claims verificables,
+
+y páginas que una IA pueda resumir sin ambigüedad.
+
+Así que no lo descartes, pero no lo sobrevalores.
+
+8. Convertir la propia web en laboratorio público
+Hay una idea especialmente potente para ti: que SaaS Automation Lab no sea solo un medio, sino un laboratorio público.
+Es decir, publicar benchmarks, pruebas, cambios de precios, capturas, experimentos de CTR, visibilidad en IA y comparativas mantenidas.
+
+Eso genera varias ventajas a la vez:
+
+más E-E-A-T,
+
+más enlaces naturales,
+
+más citabilidad por IA,
+
+y más razón para volver al sitio.
+
+En vez de “artículos”, tendrías un activo vivo.
+
+9. Posible nueva línea: vender assets para otros SaaS
+Una derivación que no habíamos contemplado: si acabas entendiendo muy bien este ecosistema, puedes vender o distribuir activos reutilizables para otros creadores y pequeñas marcas:
+
+plantillas de comparativas,
+
+bloques Astro para fichas SaaS,
+
+calculadoras embebibles,
+
+snippets de schema,
+
+plantillas de disclosure,
+
+dashboards de seguimiento.
+
+Eso convierte el proyecto en algo más que una web afiliada.
+Podrías monetizar también con assets B2B para publishers o microbrands de software.
+
+10. Qué haría ya con esto
+Si quieres aprovechar estas posibilidades de verdad, yo reformularía el proyecto así:
+
+Capa 1: media site nicho con comparativas y guías.
+
+Capa 2: herramientas propias gratuitas, calculadoras y checklists.
+
+Capa 3: laboratorio público de benchmarks, capturas y AI visibility.
+
+Capa 4: partner-led growth con afiliados + referrals + algún servicio ligero.
+
+Eso sí abre “un mundo nuevo” frente al modelo antiguo Amazon/AdSense, porque ya no dependes solo de SEO clásico ni de una única fuente de ingreso.
+
+Mi lectura honesta es esta:
+la gran oportunidad de 2026 no es crear “otra web de afiliación”, sino crear una marca-laboratorio con utilidades y comparativas citables por humanos e IAs.
+
+
+P0 — Cambios urgentes
+
+
+Cambiaría “Automatizacion SaaS e IA para Solopreneurs” por “Automatización SaaS e IA para negocios de servicios”.
+
+
+Motivo: faltan tildes y “solopreneurs” es más frío que “negocios de servicios”. El menú y la home tienen varias palabras sin acento: “Guias”, “Como probamos”, “automatizacion”, “senalamos”, “recomendacion”, “comision”. Eso baja confianza al segundo. 
+
+
+Cambiaría “Lab editorial de automatizacion” por “Laboratorio de automatización SaaS probado con workflows reales”.
+
+
+Motivo: “lab editorial” suena abstracto. “Workflows reales” promete prueba, que es tu ventaja.
+
+
+Cambiaría este subtítulo:
+
+
+“Guias, comparativas y fichas de SaaS para coaches, formadores y consultores B2B que quieren ahorrar horas, vender con mas sistema y elegir herramientas con criterio.”
+Por este:
+“Probamos herramientas SaaS e IA con flujos reales de captación, onboarding, CRM, email y seguimiento para coaches, formadores y consultores B2B.”
+Motivo: el actual vende contenido; el nuevo vende experiencia. La home ahora habla de guías/comparativas/fichas, pero no deja claro que haya prueba propia detrás. 
+
+
+Cambiaría “Probamos stacks por perfil, senalamos enlaces de afiliado y separamos recomendacion editorial de comision.”
+
+
+Por:
+“La comisión no decide el ranking. Cada recomendación debe tener caso de uso, límites, coste estimado y alternativa.”
+Motivo: suena más firme y menos burocrático. La transparencia ya existe, pero debe sonar a criterio editorial, no a aviso legal escondido. 
+
+
+Cambiaría la etiqueta visible “commercial” en comparativas por nada. Directamente eliminar.
+
+
+Motivo: es una categoría interna filtrada al frontend. Da aspecto de web generada o sin revisar. Aparece repetida antes de cada comparativa. 
+
+
+Cambiaría “n8n vs Make vs Zapier 2026: cual conviene segun tu caso”
+
+
+Por:
+“n8n vs Make vs Zapier en 2026: cuál elegir según tu caso real”
+Motivo: tildes, naturalidad y más intención de búsqueda. “Caso real” añade promesa de experiencia. 
+
+
+Cambiaría la tabla rota de la comparativa:
+
+
+“Resumen para decidir segun precio base y mejor perfil de uso. Herramienta Precio base Mejor para…”
+Por una tabla HTML real:
+HerramientaMejor paraPunto fuerteRiesgoCuándo no elegirlan8nConsultores técnicosControl, APIs, logsCurva inicialSi no quieres tocar lógica técnicaMakeCoaches/formadoresVisual, rápido, flexibleCoste por operacionesSi necesitas control finoZapierPrincipiantesFacilidad y conexionesEscala caraSi tienes muchos flujos o volumen
+Motivo: ahora parece texto pegado, no comparativa profesional. La tabla es una pieza clave de UX y SEO. 
+
+
+Cambiaría el doble bloque “Stack recomendado” por un único bloque.
+
+
+Actual:
+“Stack recomendado / Para onboarding comercial: n8n + Clientify + WhatsApp.”
+y luego otra vez
+“Stack recomendado / Para empezar sin friccion…”
+Por:
+“Stack recomendado según perfil”
+Con tres tarjetas:
+Coach: Make + Clientify + WhatsApp.
+Consultor técnico: n8n + Clientify + Notion.
+Formador: Thinkific + ConvertKit + Make.
+Motivo: repetir el mismo H2 rompe jerarquía y parece ensamblaje automático. 
+
+
+Cambiaría la página del Lab para dejar un solo H1.
+
+
+Ahora hay:
+“Nuestro Lab: Cómo probamos las herramientas de automatización”
+y luego
+“Nuestro Laboratorio de Automatización”
+Por un único H1:
+“Cómo probamos herramientas SaaS e IA: metodología, escenarios y límites”
+Motivo: doble H1, duplicidad conceptual y peor claridad semántica. 
+
+
+Cambiaría el cierre duplicado del Lab:
+
+
+“Última actualización: Mayo 2026 / Próxima revisión: Agosto 2026”
+y luego otra vez sin tildes.
+Por:
+“Última actualización: mayo de 2026. Próxima revisión prevista: agosto de 2026.”
+Motivo: duplicado + tildes rotas = página sin QA. 
+
+P1 — Cambios de confianza y autoridad
+
+
+Cambiaría los ratings sueltos tipo “Rating: 9.5/10” por ratings explicados.
+
+
+Actual:
+“n8n Cloud… Rating: 9.5/10”
+“ConvertKit… Rating: 9.2/10”
+“Webflow… Rating: 9.3/10”
+Por:
+“Veredicto: recomendado para consultores técnicos. Nota: 9.0/10 según control, coste, curva, integraciones y riesgo operativo.”
+Motivo: un 9.5 sin metodología visible parece inflado. En una web de afiliación, los ratings deben oler a criterio, no a escaparate. 
+
+
+Cambiaría “Pros reales a validar” por “Qué hemos podido comprobar”.
+
+
+Actual en fichas:
+“Pros reales a validar”
+“Buen encaje si resuelve el caso de uso principal.”
+Por:
+“Qué hemos podido comprobar”
+“Funciona bien para centralizar contactos y seguimiento comercial cuando el proceso ya está definido.”
+“Pierde valor si todavía no tienes pipeline, etiquetas ni criterios de cualificación.”
+Motivo: “pros reales a validar” se contradice solo. O son reales o están por validar. 
+
+
+Cambiaría el bloque visible “E-E-A-T” por “Método de evaluación”.
+
+
+Motivo: E-E-A-T es criterio interno de calidad, no una etiqueta para enseñar al lector. Ponerlo tal cual parece SEO de manual.
+
+
+Cambiaría esta frase de n8n:
+
+
+“n8n Cloud: automatizacion flexible para equipos pequenos tiene sentido para Consultor cuando el objetivo es reducir trabajo manual sin perder control del proceso.”
+Por:
+“n8n Cloud encaja si eres consultor técnico y necesitas automatizar procesos con APIs, lógica condicional y control de errores sin montar infraestructura propia.”
+Motivo: el actual parece plantilla con variables. El nuevo explica situación, usuario y razón. 
+
+
+Cambiaría esta frase de Clientify:
+
+
+“Ideal para Coach que necesita automatizar procesos y escalar su negocio sin aumentar el tiempo manual.”
+Por:
+“Clientify encaja mejor con coaches y consultores que venden por conversación, usan WhatsApp a diario y necesitan ordenar leads, seguimientos y cierres en un CRM sencillo.”
+Motivo: más concreto, más español real, menos genérico. 
+
+
+Cambiaría “Enlace de afiliado: podemos ganar una comision…” repetido en cada tarjeta por un disclosure más limpio.
+
+
+Actual:
+“Enlace de afiliado: podemos ganar una comision si te registras, sin coste adicional para ti.”
+Por:
+“Puede ser afiliado. La recomendación se basa en encaje y pruebas, no en comisión.”
+Motivo: más corto, menos pesado y más editorial. La página legal ya explica la afiliación con más detalle. 
+
+
+Cambiaría la página legal:
+
+
+“La posicion de una herramienta no se compra…”
+Por:
+“La posición de una herramienta no se compra. Si una opción paga comisión pero no encaja, no aparece como recomendación principal.”
+Motivo: más tajante. Además corriges tildes. La base legal está bien, pero necesita pulido lingüístico. 
+
+
+Cambiaría “Nano Banana es la entidad visual de SaaS Automation Lab” en la zona superior por una presencia secundaria.
+
+
+Por ejemplo:
+“Mascota editorial del Lab” en alt/caption menor, no en el bloque principal.
+Motivo: como detalle de marca puede funcionar; como mensaje visible repetido en páginas serias, resta autoridad. Aparece en home, comparativas, Lab, fichas y guías. 
+
+P2 — Cambios de contenido para posicionar mejor
+
+
+Cambiaría la página pilar actual, que ahora es demasiado corta, por una guía real.
+
+
+Actual:
+“La tesis del laboratorio es simple…”
+y una lista de tareas + stacks recomendados. 
+Por una estructura así:
+H1: “Cómo escalar un negocio de servicios con IA sin contratar antes de tiempo”
+Bloques:
+
+
+Qué tareas no debes automatizar todavía.
+
+
+Qué automatizar primero.
+
+
+Stack por perfil.
+
+
+Coste mensual estimado.
+
+
+Ejemplo de workflow.
+
+
+Errores reales.
+
+
+Plantilla descargable.
+
+
+Comparativas relacionadas.
+
+
+Motivo: ahora no es una página pilar; es un resumen. Para posicionar, necesita profundidad, ejemplos y enlaces internos.
+
+
+Cambiaría “Coach: Webflow + Clientify + n8n” por una recomendación más razonada.
+
+
+Por:
+“Coach con venta por llamada: Webflow para captación, Clientify para CRM/WhatsApp y Make si prioriza facilidad. n8n solo si tiene soporte técnico o flujos más complejos.”
+Motivo: no todos los coaches deberían empezar con n8n. El stack debe depender de capacidad técnica, no solo del perfil. 
+
+
+Cambiaría “Formador: Thinkific + ConvertKit + Blym” por:
+
+
+“Formador con cursos evergreen: Thinkific para entrega, ConvertKit/MailerLite para email y Make para unir formulario, pago y bienvenida.”
+Motivo: Blym no parece pieza nuclear del flujo operativo. Para SEO puede estar bien, pero como stack principal suena raro.
+
+
+Cambiaría “Consultor B2B: lemlist + Make + Clientify” por:
+
+
+“Consultor B2B: Pipedrive o Clientify para pipeline, lemlist/Instantly para prospección y n8n/Make para enrichment y seguimiento.”
+Motivo: más completo y menos arbitrario. Separas CRM, prospección y automatización.
+
+
+Cambiaría el inicio de la guía de onboarding:
+
+
+“Respuesta breve: Este flujo busca ahorrar 10 horas/semana en un escenario de Coach.”
+Por:
+“Objetivo: reducir el onboarding manual de alumnos después del pago: alta, bienvenida, acceso, ficha en CRM y primer seguimiento.”
+Motivo: “10 horas/semana” es claim fuerte y necesita prueba. Mejor explicar primero el proceso; luego calculas ahorro. 
+
+
+Cambiaría los pasos iniciales de onboarding, que ahora dicen “Paso 1 de 3”, “Paso 2 de 3”, “Paso 3 de 3”, pero luego la guía tiene seis pasos largos.
+
+
+Por:
+“Resumen del flujo en 3 fases”
+
+
+Captura del pago y datos.
+
+
+Creación de contacto y acceso.
+
+
+Bienvenida y seguimiento.
+
+
+Y después:
+“Implementación paso a paso” con los seis pasos técnicos.
+Motivo: ahora parece inconsistente. No es grave, pero da sensación de contenido pegado por capas. 
+
+
+Cambiaría el diagrama de texto:
+
+
+“Pago Confirmado → n8n detecta → Clientify crea contacto…”
+Por un bloque visual:
+Pago confirmado
+↓
+Webhook en n8n
+↓
+Validación de datos
+↓
+Contacto en CRM
+↓
+WhatsApp de bienvenida
+↓
+Accesos + seguimiento
+Motivo: mejora escaneo y puede convertirse en imagen compartible/SEO visual. 
+
+
+Cambiaría el bloque de beneficios:
+
+
+“✅ Ahorro de 10+ horas semanales…”
+“✅ Escalabilidad sin límites…”
+Por:
+“Beneficios esperables si el flujo está bien configurado”
+“Menos tareas manuales tras cada venta.”
+“Onboarding más consistente.”
+“Menos olvidos en accesos y seguimientos.”
+“Mejor trazabilidad en CRM.”
+“Escalabilidad limitada por coste, soporte y calidad de datos.”
+Motivo: “sin límites” es una frase peligrosa y poco creíble. Todo tiene límites: API, coste, errores, soporte, RGPD. 
+
+
+Cambiaría claims del Lab como:
+
+
+“ROI: 300% en primer mes”
+“Recuperación: €4,500/mes adicionales”
+“Tasa respuesta automatizada: 22%”
+Por:
+“Caso simulado/documentado: pendiente de publicar dataset y configuración.”
+o, si lo tienes probado:
+“Prueba realizada en mayo de 2026 con X leads, Y emails, Z configuración. Resultado: 22% de respuesta. Limitación: muestra pequeña.”
+Motivo: números tan concretos sin evidencia visible perjudican más que ayudan. O los documentas o los suavizas. 
+
+
+Cambiaría “Test con 3 solopreneurs reales diferentes perfiles” por:
+
+
+“Validación pendiente/publicada: 3 perfiles — coach, formador y consultor B2B. Incluiremos fricciones, tiempo de configuración y coste mensual.”
+Motivo: si no hay nombres, capturas, datos anonimizados o fichas de test, el lector no sabe si existe. 
+
+P3 — Cambios SEO técnicos y de estructura
+
+
+Cambiaría cada ficha de herramienta para incluir schema SoftwareApplication.
+
+
+Ejemplo:
+Antes: ficha normal con título, precio, rating y enlace.
+Después: ficha con SoftwareApplication, name, applicationCategory, operatingSystem, offers, aggregateRating solo si el rating está justificado.
+Motivo: Google tiene documentación específica para datos estructurados de software; las propiedades deben estar bien definidas y coincidir con el contenido visible. 
+
+
+Cambiaría las páginas de guía para incluir bloques tipo “HowTo” solo si los pasos son reales y completos.
+
+
+Motivo: la guía de onboarding sí tiene pasos accionables, código y consideraciones de seguridad. Es candidata a contenido estructurado, pero antes hay que corregir consistencia, claims y formato. 
+
+
+Cambiaría la arquitectura de enlaces internos.
+
+
+Ahora hay enlaces tipo “Ver flujo de onboarding”, “Comparar email marketing”, “Ver flujo outbound”, pero faltan clusters más claros desde cada página. 
+Por:
+En cada ficha de herramienta añadir:
+“Comparativas donde aparece”
+“Guías donde se usa”
+“Alternativas directas”
+“No la elijas si…”
+Motivo: mejora navegación, topical authority y conversión.
+
+
+Cambiaría el directorio de herramientas de listado plano a filtros por intención.
+
+
+Actual: lista larga con herramientas, rating y afiliación. 
+Por:
+Filtrar por problema: onboarding, CRM, email, prospección, agenda, contenido, formación.
+Filtrar por perfil: coach, formador, consultor, agencia pequeña.
+Filtrar por dificultad: fácil, media, técnica.
+Motivo: el usuario no llega pensando “quiero una herramienta”; llega pensando “quiero resolver X”.
+
+
+Cambiaría los CTAs de herramienta:
+
+
+“Ver herramienta ->”
+“Probar gratis ->”
+Por CTAs según intención:
+“Ver límites y precio real”
+“Cuándo elegirla”
+“Compararla con alternativas”
+“Ir a la web oficial”
+Motivo: reduces sensación de afiliación agresiva y aumentas confianza antes del clic.
+
+
+Añadiría una caja fija en reviews:
+
+
+“Decisión rápida”
+Formato:
+Elige n8n si: necesitas control técnico.
+Elige Make si: quieres montar rápido sin código.
+Elige Zapier si: priorizas facilidad y pocas automatizaciones.
+No elijas ninguna todavía si: tu proceso manual no está documentado.
+Motivo: esto responde rápido y puede ser buen snippet para búsquedas comparativas.
+
+
+Mediría Core Web Vitals antes de tocar animaciones o imágenes.
+
+
+No digo que falle, digo que hay que medirlo. Google usa LCP, INP y CLS como métricas principales de experiencia de página, y conviene validarlas con Search Console/PageSpeed. 
+
+Cambios de copy listos para pegar
+Home hero
+Cambiar:
+“Automatiza un negocio de servicios sin convertirlo en una maraña de herramientas”
+Por:
+“Automatiza tu negocio de servicios con un stack que puedas mantener”
+Motivo: más claro, más orientado a beneficio real.
+Alternativa más SEO:
+“Automatización SaaS e IA para coaches, formadores y consultores B2B”
+Motivo: menos bonita, más buscable.
+
+Home subtítulo
+Cambiar:
+“Guias, comparativas y fichas de SaaS para coaches, formadores y consultores B2B que quieren ahorrar horas, vender con mas sistema y elegir herramientas con criterio.”
+Por:
+“Probamos herramientas SaaS e IA con workflows reales de captación, onboarding, CRM, email y seguimiento para que elijas sin perder semanas comparando.”
+Motivo: cambia “contenido sobre herramientas” por “pruebas para decidir”.
+
+Comparativas
+Cambiar:
+“Comparativas para decidir stack sin perder semanas probando”
+Por:
+“Comparativas SaaS con decisión final, coste real y límites por perfil”
+Motivo: más concreto y más diferenciador.
+
+Lab
+Cambiar:
+“Aquí no solo recomendamos herramientas, las probamos realmente en escenarios de negocio reales con solopreneurs como tú.”
+Por:
+“No publicamos una recomendación principal sin caso de uso, coste estimado, límites, alternativa y fecha de revisión.”
+Motivo: suena más profesional y verificable.
+
+Fichas
+Cambiar:
+“Respuesta breve: n8n Cloud tiene sentido para Consultor cuando el objetivo es reducir trabajo manual sin perder control del proceso.”
+Por:
+“n8n Cloud encaja si necesitas automatizaciones con APIs, lógica condicional y control de errores. No lo elegiría como primera herramienta si buscas algo visual y sin curva técnica.”
+Motivo: añade criterio, límite y decisión.
+
+Legal
+Cambiar:
+“Si te registras desde esos enlaces, podemos recibir una comision sin coste adicional para ti.”
+Por:
+“Si te registras desde algunos enlaces, podemos recibir una comisión sin coste adicional para ti. Esa comisión no compra posiciones ni veredictos.”
+Motivo: más limpio, más fuerte, más confiable.
+
+Orden exacto en que lo haría
+Primero: tildes globales, etiquetas commercial, doble H1, duplicados y tablas rotas.
+Segundo: ratings y claims. O se justifican con metodología visible o se suavizan.
+Tercero: reescribir home, comparativa n8n/Make/Zapier, Lab y pilar principal.
+Cuarto: convertir cada ficha en review real: “probado con”, “para quién no”, “coste real”, “alternativas”, “fecha”.
+Quinto: añadir schema, filtros, enlaces internos y lead magnets.
+La frase que resume el cambio: ahora la web dice “tengo comparativas”; debería decir “he probado este flujo, estos son los límites y esta es la decisión”.
+
+
+

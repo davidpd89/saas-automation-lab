@@ -49,17 +49,17 @@ const breadcrumbSchema = {
     })} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </head>
-  <body>
+  <body data-base-url={basePath}>
     <header>
       <div class="container">
         <nav aria-label="Principal">
           <a href={withBase()}>Inicio</a>
           <a href={withBase("herramientas/")}>Herramientas</a>
           <a href={withBase("comparativas/")}>Comparativas</a>
-          <a href={withBase("guias/")}>Guias</a>
+          <a href={withBase("guias/")}>Guías</a>
           <a href={withBase("automatizacion-solopreneurs-2026/")}>Pilar</a>
           <a href={withBase("lab/")}>Lab</a>
-          <a href={withBase("como-probamos/")}>Como probamos</a>
+          <a href={withBase("como-probamos/")}>Cómo probamos</a>
           <a href={withBase("legal/")}>Legal</a>
         </nav>
       </div>
@@ -69,7 +69,7 @@ const breadcrumbSchema = {
     </main>
     <footer>
       <div class="container">
-        <small>SaaS Automation Lab. Analisis de herramientas con enlaces de afiliado senalizados. <a href={withBase("criterios-evaluacion/")}>Criterios editoriales</a>.</small>
+        <small>SaaS Automation Lab. Análisis de herramientas con enlaces de afiliado señalizados. <a href={withBase("criterios-evaluacion/")}>Criterios editoriales</a>.</small>
       </div>
     </footer>
     <script>

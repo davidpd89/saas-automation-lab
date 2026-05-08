@@ -1,0 +1,108 @@
+---
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+---
+
+<section class="diagnostic-panel" aria-labelledby="diagnostic-title">
+  <div class="diagnostic-copy">
+    <p class="eyebrow">Diagnóstico rápido</p>
+    <h2 id="diagnostic-title">Cuéntame qué quieres resolver y te llevo al mejor punto de entrada</h2>
+    <p>
+      No todo el mundo necesita la misma herramienta. Elige tu bloqueo principal y el Lab te orienta hacia una guía,
+      comparativa o ficha concreta.
+    </p>
+  </div>
+
+  <div class="diagnostic-chat" data-diagnostic-chat>
+    <div class="chat-thread" aria-live="polite">
+      <div class="chat-message bot">
+        <strong>Lab</strong>
+        <p>¿Qué problema quieres resolver primero?</p>
+      </div>
+    </div>
+
+    <div class="chat-options" data-step="problem">
+      <button type="button" data-choice="onboarding">Onboarding y seguimiento</button>
+      <button type="button" data-choice="captacion">Captación y prospección</button>
+      <button type="button" data-choice="crm">CRM y pipeline</button>
+      <button type="button" data-choice="coste">Elegir stack por coste</button>
+    </div>
+
+    <div class="diagnostic-result" data-result hidden>
+      <p class="result-label">Ruta recomendada</p>
+      <h3 data-result-title></h3>
+      <p data-result-text></p>
+      <div class="result-actions">
+        <a class="btn btn-primary" data-result-primary href={withBase()}>Ver recomendación</a>
+        <a class="btn btn-secondary" href={withBase("como-probamos/")}>Ver método del Lab</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const chat = document.querySelector("[data-diagnostic-chat]");
+
+  if (chat) {
+    const thread = chat.querySelector(".chat-thread");
+    const result = chat.querySelector("[data-result]");
+    const resultTitle = chat.querySelector("[data-result-title]");
+    const resultText = chat.querySelector("[data-result-text]");
+    const resultPrimary = chat.querySelector("[data-result-primary]");
+    const options = chat.querySelectorAll("[data-choice]");
+
+    const routes = {
+      onboarding: {
+        label: "Quiero ordenar altas, accesos y seguimiento",
+        title: "Empieza por el flujo de onboarding con n8n, WhatsApp y CRM",
+        text: "Es la ruta más directa si vendes servicios, cursos o programas y pierdes tiempo tras cada venta.",
+        href: "guias/onboarding-automatizado-n8n-whatsapp/"
+      },
+      captacion: {
+        label: "Necesito captar y hacer seguimiento comercial",
+        title: "Mira la guía de prospección y la comparativa de herramientas outbound",
+        text: "Te ayuda a separar CRM, email, enriquecimiento y automatización para no montar un sistema frágil.",
+        href: "guias/prospeccion-automatizada-lemlist/"
+      },
+      crm: {
+        label: "Tengo leads desordenados y pierdo oportunidades",
+        title: "Compara CRM y automatización antes de contratar otra herramienta",
+        text: "Si el proceso comercial no está claro, conviene decidir pipeline, WhatsApp, email y reporting antes del software.",
+        href: "comparativas/clientify-vs-hubspot/"
+      },
+      coste: {
+        label: "No sé si me conviene n8n, Make o Zapier",
+        title: "Ve a la comparativa n8n vs Make vs Zapier",
+        text: "Es el mejor punto de entrada si tu duda es coste real, curva técnica, control y escalado.",
+        href: "comparativas/n8n-vs-make-vs-zapier/"
+      }
+    };
+
+    const base = document.querySelector("body")?.dataset.baseUrl || "/";
+    const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+    const withBase = (path) => `${normalizedBase}${path.replace(/^\/+/, "")}`;
+
+    options.forEach((button) => {
+      button.addEventListener("click", () => {
+        const choice = button.getAttribute("data-choice");
+        const route = routes[choice];
+        if (!route || !thread || !result || !resultTitle || !resultText || !resultPrimary) return;
+
+        thread.insertAdjacentHTML(
+          "beforeend",
+          `<div class="chat-message user"><strong>Tú</strong><p>${route.label}</p></div>`
+        );
+        thread.insertAdjacentHTML(
+          "beforeend",
+          `<div class="chat-message bot"><strong>Lab</strong><p>${route.title}</p></div>`
+        );
+
+        resultTitle.textContent = route.title;
+        resultText.textContent = route.text;
+        resultPrimary.setAttribute("href", withBase(route.href));
+        result.removeAttribute("hidden");
+
+        options.forEach((option) => option.setAttribute("aria-pressed", option === button ? "true" : "false"));
+      });
+    });
+  }
+</script>

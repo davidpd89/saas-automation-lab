@@ -9,19 +9,19 @@ const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+
 ---
 
 <BaseLayout
-  title="Comparativas SaaS 2026 para automatizacion e IA"
-  description="Comparativas de herramientas SaaS con veredictos por caso de uso, costes reales y criterios de seleccion para solopreneurs."
+  title="Comparativas SaaS 2026 para automatización e IA"
+  description="Comparativas de herramientas SaaS con veredictos por caso de uso, costes reales y criterios de selección para negocios de servicios."
 >
   <section class="section-header">
     <p class="eyebrow">Batalla de herramientas</p>
-    <h1>Comparativas para decidir stack sin perder semanas probando</h1>
-    <p class="lede">Analisis orientado a ROI, curva de aprendizaje, integraciones y control tecnico.</p>
+    <h1>Comparativas SaaS con decisión final, coste real y límites por perfil</h1>
+    <p class="lede">Análisis orientado a ROI, curva de aprendizaje, integraciones y control técnico.</p>
   </section>
 
   <section class="grid grid-2">
     {comparisons.map(({ data, slug }) => (
       <article class="card">
-        <p class="eyebrow">{data.searchIntent}</p>
+        <p class="eyebrow">Comparativa</p>
         <h2><a href={withBase(`comparativas/${slug}/`)}>{data.title}</a></h2>
         <p>{data.seoDescription}</p>
         <p><strong>Veredicto:</strong> {data.verdict}</p>
