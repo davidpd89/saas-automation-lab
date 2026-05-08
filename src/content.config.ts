@@ -16,6 +16,10 @@ const tools = defineCollection({
     idealUser: persona,
     rating: z.number().min(1).max(10),
     tags: z.array(z.string()).default([]),
+    pros: z.array(z.string()).default([]),
+    cons: z.array(z.string()).default([]),
+    evidence: z.array(z.string()).default([]),
+    methodology: z.array(z.string()).default([]),
     searchIntent: intent.default("commercial"),
     publishedAt: z.coerce.date().optional(),
     updatedAt: z.coerce.date().optional(),
@@ -38,8 +42,11 @@ const comparisons = defineCollection({
     seoDescription: z.string(),
     toolsCompared: z.array(z.string()),
     verdict: z.string(),
+    bestFor: z.record(z.string(), z.string()).default({}),
+    decisionCriteria: z.array(z.string()).default([]),
     searchIntent: intent.default("commercial"),
-    seoKeywords: z.array(z.string()).default([])
+    seoKeywords: z.array(z.string()).default([]),
+    updatedAt: z.coerce.date().optional()
   })
 });
 
@@ -56,8 +63,11 @@ const guides = defineCollection({
     scenario: z.string(),
     toolsUsed: z.array(z.string()),
     timeSaved: z.string(),
+    expectedResult: z.string().optional(),
+    commonErrors: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
-    searchIntent: intent.default("informational")
+    searchIntent: intent.default("informational"),
+    updatedAt: z.coerce.date().optional()
   })
 });
 

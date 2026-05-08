@@ -6,6 +6,8 @@ export async function GET({ site }: { site: URL }) {
       "User-agent: *",
       "Allow: /",
       "",
+      `# LLM guidance: ${new URL("llms.txt", baseUrl).toString()}`,
+      `# LLM full index: ${new URL("llms-full.txt", baseUrl).toString()}`,
       `Sitemap: ${new URL("sitemap.xml", baseUrl).toString()}`
     ].join("\n"),
     { headers: { "Content-Type": "text/plain; charset=utf-8" } }

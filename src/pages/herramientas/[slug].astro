@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AffiliateButton from "../../components/AffiliateButton.astro";
+import StructuredData from "../../components/StructuredData.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("tools");
@@ -28,6 +29,27 @@ const faqItems = [
     answer: "Si. Algunos enlaces pueden generar una comision sin coste adicional para el lector."
   }
 ];
+
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": item.data.title,
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "description": item.data.description,
+  "offers": {
+    "@type": "Offer",
+    "price": item.data.pricing,
+    "priceCurrency": "EUR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": item.data.rating,
+    "bestRating": 10,
+    "worstRating": 1,
+    "ratingCount": 1
+  }
+};
 
 // Schema markup for tool pages
 const toolSchema = {
@@ -76,14 +98,12 @@ const faqSchema = {
 ---
 
 <BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
-  <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <StructuredData data={[softwareSchema, toolSchema, faqSchema]} />
   
   <article class="max-w-4xl mx-auto px-4 py-8">
     <header class="mb-8">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">
-        {item.data.title}
-      </h1>
+      <p class="eyebrow">Ficha de herramienta</p>
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">{item.data.title}</h1>
       
       <div class="flex flex-wrap items-center gap-4 mb-6 text-sm text-gray-600">
         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
@@ -100,6 +120,9 @@ const faqSchema = {
       <p class="text-xl text-gray-700 leading-relaxed">
         {item.data.description}
       </p>
+      <div class="answer-box">
+        <strong>Respuesta breve:</strong> {item.data.title} tiene sentido para {item.data.idealUser} cuando el objetivo es reducir trabajo manual sin perder control del proceso. Valida precio, limites y encaje con tu stack antes de contratar.
+      </div>
     </header>
 
     <section class="mb-12">
@@ -108,6 +131,7 @@ const faqSchema = {
         <p class="text-blue-800">
           Ideal para <strong>{item.data.idealUser}</strong> que necesita automatizar procesos y escalar su negocio sin aumentar el tiempo manual.
         </p>
+        <p class="trust-note">Disclosure: este CTA puede ser un enlace de afiliado. La recomendacion no depende de la comision.</p>
         
         <div class="mt-6">
           <AffiliateButton 
@@ -126,6 +150,25 @@ const faqSchema = {
       <Content />
     </section>
 
+    <section class="mt-12 grid grid-2">
+      <article class="card">
+        <h2>Pros reales a validar</h2>
+        <ul>
+          {(item.data.pros.length ? item.data.pros : ["Buen encaje si resuelve el caso de uso principal.", "Puede integrarse en stacks de automatizacion.", "Permite comparar coste frente a trabajo manual."]).map((pro) => (
+            <li>{pro}</li>
+          ))}
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Contras y riesgos</h2>
+        <ul>
+          {(item.data.cons.length ? item.data.cons : ["Precios y limites pueden cambiar.", "Requiere validar integraciones antes de depender de ella.", "No sustituye una metodologia clara de procesos."]).map((con) => (
+            <li>{con}</li>
+          ))}
+        </ul>
+      </article>
+    </section>
+
     <section class="mt-12 p-6 bg-gray-50 rounded-lg border">
       <p class="eyebrow">E-E-A-T</p>
       <h2>Como evaluamos esta herramienta</h2>
@@ -133,6 +176,12 @@ const faqSchema = {
         Revisamos encaje por perfil, claridad de precios, integraciones, curva de aprendizaje,
         transparencia del programa de afiliados y utilidad real para solopreneurs de servicios.
       </p>
+      <dl class="definition-list">
+        <dt>Prueba minima</dt>
+        <dd>{item.data.evidence[0] ?? "Flujo o escenario documentado antes de elevarla a recomendacion principal."}</dd>
+        <dt>Criterio clave</dt>
+        <dd>{item.data.methodology[0] ?? "Coste, control, facilidad de implementacion y riesgo operativo."}</dd>
+      </dl>
     </section>
 
     {item.data.affiliate && (

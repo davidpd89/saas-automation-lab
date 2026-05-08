@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import AffiliateButton from "../../components/AffiliateButton.astro";
+import StructuredData from "../../components/StructuredData.astro";
 
 export async function getStaticPaths() {
   const items = [
@@ -23,10 +24,12 @@ const comparedTools = allTools.filter((tool) => item.data.toolsCompared?.include
 const tableRows = comparedTools.map((tool) => ({
   tool: tool.data.title,
   pricing: tool.data.pricing,
-  bestFor: tool.data.idealUser
+  bestFor: item.data.bestFor?.[tool.data.toolId] ?? tool.data.idealUser
 }));
+const criteria = item.data.decisionCriteria.length
+  ? item.data.decisionCriteria
+  : ["Coste real al escalar", "Curva de aprendizaje", "Control tecnico", "Integraciones", "Riesgo operativo"];
 
-// Schema markup for comparison pages
 const comparisonSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -39,10 +42,10 @@ const comparisonSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Automatización SaaS e IA",
+    "name": "SaaS Automation Lab",
     "url": siteUrl
   },
-  "dateModified": new Date().toISOString(),
+  "dateModified": item.data.updatedAt?.toISOString() ?? new Date().toISOString(),
   "mainEntity": {
     "@type": "ItemList",
     "numberOfItems": item.data.toolsCompared?.length || 3,
@@ -59,30 +62,41 @@ const comparisonSchema = {
 ---
 
 <BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
-  <script type="application/ld+json" set:html={JSON.stringify(comparisonSchema)} />
-  
+  <StructuredData data={comparisonSchema} />
+
   <article class="max-w-4xl mx-auto px-4 py-8">
     <header class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">
-        {item.data.title}
-      </h1>
-      
-      <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-        <h2 class="text-2xl font-semibold text-green-900 mb-2">🏆 Veredicto Rápido</h2>
-        <p class="text-lg text-green-800 font-medium">
-          {item.data.verdict}
-        </p>
+      <p class="eyebrow">Comparativa money</p>
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">{item.data.title}</h1>
+
+      <div class="answer-box mb-8">
+        <h2 class="text-2xl font-semibold text-green-900 mb-2">Veredicto rapido</h2>
+        <p class="text-lg text-green-800 font-medium">{item.data.verdict}</p>
       </div>
     </header>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Comparativa Detallada</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Comparativa detallada</h2>
       <ComparisonTable rows={tableRows.length ? tableRows : undefined} toolsCompared={item.data.toolsCompared || []} />
+    </section>
+
+    <section class="mb-12 grid grid-2">
+      <article class="card">
+        <h2>Criterios de decision</h2>
+        <ul>
+          {criteria.map((criterion) => <li>{criterion}</li>)}
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Como leer esta comparativa</h2>
+        <p>Primero decide perfil y volumen. Una herramienta barata al inicio puede salir cara si tus tareas, contactos o ejecuciones crecen rapido.</p>
+      </article>
     </section>
 
     {comparedTools.length > 0 && (
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Probar herramientas comparadas</h2>
+        <p class="trust-note">Disclosure: estos enlaces pueden ser afiliados. El veredicto se basa en encaje, coste y caso de uso.</p>
         <div class="grid grid-3">
           {comparedTools.map((tool) => (
             <article class="card">
@@ -101,46 +115,35 @@ const comparisonSchema = {
     )}
 
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Casos de Uso por Perfil</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-blue-50 p-6 rounded-lg">
-          <h3 class="font-semibold text-blue-900 mb-3">👨‍💼 Consultor Técnico</h3>
-          <p class="text-blue-800">
-            Elige herramientas con control técnico y APIs abiertas para personalizaciones avanzadas.
-          </p>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Veredicto por perfil</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Consultor tecnico</h3>
+          <p>Prioriza control, APIs, logs, exportacion y capacidad de depurar flujos complejos.</p>
         </div>
-        <div class="bg-green-50 p-6 rounded-lg">
-          <h3 class="font-semibold text-green-900 mb-3">🎯 Coach</h3>
-          <p class="text-green-800">
-            Prioriza facilidad de uso y automatización de procesos repetitivos sin código.
-          </p>
+        <div class="card">
+          <h3>Coach</h3>
+          <p>Prioriza facilidad de uso, seguimiento, WhatsApp, recordatorios y experiencia de cliente.</p>
         </div>
-        <div class="bg-purple-50 p-6 rounded-lg">
-          <h3 class="font-semibold text-purple-900 mb-3">📚 Formador</h3>
-          <p class="text-purple-800">
-            Necesita plataformas LMS robustas y sistemas de entrega de contenido escalables.
-          </p>
+        <div class="card">
+          <h3>Formador</h3>
+          <p>Prioriza email, LMS, entrega evergreen, analitica de alumnos y mantenimiento sencillo.</p>
         </div>
       </div>
     </section>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Análisis de Costes Reales</h2>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-        <p class="text-yellow-800 mb-4">
-          <strong>⚠️ Importante:</strong> Los costes mostrados son para volúmenes de uso realistas (1,000-10,000 operaciones/mes). 
-          A mayor escala, los costes pueden variar significativamente.
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Coste real y limites</h2>
+      <div class="notice">
+        <p>
+          <strong>Importante:</strong> Los costes son orientativos y deben validarse con la pagina oficial.
+          Para volumen alto, compara coste por tarea, limites de plan y coste de mantenimiento.
         </p>
-        <div class="grid md:grid-cols-2 gap-4 text-sm">
-          <div>
-            <strong>Make:</strong> Más económico a gran escala (€90-160 por 100K ops)
-          </div>
-          <div>
-            <strong>Zapier:</strong> Más caro a gran escala (€2,500-6,000 por 100K tareas)
-          </div>
-          <div>
-            <strong>n8n:</strong> Balance entre control y coste (€200-450 por 100K ejecuciones)
-          </div>
+        <div class="grid grid-2 text-sm">
+          <div><strong>Automatizacion visual:</strong> revisa operaciones, tareas premium y limites de historial.</div>
+          <div><strong>Automatizacion tecnica:</strong> revisa servidor, logs, mantenimiento y responsabilidad operativa.</div>
+          <div><strong>CRM/email:</strong> revisa contactos, envios, usuarios y coste de escalado.</div>
+          <div><strong>IA/agentes:</strong> revisa coste por ejecucion, tokens, memoria y privacidad de datos.</div>
         </div>
       </div>
     </section>
@@ -150,25 +153,17 @@ const comparisonSchema = {
     </section>
 
     <section class="bg-gray-50 rounded-lg p-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">🚀 Stack Recomendado</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200">
-          <h3 class="font-semibold text-gray-900 mb-3">Para Principiantes</h3>
-          <p class="text-gray-700 mb-4">
-            Make → ConvertKit → Webflow
-          </p>
-          <p class="text-sm text-gray-600">
-            Automatización visual + Email marketing + Web profesional
-          </p>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Stack recomendado</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Para empezar sin friccion</h3>
+          <p>Make + ConvertKit + Webflow</p>
+          <p class="text-sm text-gray-600">Automatizacion visual, email marketing y web profesional.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200">
-          <h3 class="font-semibold text-gray-900 mb-3">Para Técnicos</h3>
-          <p class="text-gray-700 mb-4">
-            n8n → Clientify → Thinkific
-          </p>
-          <p class="text-sm text-gray-600">
-            Control total + WhatsApp nativo + LMS potente
-          </p>
+        <div class="card">
+          <h3>Para control tecnico</h3>
+          <p>n8n + Clientify + Thinkific</p>
+          <p class="text-sm text-gray-600">Control de flujos, CRM con seguimiento y entrega formativa.</p>
         </div>
       </div>
     </section>

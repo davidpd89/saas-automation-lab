@@ -44,7 +44,8 @@ const breadcrumbSchema = {
       "@type": "Organization",
       name: "SaaS Automation Lab",
       url: siteUrl,
-      description
+      description,
+      sameAs: ["https://github.com/davidpd89/saas-automation-lab"]
     })} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </head>
@@ -58,6 +59,7 @@ const breadcrumbSchema = {
           <a href={withBase("guias/")}>Guias</a>
           <a href={withBase("automatizacion-solopreneurs-2026/")}>Pilar</a>
           <a href={withBase("lab/")}>Lab</a>
+          <a href={withBase("como-probamos/")}>Como probamos</a>
           <a href={withBase("legal/")}>Legal</a>
         </nav>
       </div>
@@ -67,7 +69,7 @@ const breadcrumbSchema = {
     </main>
     <footer>
       <div class="container">
-        <small>SaaS Automation Lab. Analisis de herramientas con enlaces de afiliado senalizados.</small>
+        <small>SaaS Automation Lab. Analisis de herramientas con enlaces de afiliado senalizados. <a href={withBase("criterios-evaluacion/")}>Criterios editoriales</a>.</small>
       </div>
     </footer>
     <script>

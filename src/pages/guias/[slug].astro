@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import GuideStep from "../../components/GuideStep.astro";
+import StructuredData from "../../components/StructuredData.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("guides");
@@ -34,12 +35,17 @@ const howToSchema = {
 ---
 
 <BaseLayout title={item.data.seoTitle} description={item.data.seoDescription}>
-  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
-  <article>
+  <StructuredData data={howToSchema} />
+  <article class="prose-page">
+    <p class="eyebrow">Guia de proceso</p>
     <h1>{item.data.title}</h1>
+    <div class="answer-box">
+      <strong>Respuesta breve:</strong> {item.data.expectedResult ?? `Este flujo busca ahorrar ${item.data.timeSaved} en un escenario de ${item.data.persona}.`}
+    </div>
     <p><strong>Dificultad:</strong> {item.data.difficulty}</p>
     <p><strong>Persona:</strong> {item.data.persona}</p>
     <p><strong>Ahorro estimado:</strong> {item.data.timeSaved}</p>
+    <p><strong>Escenario:</strong> {item.data.scenario}</p>
   </article>
 
   <section class="grid">
@@ -62,6 +68,21 @@ const howToSchema = {
       </div>
     </section>
   )}
+
+  <section class="mt-12 grid grid-2">
+    <article class="card">
+      <h2>Errores frecuentes</h2>
+      <ul>
+        {(item.data.commonErrors.length ? item.data.commonErrors : ["Automatizar sin limpiar el proceso manual.", "No probar errores y casos limite.", "No medir ahorro real antes de anadir mas herramientas."]).map((error) => (
+          <li>{error}</li>
+        ))}
+      </ul>
+    </article>
+    <article class="card">
+      <h2>Resultado esperado</h2>
+      <p>{item.data.expectedResult ?? "Un flujo documentado, medible y conectado con herramientas que puedas mantener sin depender de memoria manual."}</p>
+    </article>
+  </section>
 
   <section class="prose-page">
     <Content />

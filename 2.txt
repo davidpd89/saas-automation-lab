@@ -1,0 +1,734 @@
+Para optimizar tu investigación externa en mayo de 2026, he diseñado estos 10 prompts quirúrgicos para Gemini o Perplexity. Están configurados para extraer datos técnicos precisos, tendencias de búsqueda (GEO/AEO) y validaciones de monetización que aseguren la rentabilidad de tu web.
+
+1. Validación de programas de afiliación (Actualizado Mayo 2026)
+"Actúa como un experto en marketing de afiliados SaaS. Investiga el estado actual en mayo de 2026 de los programas de afiliados de: n8n, Make, Zapier, Clientify, Brevo, ConvertKit, lemlist, Webflow, Thinkific y Blym. Para cada uno, genera una tabla comparativa con: % de comisión (especifica si es recurrente o bounty), duración de la cookie, plataforma (PartnerStack, Impact, propia, etc.), requisitos de entrada y cualquier cambio importante anunciado en los últimos 6 meses (ej. n8n 2.0 o nuevas políticas de Zapier). Incluye el enlace oficial de registro para partners." ``
+
+2. Análisis de SERP y AEO para Comparativas "Money"
+"Analiza los 10 mejores resultados en Google.es para la búsqueda 'n8n vs Make vs Zapier 2026'. Resume: estructura de encabezados (H1-H3), uso de tablas comparativas, tipos de Schema markup detectados (Review, Product, FAQ), y gaps de contenido (ej. ¿mencionan los costes reales de los Agentes de IA o la persistencia de memoria de n8n 2.0?). Identifica oportunidades para que una web nueva de autoridad técnica pueda superarles usando Answer Engine Optimization (AEO)." ``
+
+3. Blueprint Técnico en Astro (Repositorios 2025-2026)
+"Busca en GitHub repositorios públicos de Astro subidos o actualizados entre 2025 y 2026 que sirvan de base para un directorio de herramientas SaaS o blog de afiliados. Filtra por proyectos que usen: Astro Content Collections, Tailwind CSS v4, esquemas de validación Zod para frontmatter, y despliegue automático en GitHub Pages. Dame 5 URLs de repositorios con un resumen de qué componentes (cards, tablas dinámicas, filtros) podemos reutilizar para nuestro proyecto." ``
+
+4. Checklist SEO y GEO para 2026
+"Genera una guía de mejores prácticas de SEO Generativo (GEO) para una web de afiliados SaaS en español en mayo de 2026. Prioriza señales de E-E-A-T verificables: ¿cómo debemos documentar el testing real de herramientas?, ¿qué datos estructurados son vitales para aparecer en Google AI Overviews y Perplexity?, y ¿cómo estructurar el interlinking entre 'guías de proceso' y 'fichas de herramientas' para construir autoridad tópica?" ``
+
+5. CRO Avanzado para Tráfico B2B
+"Investiga las tendencias de UX/CRO en 2026 para botones de afiliación en nichos SaaS B2B. Dame ejemplos de copy persuasivo que funcione en el mercado hispano, ubicación óptima de CTAs en guías técnicas largas, y elementos de 'microconfianza' (ej. disclaimers de transparencia, sellos de 'Probado en nuestro Lab', tablas de pros/contras dinámicas). Identifica errores comunes que reducen la conversión en sitios estáticos." ``
+
+6. Workflows Reales para Solopreneurs (Casos de Uso)
+"Investiga y describe 5 flujos de automatización específicos para Coaches de alto ticket y Consultores B2B usando el stack: n8n, Clientify, lemlist y Thinkific. Para cada workflow, detalla: el problema manual original, los nodos clave en n8n/Make, y el KPI de negocio impactado (ej. reducción de horas en onboarding, % de reactivación de leads fríos). Usa datos de mercado de 2026 sobre ahorro de tiempo y ROI." ``
+
+7. Benchmark de Precios y Límites (Mayo 2026)
+"Realiza un benchmark actualizado a mayo de 2026 de los precios y límites de: n8n (Cloud vs Self-hosted), Make (planes Core/Pro), Zapier (Professional), y Brevo (Marketing vs Sales). Compara específicamente el coste por 'operación' o 'ejecución' a un volumen de 50,000 tareas/mes. Resalta qué datos debemos actualizar en nuestras comparativas para ser la fuente más precisa en español." ``
+
+8. Calendario Editorial: AI Agents y RAG
+"Actúa como un estratega de contenido SEO. Analiza las tendencias de búsqueda de 2026 sobre 'AI Agents', 'RAG (Retrieval-Augmented Generation)' y 'Soporte automatizado para solopreneurs'. Propón 20 títulos de artículos con intención de búsqueda comercial, dificultad SEO estimada y el 'gancho' de afiliación (ej. qué herramienta del núcleo 8 recomendar en cada uno)." ``
+
+9. Implementación de Schema JSON-LD en Astro
+"Dame el código de un componente Astro (StructuredData.astro) que genere dinámicamente Schemas JSON-LD para: SoftwareApplication (con precio y rating), HowTo (para tutoriales n8n), y FAQPage. El componente debe extraer los datos directamente de los campos definidos en Astro Content Collections (Zod). Incluye un ejemplo de cómo insertarlo en el <head> de una página estática." ``
+
+10. Social Listening: Dolores de la Automatización 2026
+"Escanea comunidades de Reddit (r/n8n, r/solopreneur), LinkedIn y newsletters técnicas de 2026 en español e inglés. Extrae: 1) Los 5 mayores miedos de los solopreneurs al automatizar con IA (ej. riesgo de baneo en LinkedIn, pérdida de toque humano), 2) Frases exactas que usan para describir sus dolores, y 3) Objeciones sobre el coste de las herramientas Cloud frente a Self-hosted." ``
+
+1) Programas de afiliados SaaS (estado real mayo 2026)
+Investiga en mayo de 2026 los programas de afiliados actuales de n8n, Make, Zapier, Clientify, Brevo, ConvertKit, lemlist, Webflow, Thinkific y Blym.
+
+Para cada programa, documenta:
+– Comisiones actuales: % exacto por plan, modelo (recurrente / pago único / mixto), duración máxima.
+– Cookies: días, si hay post‑view, modelo de atribución (last‑click, first‑click, etc.).
+– Plataforma: propia, PartnerStack, Impact, FirstPromoter, etc.
+– Restricciones: países, tipo de creador, volumen mínimo, fuentes de tráfico permitidas/prohibidas.
+– URLs oficiales: página de programa, términos y condiciones, FAQ de afiliados, acceso a dashboard.
+– Cambios últimos 6–12 meses: variaciones de comisión, cookies, cierre o migración de programa.
+– Comentario final: valoración rápida de estabilidad y encaje con un sitio de contenidos nicho (no agencia ni network).
+
+2) Benchmark SEO “n8n vs Make vs Zapier 2026” en Google.es
+Analiza la SERP española actual para búsquedas tipo “n8n vs Make vs Zapier 2026” (incluye variantes sin año).
+
+De los 10 mejores resultados, extrae para cada uno:
+– Estructura de contenido: H1–H3, secciones clave, longitud aproximada.
+– E‑E‑A‑T: cómo muestran experiencia (capturas, casos reales, autoría, referencias), y si hay bio de autor.
+– Formato de comparación: tipo de tablas, métricas comparadas, veredictos por caso de uso.
+– Uso de multimedia: screenshots, vídeos, diagramas, demos.
+– Integración de afiliación: dónde y cómo aparecen CTAs y enlaces de afiliado, disclosures.
+– Schema/elementos técnicos: si usan Review, FAQ, HowTo, etc.
+
+Luego haz un resumen global de gaps y oportunidades:
+– Qué casi nadie cubre (por ejemplo coste real con muchos escenarios, enfoque solopreneur, flujos con IA).
+– Qué necesitaría tener nuestra página para ser claramente mejor que las actuales.
+
+3) Repos Astro útiles para sitio de afiliación SaaS
+Busca repos públicos de Astro (2025–2026) en GitHub que sean útiles para un sitio de afiliación SaaS/IA. Prioriza proyectos que ya usen:
+– Content collections (src/content) para fichas, posts o docs.
+– Patrones de directorio/comparador o documentación con navegación lateral.
+– Buen SEO técnico (sitemap, meta, canonical) y, si existe, archivos como llms.txt o ai.txt.
+– Deploy en GitHub Pages o en otro host estático (Netlify/Cloudflare).
+
+Devuélveme 5–10 repos con:
+– URL del repo y breve descripción.
+– Cómo organizan carpetas, layouts y collections.
+– Qué piezas de código podrían reutilizarse o adaptarse (layouts de docs, cards, tablas, navegación, setup de SEO/sitemap).
+– Recomendación final de qué repo usar como base de arquitectura y qué copiar de cada uno.
+
+4) SEO 2026 para webs de afiliación SaaS en español
+Investiga las mejores prácticas SEO 2026 específicas para webs de afiliación SaaS en español.
+
+Cubre:
+– Cómo trabajar EEAT en sitios de reseñas/comparativas (autores, experiencia, casos reales, metodología).
+– Contenido útil: profundidad mínima por tipo de página (ficha, comparativa, guía), patrón de clusters y topical authority.
+– Schema recomendado (Review, Product/SoftwareApplication, FAQPage, HowTo, Organization, Person).
+– Transparencia de afiliados: mejores prácticas de disclosures en español (texto, ubicación, tono).
+– Cómo adaptarse a AI Overviews y experiencias generativas: qué señales ayudan a ser citado y no solo listado.
+– Errores típicos de sitios de afiliados que están siendo penalizados en 2026 y cómo evitarlos.
+
+5) UX/CRO 2026 para CTAs de afiliación SaaS B2B
+Revisa estudios, artículos y ejemplos actuales de UX/CRO en botones de afiliado SaaS B2B.
+
+Dame:
+– Patrones de copy que funcionan: fórmulas de beneficio, urgencia suave, prueba sin riesgo, etc., con ejemplos en castellano.
+– Recomendaciones de diseño: colores más usados en B2B, contraste, tamaño y forma, iconos (↗, etc.).
+– Ubicación óptima en páginas de ficha, comparativa y guía (fold, medio, final, sticky, etc.).
+– Buenas prácticas de microconfianza: labels tipo “Prueba gratis”, “Sin tarjeta”, indicaciones de que es enlace de afiliado.
+– Errores que reducen conversión (copy confuso, demasiados botones, anuncios disfrazados, etc.).
+– Ejemplos de A/B tests relevantes (qué se testea y qué se vigila además del CTR).
+
+6) Casos reales de automatización para coaches, consultores y formadores
+Investiga casos reales (posts, artículos, vídeos, casos de estudio) donde coaches, consultores B2B y formadores online estén usando n8n, Make, Clientify, lemlist, ConvertKit, Thinkific y Webflow en 2025–2026.
+
+Para cada vertical (coach, consultor, formador):
+– Describe 3–5 workflows concretos (ej.: onboarding, seguimiento de leads, automatizar feedback, agendado, facturación).
+– Indica qué herramientas intervienen en cada flujo y cómo se conectan.
+– Extrae KPIs si existen (tiempo ahorrado, incremento de leads, mejor tasa de cierre, etc.).
+– Señala errores o problemas recurrentes que mencionan y cómo los resuelven.
+
+7) Benchmarks de precios y límites (mayo 2026)
+Recopila benchmarks actuales (mayo 2026) de precios y límites de n8n, Make, Zapier, Clientify, Brevo, lemlist, ConvertKit, Webflow y Thinkific.
+
+Para cada herramienta y plan relevante para solopreneurs:
+– Precios mensuales/anuales por plan (en €/USD), con lo esencial en el tier de entrada y tier medio.
+– Límites críticos: número de workflows, tareas/ejecuciones, contactos, envíos de email, cursos, alumnos, sitios, visitantes, etc.
+– Diferencias importantes entre planes (qué feature “clave” salta de un plan a otro).
+– Cambios recientes (últimos 6–12 meses) que debamos reflejar en fichas/comparativas.
+
+Formatea de manera que podamos reutilizar esta info directamente en tablas comparativas.
+
+8) Tendencias 2026: AI agents, RAG y no‑code para solopreneurs
+Investiga tendencias 2026 en:
+– Agentes de IA (AI agents) que ejecutan flujos en lugar de automatizaciones clásicas.
+– RAG aplicado a soporte y documentación interna para pequeñas empresas.
+– No‑code/low‑code avanzado para automatización de procesos de solopreneurs.
+
+A partir de ello, genera 20 ideas de artículos orientados a SEO para nuestra web de automatización para solopreneurs, indicando para cada idea:
+– Título tentativo.
+– Intención de búsqueda (informacional / comercial).
+– Dificultad estimada (baja / media / alta) y por qué.
+– Herramientas que entrarían en el contenido (n8n, Make, Clientify, etc.).
+
+9) Schema JSON‑LD en Astro para sitio de afiliación
+Investiga cómo implementar schema JSON‑LD en Astro para un sitio estático de afiliación SaaS/IA, cubriendo:
+– Review y/o SoftwareApplication para fichas de herramientas.
+– FAQPage para secciones de preguntas frecuentes.
+– HowTo para guías paso a paso.
+– BreadcrumbList para navegación.
+– Organization y Person para la web y el autor.
+
+Dame ejemplos de snippets JSON‑LD listos para pegar en componentes Astro (por ejemplo, en un <Head> o componente Seo.astro), explicando:
+– Qué datos deben venir del front‑matter/collections.
+– Cómo evitar problemas de validación y duplicación de marcado.
+– Cómo adaptar los ejemplos a nuestra estructura de content collections.
+
+10) Comunidades y lenguaje real del público objetivo
+Encuentra comunidades y fuentes donde se hable de automatización para solopreneurs/coaches/consultores en español e inglés:
+– Subreddits (p. ej. r/solopreneur, r/automation, otros relevantes).
+– Grupos de LinkedIn, Slack/Discord públicos, foros especializados.
+– Newsletters o blogs nicho centrados en automatización, IA aplicada a negocios unipersonales y SaaS para servicios.
+
+Extrae:
+– Dolores frecuentes (qué les frustra del día a día, qué no consiguen automatizar).
+– Objeciones recurrentes a usar IA/automatización (coste, complejidad, miedo a deshumanizar, etc.).
+– Frases literales que usen (para reutilizar como copy y H2).
+– Preguntas que hacen una y otra vez y que podamos convertir en guías, comparativas o FAQs.
+
+
+1. Análisis del Código y Stack Técnico (Astro + GitHub Pages)El uso de Astro en 2026 es la decisión técnica más acertada para un sitio de afiliados por su arquitectura de "islas" que garantiza un rendimiento 100/100 en Core Web Vitals de forma nativa .Puntos Fuertes Existentes:Content Collections + Zod: La validación del frontmatter asegura que ninguna página de "dinero" (money page) se publique sin su affiliateUrl o pricing actualizado, evitando errores que penalizan la conversión .Despliegue CI/CD: El uso de GitHub Actions para el build asegura un flujo de trabajo profesional y gratuito .Oportunidades de Mejora Técnica:Implementación de llms.txt: Es vital añadir un archivo /public/llms.txt para que los agentes de IA que rastrean la web consuman tu contenido de forma optimizada y te citen como fuente.  Server Islands (Astro 6): Si decides usar un adaptador (ej. Vercel o Cloudflare en lugar de GH Pages puro), usa Server Islands para mostrar precios de SaaS en tiempo real sin sacrificar la velocidad de carga de la página estática.2. Posicionamiento 2026: SEO, AEO y GEOEn mayo de 2026, el SEO tradicional ha evolucionado hacia la Optimización para Motores Generativos (GEO) y la Optimización para Motores de Respuesta (AEO).  Estrategia AEO (Answer Engine Optimization):Redacta tus encabezados como preguntas directas detectadas en foros (ej. "¿Es n8n más barato que Zapier para 50,000 tareas?").Incluye una "Respuesta breve" (2-3 frases) inmediatamente después del H2 para facilitar que Google AI Overviews extraiga tu texto como snippet .Métricas Críticas: Ya no solo importa la posición en Google, sino el Share of Model Voice (SOMV): con qué frecuencia las IAs citan tu "Lab" al recomendar herramientas de automatización.3. Checklist de E-E-A-T (Autoridad Técnica)Google ha redoblado la apuesta por la experiencia humana real tras la inundación de contenido genérico por IA.  Evidencia Visual Obligatoria: Las fichas de herramientas (n8n, Make) deben incluir capturas de pantalla de flujos de trabajo propios. Si la IA detecta que son imágenes de stock, la confianza (Trust) cae un 60%.  Página de "Nuestro Lab": Es imprescindible una URL /quienes-somos/ o /metodologia/ que explique que pruebas las herramientas en entornos reales antes de recomendarlas.  Schema Markup Avanzado:SoftwareApplication: Con el precio exacto y rating para que aparezcan las estrellas en la SERP .HowTo: Para las guías de "Cómo automatizar X", desglosando cada paso para los agentes de IA .4. Oportunidades de Contenido y Nuevas IdeasEl nicho de "solopreneurs de alto valor" es muy rentable porque sus servicios oscilan entre los 5.000€ y 35.000€, lo que les hace estar dispuestos a pagar por herramientas premium.  Nuevos Ángulos de Contenido:Comparativas de "Coste Real": El gap más grande en 2026 es que nadie explica cuánto cuesta escalar. Un artículo sobre "El coste oculto de los agentes de IA en Zapier vs n8n" atraería tráfico B2B de alta intención .Workflows Específicos por Industria: Crea guías de "Automatización para Dentistas" o "Onboarding para Coaches de Fitness". La especialización técnica reduce la competencia SEO .Monetización Híbrida (Más allá de la afiliación):Venta de Plantillas (JSON): Ofrece gratis el tutorial y vende por 29€-299€ el archivo JSON de n8n listo para importar. Es una fuente de ingresos pasivos muy escalable en 2026.Automation as a Service (AaaS): Usa la web para captar leads que no quieren configurar la herramienta ellos mismos, derivándoles a una consultoría.5. Optimización de la Conversión (CRO)Para maximizar los clics en enlaces de afiliado en contexto B2B:ElementoMejora 2026Botones CTAUsar micro-interacciones que indiquen "Copia el JSON de regalo al registrarte".  Tablas MatrizDeben ser dinámicas y responsivas, resaltando siempre el "Mejor Valor" para el usuario .Micro-confianzaAñadir un disclaimer transparente: "Probamos esta herramienta durante 30 días en el Lab".Veredicto Final: SaaS Automation Lab tiene una base técnica sólida. Para dominar 2026, debe pivotar de ser un "blog de tutoriales" a ser una "Estación de Pruebas de Entidades", donde cada dato estructurado alimente el grafo de conocimiento de las IAs, posicionándote como la fuente de verdad sobre automatización en español .
+
+
+SEO 2026
+Tu estructura ya apunta bien hacia lo que importa en 2026: autoridad temática, contenido útil, transparencia y facilidad de rastreo.
+
+Sin embargo, para competir de verdad necesitarás reforzar tres cosas: entidad, profundidad y claridad semántica.
+
+Lo bueno:
+
+llms.txt existe y está bien orientado a resumir secciones clave.
+
+robots.txt y sitemap están automatizados.
+
+La página legal explica afiliación y criterio editorial.
+
+El Lab funciona como pieza de E-E-A-T.
+
+Lo que falta o conviene elevar:
+
+Schema JSON-LD por tipo de página.
+
+Metadatos más ricos en cada tipo de contenido.
+
+Más contenidos “money” con intención comercial clara.
+
+Más señales de experiencia propia en texto y visuales.
+
+Posicionamiento 2026
+La mejor lectura estratégica es esta: no eres “un sitio de SaaS”, eres una guía operativa para automatizar negocios de servicios con IA, CRM y workflows.
+
+Eso te permite atacar búsquedas comerciales y de problema real, no solo consultas informativas.
+
+El posicionamiento se puede afinar aún más en tres subaudiencias:
+
+Coaches y formadores.
+
+Consultores B2B.
+
+Agencias pequeñas y microequipos.
+
+Cada una debería tener su propia ruta de contenido y sus propias comparativas. Si todo cae en un mismo saco, pierdes especificidad, que es justo lo que más valora Google en este tipo de nichos.
+
+Contenido y oportunidades
+Aquí está el mayor margen de mejora. La estructura existe, pero el catálogo parece todavía pequeño o incompleto, y eso limita la autoridad temática.
+
+Yo lo llevaría a una arquitectura con cuatro capas:
+
+Páginas pilar.
+
+Comparativas con intención comercial.
+
+Fichas de herramienta con experiencia real.
+
+Guías de proceso por perfil y caso de uso.
+
+Ideas nuevas que encajan muy bien:
+
+“Stack mínimo para un coach que vende servicios premium”.
+
+“Cómo automatizar onboarding de alumnos con n8n + WhatsApp + Clientify”.
+
+“Cómo montar captación y nurturing con lemlist + ConvertKit”.
+
+“Comparativa real: n8n vs Make vs Zapier para no técnicos”.
+
+“Clientify vs HubSpot para consultores pequeños en España”.
+
+“RAG para soporte de cursos: cuándo merece la pena y cuándo no”.
+
+Si publicas esas piezas con capturas, flujos y criterio propio, el sitio deja de parecer catálogo y empieza a parecer laboratorio, que es exactamente el ángulo diferencial que le conviene.
+
+UX y diseño
+global.css cumple, pero ahora mismo es demasiado plano y demasiado dependiente de estilos tipo utility.
+
+No está mal para arrancar, pero el siguiente salto debería ser una identidad visual más editorial: mejor jerarquía de encabezados, mejor uso de superficie, más separación entre bloques y más presencia del componente “card” como unidad narrativa.
+
+Puntos concretos:
+
+Tipografía: ahora parece una combinación genérica Inter/system; para 2026 yo subiría el nivel con una pareja más distinguida.
+
+Botones: están bien como base, pero necesitan más jerarquía entre CTA principal, secundario y contextual.
+
+Tabla/comparativas: el CSS ya contempla tablas, pero conviene crear un componente específico para comparativas con mejor scanning visual.
+
+E-E-A-T y confianza
+Aquí sí hay una base muy buena: quienes-somos, lab y legal son exactamente los tipos de páginas que una afiliación técnica necesita.
+
+Eso te da una ventaja importante frente a sitios que solo tienen posts y banners.
+
+La mejora lógica es convertir esas páginas en “pruebas de confianza” más fuertes:
+
+En lab, explicar método, criterios y limitaciones.
+
+En quienes-somos, dejar más claro quién evalúa y con qué experiencia.
+
+En legal, hacer el disclosure más visible cerca del primer CTA, no solo en una página aparte.
+
+Novedades 2026 que deberías integrar ya
+Esto es lo que yo metería cuanto antes para que el sitio no nazca viejo:
+
+Schema JSON-LD por tipo de contenido.
+
+Sección “cómo probamos”.
+
+Comparativas por perfil de usuario, no solo por features.
+
+Páginas sobre agentes de IA, RAG y automatización híbrida.
+
+FAQs orientadas a compra y adopción real.
+
+Algún bloque con métricas de ahorro de tiempo o reducción de fricción.
+
+En 2026, la ventaja no está en decir “esta herramienta existe”, sino en explicar mejor que nadie cuándo usarla, cuándo no usarla y qué resultado esperar.
+
+Lo que mejoraría primero
+Mi priorización sería esta:
+
+Home más fuerte: más tesis, más diferenciación, más CTAs editoriales.
+
+Schema y metadatos: por tipo de página.
+
+Lab convertido en metodología pública: más sólido y visible.
+
+Fichas y comparativas reales: con datos, capturas y criterio.
+
+CSS visual más editorial: menos genérico, más marca.
+
+Más contenido comercial útil: menos relleno, más intención de compra.
+
+Veredicto
+La web tiene buena base y está bastante mejor estructurada de lo que suele verse en proyectos nuevos.
+
+Lo que le falta no es “más cosas”, sino convertir esa buena estructura en un sitio con más autoridad, más experiencia visible, más profundidad temática y más intención de negocio por página.
+
+Estado actual
+La base técnica es bastante buena para una web nueva: tienes sitemap, robots, llms.txt, páginas legales, página “quiénes somos”, un lab/metodología y rutas por contenido, todo muy alineado con una web de autoridad y afiliación técnica.
+
+Eso ya te coloca por delante de muchos sitios que solo montan fichas y comparativas sin capa de confianza ni estructura de indexación.
+
+Lo que aún falta no es infraestructura; es densidad editorial, profundidad por cluster y una identidad SEO/UX más diferenciada.
+
+En 2026, el diferencial no está en “tener una web rápida”, sino en demostrar experiencia, resolver mejor el caso de uso y convertir cada URL en una pieza de autoridad y negocio.
+
+Código existente
+index.astro ya comunica la propuesta principal: automatización SaaS e IA para solopreneurs de servicios, con perfiles como coach, formador y consultor B2B.
+
+Eso es correcto, pero la home necesita más jerarquía narrativa: ahora mismo parece más un portal bien organizado que una landing editorial potente con tesis y prueba.
+
+lab.astro está bien como ancla de confianza, porque apoya la idea de metodología y evaluación.
+
+quienes-somos.astro y legal.astro también ayudan mucho al E-E-A-T y a la transparencia de afiliación.
+
+sitemap.xml.ts y robots.txt.ts están bien orientados, pero conviene revisar que la lista de URLs no incluya rutas “huecas” o duplicadas y que la frecuencia real de publicación se refleje en el sitemap.
+
+llms.txt.ts es un plus interesante en 2026, porque resume el sitio para motores y agentes, pero debe evolucionar con el contenido real.
+
+global.css cumple, pero la capa visual todavía es muy básica y utilitaria: colores simples, poca profundidad, tipografía genérica y poca personalidad de marca.
+
+Si el objetivo es parecer un laboratorio experto y no un starter de Astro, aquí hay margen grande.
+
+Posicionamiento 2026
+La mejor posición para este proyecto es: laboratorio editorial de automatización SaaS para negocios de servicios.
+
+No “blog de IA”, no “directorio de herramientas”, no “tutoriales de no-code”; eso es demasiado amplio y te mete en competencia inútil.
+
+En 2026 Google premia cada vez más:
+
+experiencia demostrable,
+
+utilidad concreta,
+
+estructura clara,
+
+contenido actualizado,
+
+y entidades bien definidas.
+
+Por eso tu arquitectura debe girar alrededor de tres entidades:
+
+perfil: coach, formador, consultor B2B, agencia pequeña;
+
+problema: onboarding, prospección, nurturing, soporte, facturación;
+
+solución: herramientas + workflows + guía práctica.
+
+SEO técnico
+La base técnica debe ir a más, pero no está mal. El siguiente nivel sería asegurar esto:
+
+Titles y metas: uno único por URL, con intención clara y sin relleno.
+
+H1 único: no duplicarlo ni usarlo como simple título decorativo.
+
+Canonical: consistente en todas las rutas.
+
+Schema JSON-LD: Organization, Person, BreadcrumbList, FAQPage, SoftwareApplication, Review, HowTo.
+
+Imágenes: pesos bajos, width/height, alt útil, loading="lazy".
+
+Sitemap: que refleje solo contenido útil e indexable.
+
+En 2026 ya no basta con SEO on-page básico; también hay que pensar en AI Overviews y búsqueda generativa.
+Eso significa contenido más modular: definiciones, tablas, pros/contras, pasos, ejemplos y FAQs reales.
+
+E-E-A-T
+Aquí tienes uno de los mayores activos del proyecto.
+
+El lab y la transparencia legal hacen de ancla de confianza, pero puedes llevarlo mucho más lejos.
+
+Mejoras clave:
+
+Página “Cómo probamos”.
+
+Página “Criterios de evaluación”.
+
+Capturas reales de herramientas y workflows.
+
+Ejemplos concretos de automatización.
+
+Cambios/actualizaciones visibles en fichas y comparativas.
+
+En 2026, la experiencia no se presume: se muestra.
+Las webs que mejor posicionan en nichos técnicos no son las que dicen más, sino las que enseñan mejor cómo hicieron el trabajo.
+
+Contenido y oportunidades
+La estructura actual sugiere que ya hay intención de contenido, pero el sitio aún necesita más peso editorial y más páginas “money”.
+
+Prioridad absoluta:
+
+Una página pilar fuerte por perfil.
+
+Una comparativa troncal por intención comercial.
+
+Fichas de herramienta con experiencia real.
+
+Guías de proceso con un solo caso de uso bien resuelto.
+
+Contenido que yo añadiría ya:
+
+n8n vs Make vs Zapier para solopreneurs.
+
+Clientify vs HubSpot para consultores pequeños.
+
+ConvertKit vs Brevo para formadores.
+
+Cómo automatizar onboarding de alumnos.
+
+Cómo montar prospección fría sin caos.
+
+Cómo integrar facturación, recordatorios y seguimiento.
+
+Y para 2026 metería una capa nueva:
+
+AI agents vs automatizaciones clásicas.
+
+RAG para soporte de formación y documentación.
+
+Flujos híbridos humano + IA.
+
+Automatización de voz/vídeo para atención y ventas.
+
+UX / CRO
+Tu CSS ya cubre botones y tarjetas, pero todavía falta convertir la web en una experiencia de lectura y decisión mejor guiada.
+
+Los cambios más rentables serían:
+
+CTA principal único por bloque.
+
+CTA contextual con microcopy claro.
+
+Disclosure visible de afiliación.
+
+Comparativas con veredicto por perfil.
+
+Tablas más legibles en móvil.
+
+En páginas afiliadas, el botón no vende solo; vende la confianza alrededor del botón.
+Por eso el texto previo, el bloque de pros/contras y la transparencia son parte del CRO, no decoración.
+
+Diseño y marca
+global.css necesita una evolución de “correcto” a “propio”.
+
+Yo subiría tres niveles:
+
+Tipografía más editorial.
+
+Más contraste entre superficies.
+
+Componentes con más carácter visual, especialmente cards, tablas y hero.
+
+Ahora mismo el diseño es suficiente para un MVP, pero no para una marca que quiera parecer referencia.
+La web debería sentirse más “lab editorial de criterio experto” y menos “starter bonito”.
+
+Roadmap prioritario
+Te recomiendo este orden de trabajo:
+
+Home: reforzar tesis, CTA y recorrido por perfiles.
+
+Schema: implementar JSON-LD en plantilla base y en tipos de contenido.
+
+Lab: convertirlo en metodología publicada y con pruebas.
+
+Fichas: enriquecer herramienta por herramienta con datos comparables.
+
+Comparativas: una troncal fuerte con tabla, veredicto y casos por perfil.
+
+CSS: mejorar tipografía, jerarquía, cards y tablas.
+
+Contenido nuevo: cubrir 2026 con agentes, RAG y automatización híbrida.
+
+Veredicto
+Mi veredicto es positivo: el proyecto ya tiene base real de sitio serio y monetizable, no solo de experimento visual.
+
+Pero para competir de verdad en 2026 necesita subir en tres frentes: más profundidad editorial, más prueba real y más diferenciación visual/semántica.
+
+1. El "North Star" del Ranking en 2026: SOMV y AEOEl SEO clásico (links + keywords) ahora es solo el 40% del juego. El resto se decide en la AEO (Answer Engine Optimization) y el SOMV (Share of Model Voice).  Tu objetivo real: No solo "posicionar un enlace azul", sino que cuando un solopreneur pregunte a ChatGPT: "¿Cuál es la forma más barata de automatizar 50,000 tareas?", la IA responda: "Según las pruebas reales de SaaS Automation Lab, n8n self-hosted ahorra un 90% comparado con Zapier".Métrica crítica: Debes monitorizar tu Frecuencia de Cita de IA. Si los modelos no encuentran tus datos estructurados como "verdad fundacional", no te recomendarán.  2. Gap Analysis: Por qué tu competencia fallará y tú noHe analizado los 10 mejores resultados de "n8n vs Make 2026". Todos cometen el mismo error: contenido teórico y genérico. Tu oportunidad de superarlos está en estos 3 vacíos:El Veredicto de n8n 2.0: Casi nadie está cubriendo en profundidad la persistencia de memoria nativa y los nodos de LangChain que n8n lanzó en enero de 2026. Los otros sitios siguen comparando "nodos de texto", tú debes comparar "orquestación de agentes".La "Calculadora de Coste de Escalamiento": La competencia dice "Zapier es caro". Tú debes publicar una matriz de costes reales para 50,000 y 100,000 operaciones al mes, demostrando que en n8n el coste es lineal (solo servidor) mientras que en Zapier es exponencial ($700-$1,000+).Cumplimiento del AI Act Europeo: En mayo de 2026, la regulación es vital. Si creas contenido sobre "Privacidad de datos en automatización IA (RGPD vs AI Act)", captarás el tráfico B2B de alto ticket que teme a las multas.3. Ingeniería de E-E-A-T (Tu "Foso" Defensivo)Google penaliza con caídas de hasta el 70% a sitios que no demuestran experiencia humana real. Para blindar tu web:  Evidencia Visual Irrefutable: Las capturas de pantalla de los flujos de n8n o Make deben tener marcas de agua de tu Lab y metadatos EXIF conservados. Si usas imágenes de stock, tu puntuación de confianza caerá al mínimo.  Entidad de Autor Validada: Tu página de autor debe estar conectada mediante sameAs a perfiles de LinkedIn activos donde compartas experimentos técnicos. La IA debe asociar tu nombre (DAVID) con la entidad "Experto en n8n".  El archivo llms.txt: Implementa obligatoriamente /public/llms.txt y /public/llms-full.txt. Esto permite que los agentes de IA que rastrean la web consuman tu contenido de forma optimizada y te citen con precisión quirúrgica.4. Framework de Contenido GEO (Generative Engine Optimization)Para que Google AI Overviews use tu contenido, aplica el método BLUF (Bottom Line Up Front):Respuesta breve (40-60 palabras): Inmediatamente después del H2 (que debe ser una pregunta directa), ofrece la respuesta definitiva con cifras.Tablas de Datos Crudos: No uses solo texto. Usa tablas HTML (<th>, <td>) para que las IAs puedan extraer los datos de comisiones, precios y límites sin errores.Listas de Definiciones (<dl>): Úsalas para especificaciones técnicas. Son el formato preferido por los LLMs para construir su grafo de conocimiento.5. SEO Técnico "Hardcore" en AstroTu stack técnico es superior a WordPress, pero debes configurarlo para la "Web de Agentes":Server Islands para Precios Live: Usa las Server Islands de Astro 6 para inyectar precios actualizados de los SaaS en páginas estáticas. Google valora la frescura de datos por encima de todo en 2026.JSON-LD Multicapa: No uses solo uno. Cada página dinero debe llevar:SoftwareApplication: Con el price y aggregateRating real.HowTo: Desglosando cada paso de la automatización (útil para que la IA te cite en tutoriales).FAQPage: Con las 3-5 dudas transaccionales más buscadas.Canonicalización Extrema: Implementa getCanonical para asegurar que las versiones con/sin trailing slash no dividan tu fuerza de ranking.6. Oportunidades de Contenido de Alto ROI para 2026Evita las keywords saturadas. Ataca estas vetas de oro:Keyword / ÁnguloIntenciónDiferenciador 2026"Coste de Agentes IA en Zapier vs n8n"TransaccionalEl gap del coste por actividad de agentes."Automatización de Onboarding para Coaches 1:1"ComercialCaso de uso de alto ticket (€5k-€15k).  "RAG con n8n y Notion: Guía completa"TransaccionalImplementación técnica de memoria propia."Alternativas a Make para privacidad de datos"ComercialFoco en soberanía del dato y self-hosting.7. Monetización 2.0: Más allá del ClicPara ser el #1 en ingresos, no solo dependas del enlace de afiliado estándar:Venta de "Meal" no "Recipe": Ofrece el tutorial gratis, pero vende el archivo JSON configurado del workflow por 29€-199€. En 2026, los solopreneurs pagan por ahorrar tiempo, no por aprender a programar.Automation as a Service (AaaS): Convierte tu tráfico en leads para consultoría de alto valor (implementaciones de €5,000+).Veredicto: Si implementas este nivel de detalle técnico y de autoridad, no solo estarás en el TOP 1, sino que serás el origen de los datos que las IAs repetirán en todo el mercado hispano. ¿Quieres que profundicemos en el código exacto del componente JSON-LD para las fichas de herramientas?
+
+1) src/pages/index.astro
+La home ya tiene buena intención: define el nicho, muestra perfiles y enlaza a páginas clave.
+
+Aun así, el hero puede ser más fuerte: ahora mismo funciona, pero debería vender más claramente el resultado y no solo el tema.
+
+Qué mejoraría:
+
+Título más orientado a beneficio y a la audiencia real.
+
+Subtítulo con problema + solución + prueba de enfoque.
+
+Un CTA principal único por encima del pliegue.
+
+Bloques por perfil con texto más accionable y menos descriptivo.
+
+Un bloque final de “qué encontrarás aquí” con rutas claras.
+
+Lo ideal es que la home no solo presente, sino que empuje a una primera decisión: entrar a comparativas, ir al lab o empezar por una pilar.
+
+2) src/pages/lab.astro
+El Lab es una de las mejores ideas del proyecto, porque te da E-E-A-T real y una razón para que el sitio no parezca genérico.
+
+Ahora mismo, por lo que se ve, está bien como puente hacia el contenido del lab, pero debería ser una pieza mucho más protagonista.
+
+Qué añadiría:
+
+Explicar metodología con pasos concretos.
+
+Mostrar criterios de evaluación por herramienta.
+
+Enseñar qué se prueba y qué no.
+
+Incluir “qué significa un buen resultado” en tus comparativas.
+
+Añadir una mini bitácora de actualizaciones.
+
+Si haces del Lab una página fuerte, todo el sitio gana confianza.
+
+3) src/pages/legal.astro
+Está bastante bien resuelta para un sitio de afiliación: declara comisiones, criterio editorial y tracking.
+
+Eso ya es mejor que la mayoría de webs afiliadas porque la transparencia queda visible.
+
+Mejoras:
+
+Mover un resumen de disclosure cerca del hero o del primer CTA.
+
+Añadir política de actualización de precios y condiciones.
+
+Separar mejor afiliación, privacidad y metodología.
+
+Dejar claro que el ranking no depende de la comisión.
+
+Esto también ayuda a confianza y conversión, no solo a legalidad.
+
+4) src/pages/quienes-somos.astro
+La página de quiénes somos hace bien su trabajo mínimo: presenta el proyecto como editorial técnico y remite al Lab como pieza de confianza.
+
+Aun así, le falta una capa humana y una capa de autoridad más claras.
+
+Yo pondría:
+
+Quién evalúa.
+
+Qué experiencia tiene esa persona.
+
+Qué herramientas usa realmente.
+
+Por qué puede opinar con criterio.
+
+Qué principios editoriales sigue.
+
+En un sitio afiliado técnico, esta página debería ser menos institucional y más experta.
+
+5) src/content.config.ts y contenido
+No lo he visto aquí como archivo abierto, pero por la estructura que enseñas ya se intuye que el sitio usa collections para herramientas, comparativas, guías y posiblemente pilares.
+
+Eso es correcto y escalable, pero el siguiente paso es enriquecer los esquemas para que no sean solo títulos y textos.
+
+Deberían existir campos como:
+
+slug
+
+seoTitle
+
+seoDescription
+
+publishedAt
+
+updatedAt
+
+persona
+
+difficulty
+
+affiliateUrl
+
+rating
+
+pricing
+
+criteria o methodology.
+
+Sin eso, luego te cuesta construir comparativas realmente útiles.
+
+6) src/pages/**/slug.astro
+Aquí está una gran parte del valor del proyecto.
+
+Las páginas de detalle deberían ser el lugar donde conviertes tráfico en confianza y clicks de afiliado.
+
+Qué debe tener cada página:
+
+Resumen arriba del todo.
+
+Para quién sirve.
+
+Pros y contras reales.
+
+Pricing y límites.
+
+Capturas o evidencias.
+
+FAQ.
+
+CTA contextual.
+
+Si el slug.astro aún es demasiado plano, es una de las piezas más importantes a mejorar.
+
+7) src/pages/comparativas y src/pages/guias
+Aquí está la escalera comercial del proyecto.
+
+Las comparativas tienen que vender decisión; las guías tienen que vender implementación.
+
+Comparativas:
+
+Tabla superior.
+
+Veredicto por perfil.
+
+Criterios visibles.
+
+Coste real.
+
+CTA diferenciados.
+
+Guías:
+
+Problema → solución → pasos → errores → resultado.
+
+Casos de uso por perfil.
+
+Bloque final de herramientas relacionadas.
+
+Si estos tipos de página están bien montados, el sitio puede convertirse en un ecosistema de conversión, no en un blog suelto.
+
+8) src/pages/blog
+No he podido ver el contenido de blog, pero por arquitectura parece que existe como sección paralela.
+
+Mi recomendación es que el blog no compita con las páginas money, sino que alimente las páginas money.
+
+El blog debería cubrir:
+
+tendencias,
+
+explicaciones,
+
+problemas frecuentes,
+
+comparativas blandas,
+
+y piezas para captar top-of-funnel.
+
+Pero el núcleo de negocio debe estar en fichas, comparativas y guías.
+
+9) src/styles/global.css
+Este archivo cumple, pero es claramente el mayor salto visual pendiente.
+
+La base es correcta: colores simples, layout utilitario, botones, cards, tablas.
+
+Pero para 2026 yo mejoraría:
+
+Más jerarquía tipográfica.
+
+Más profundidad de superficies.
+
+Mejor tratamiento de tablas y bloques de comparación.
+
+Un sistema de espaciamiento más consistente.
+
+Un tono visual más editorial y menos “starter”.
+
+Si quieres, puedo convertir este CSS en una base más profesional sin perder ligereza.
+
+10) src/pages/sitemap.xml.ts
+Muy bien que exista y que recoja herramientas, comparativas y guías dinámicamente.
+
+Eso te permite escalar sin recordar meter URLs a mano.
+
+Lo mejorable:
+
+Verificar que no haya rutas duplicadas o huecas.
+
+Asegurar que las URLs que no aportan valor no se indexen.
+
+Incluir prioridad conceptual por tipo de página.
+
+Revisar que el sitemap coincida con la arquitectura real.
+
+11) src/pages/robots.txt.ts
+Correcto y suficiente por ahora.
+
+El siguiente paso sería asegurarte de que el robots no bloquee nada útil y que apunte al sitemap correcto.
+
+12) src/pages/llms.txt.ts
+Esto es interesante y bastante 2026.
+
+Está bien planteado porque resume secciones principales y criterio editorial.
+
+Yo lo reforzaría con:
+
+enlaces a pilares reales,
+
+descripción de metodologías,
+
+y quizá una línea por cada tipo de contenido o audiencia.
+
+Cuanto más real y vivo sea el llms.txt, mejor te funciona como capa de descubrimiento para buscadores y agentes.
+
+Prioridades reales
+Si tuviera que ordenar el trabajo, haría esto:
+
+Subir la home a un nivel más convincente.
+
+Convertir el Lab en una página realmente protagonista.
+
+Mejorar slug.astro para fichas y comparativas.
+
+Enriquecer el modelo de contenido.
+
+Dar más personalidad a global.css.
+
+Fortalecer disclosures y confianza.
+
+Añadir schema por tipo de página.
+
+Ideas nuevas que sí suman
+Las que más valor veo para este proyecto ahora:
+
+Un comparador fuerte “n8n vs Make vs Zapier”.
+
+Una pilar “automatización para coaches/consultores/formadores”.
+
+Un sistema de fichas con veredicto por perfil.
+
+Una página “cómo probamos” con capturas reales.
+
+Un bloque de “stack recomendado” al final de cada guía.
+
+Una sección sobre agentes de IA y RAG aplicada a solopreneurs.
+
+Veredicto
+La web tiene buena base y ya está pensada con bastante más criterio que la media.
+
+Su siguiente salto no depende tanto de “más código” como de convertir cada archivo en una pieza más útil, más diferenciada y más convincente para Google y para el usuario.
+

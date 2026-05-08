@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const labUrl = `${import.meta.env.BASE_URL}lab/`;
+const criteriosUrl = `${import.meta.env.BASE_URL}criterios-evaluacion/`;
+---
+
+<BaseLayout
+  title="Como probamos herramientas SaaS e IA"
+  description="Metodo de pruebas de SaaS Automation Lab: escenarios, criterios, evidencias, limitaciones y actualizacion de herramientas."
+>
+  <article class="prose-page">
+    <p class="eyebrow">Metodologia publica</p>
+    <h1>Como probamos herramientas SaaS e IA</h1>
+    <p class="lede">Una recomendacion solo es util si explica el contexto: para quien sirve, que problema resuelve, cuanto cuesta escalar y que fricciones aparecen al usarla.</p>
+
+    <h2>1. Escenario de negocio</h2>
+    <p>Partimos de un caso concreto: onboarding de alumnos, prospeccion B2B, soporte RAG, facturacion o nurturing. Si no hay caso de uso, no hay recomendacion fuerte.</p>
+
+    <h2>2. Stack y configuracion</h2>
+    <p>Documentamos que herramientas intervienen, que integraciones se necesitan, que datos entran y que resultado deberia salir del flujo.</p>
+
+    <h2>3. Criterios de resultado</h2>
+    <p>Valoramos ahorro de tiempo, coste mensual, curva de aprendizaje, control tecnico, soporte, privacidad, riesgo de bloqueo y facilidad de mantenimiento.</p>
+
+    <h2>4. Limitaciones visibles</h2>
+    <p>Las fichas deben explicar cuando no elegir una herramienta. Una herramienta puede ser buena y aun asi no ser adecuada para un perfil concreto.</p>
+
+    <h2>5. Actualizacion</h2>
+    <p>Precios, programas de afiliacion, APIs y limites cambian. Por eso las fichas incluyen datos de referencia y una llamada a verificar condiciones oficiales antes de contratar.</p>
+
+    <p>
+      <a class="btn btn-primary" href={labUrl}>Ver Lab completo</a>
+      <a class="btn btn-secondary" href={criteriosUrl}>Ver criterios</a>
+    </p>
+  </article>
+</BaseLayout>
