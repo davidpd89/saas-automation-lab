@@ -1,31 +1,61 @@
-# SaaS Automation Lab
+# Automatiza Sin Humo / SaaS Automation Lab
 
-Base de la nueva web en Astro para afiliación SaaS/IA.
+Web Astro publicada con GitHub Pages en:
 
-## Estado actual
+- Dominio principal: `https://automatizasinhumo.com/`
+- Repositorio: `davidpd89/saas-automation-lab`
+- Rama de publicacion: `gh-pages`
 
-- Estructura Astro creada.
-- Colecciones, rutas dinámicas, contenido semilla y componentes de afiliación implementados.
-- Workflow de GitHub Pages preparado para publicar en `https://davidpd89.github.io/saas-automation-lab/`.
+## Configuracion de dominio
 
-## Pendiente para publicar
+El repositorio incluye `public/CNAME` con:
 
-1. Iniciar sesión en GitHub CLI:
-
-```powershell
-& "C:\Users\pblac\AppData\Local\Microsoft\WinGet\Packages\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\bin\gh.exe" auth login
+```text
+automatizasinhumo.com
 ```
 
-2. Conectar este checkout local al repo correcto:
+Astro esta configurado con:
 
-```powershell
-git remote set-url origin https://github.com/davidpd89/saas-automation-lab.git
+```js
+site: "https://automatizasinhumo.com",
+base: "/"
 ```
 
-3. Activar GitHub Pages en settings del repo con fuente `Deploy from a branch`, rama `gh-pages`, carpeta `/`.
+## DNS pendiente fuera del repositorio
 
-Si GitHub Pages queda apuntando a `main`, GitHub intentara construir el codigo Astro con Jekyll y aparecera un run rojo llamado `pages build and deployment`.
+En el proveedor del dominio hay que apuntar el dominio apex a GitHub Pages:
 
-## Nota de entorno local
+```text
+A     @     185.199.108.153
+A     @     185.199.109.153
+A     @     185.199.110.153
+A     @     185.199.111.153
+```
 
-Si `npm install` falla con `ENOSPC`, libera espacio en disco antes de ejecutar build local.
+Si el proveedor permite IPv6, anade tambien:
+
+```text
+AAAA  @     2606:50c0:8000::153
+AAAA  @     2606:50c0:8001::153
+AAAA  @     2606:50c0:8002::153
+AAAA  @     2606:50c0:8003::153
+```
+
+Opcional para `www`:
+
+```text
+CNAME www   davidpd89.github.io
+```
+
+GitHub recomienda verificar el dominio en la cuenta para reducir riesgos de takeover.
+
+## Desarrollo local
+
+```powershell
+npm install
+npm run build
+```
+
+## Deploy
+
+El workflow `.github/workflows/deploy.yml` construye Astro y publica `dist/` en `gh-pages`.

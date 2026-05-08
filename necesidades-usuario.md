@@ -14,6 +14,8 @@ Este fichero separa lo que una IA puede proponer de lo que necesitamos que aport
 
 ## Accesos y registros
 
+- Configurar DNS de `automatizasinhumo.com` en el proveedor del dominio.
+- Verificar el dominio en GitHub Pages desde la cuenta `davidpd89` cuando GitHub lo permita.
 - Confirmar en que programas de afiliacion tienes cuenta aprobada.
 - IDs reales de afiliado para sustituir los placeholders `tu-id`.
 - URL oficial de cada dashboard de afiliacion.
