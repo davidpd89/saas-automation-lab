@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# LLM guidance: https://davidpd89.github.io/saas-automation-lab/llms.txt
+# LLM full index: https://davidpd89.github.io/saas-automation-lab/llms-full.txt
 Sitemap: https://davidpd89.github.io/saas-automation-lab/sitemap.xml

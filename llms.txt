@@ -8,7 +8,15 @@ Proyecto editorial en espanol sobre automatizacion SaaS e IA para solopreneurs d
 - Comparativas: https://davidpd89.github.io/saas-automation-lab/comparativas/
 - Guias: https://davidpd89.github.io/saas-automation-lab/guias/
 - Lab y metodologia: https://davidpd89.github.io/saas-automation-lab/lab/
+- Como probamos: https://davidpd89.github.io/saas-automation-lab/como-probamos/
+- Criterios de evaluacion: https://davidpd89.github.io/saas-automation-lab/criterios-evaluacion/
 - Transparencia legal: https://davidpd89.github.io/saas-automation-lab/legal/
+- Version ampliada para agentes: https://davidpd89.github.io/saas-automation-lab/llms-full.txt
+
+## Audiencias
+- Coaches y formadores que venden servicios, cursos o programas premium.
+- Consultores B2B que necesitan prospeccion, CRM, facturacion y seguimiento.
+- Microequipos que quieren automatizar sin perder control de datos.
 
 ## Criterio editorial
 Las paginas priorizan utilidad practica, precios verificables, casos de uso por perfil y transparencia de afiliacion.
