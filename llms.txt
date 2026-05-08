@@ -3,15 +3,15 @@
 Proyecto editorial en espanol sobre automatizacion SaaS e IA para solopreneurs de servicios.
 
 ## Secciones principales
-- Inicio: https://davidpd89.github.io/saas-automation-lab/
-- Herramientas: https://davidpd89.github.io/saas-automation-lab/herramientas/
-- Comparativas: https://davidpd89.github.io/saas-automation-lab/comparativas/
-- Guias: https://davidpd89.github.io/saas-automation-lab/guias/
-- Lab y metodologia: https://davidpd89.github.io/saas-automation-lab/lab/
-- Como probamos: https://davidpd89.github.io/saas-automation-lab/como-probamos/
-- Criterios de evaluacion: https://davidpd89.github.io/saas-automation-lab/criterios-evaluacion/
-- Transparencia legal: https://davidpd89.github.io/saas-automation-lab/legal/
-- Version ampliada para agentes: https://davidpd89.github.io/saas-automation-lab/llms-full.txt
+- Inicio: https://automatizasinhumo.com/
+- Herramientas: https://automatizasinhumo.com/herramientas/
+- Comparativas: https://automatizasinhumo.com/comparativas/
+- Guias: https://automatizasinhumo.com/guias/
+- Lab y metodologia: https://automatizasinhumo.com/lab/
+- Como probamos: https://automatizasinhumo.com/como-probamos/
+- Criterios de evaluacion: https://automatizasinhumo.com/criterios-evaluacion/
+- Transparencia legal: https://automatizasinhumo.com/legal/
+- Version ampliada para agentes: https://automatizasinhumo.com/llms-full.txt
 
 ## Audiencias
 - Coaches y formadores que venden servicios, cursos o programas premium.
