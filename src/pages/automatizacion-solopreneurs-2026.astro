@@ -5,20 +5,59 @@ import MascotImage from "../components/MascotImage.astro";
 
 const pillars = await getCollection("pillars");
 const pillar = pillars.find((item) => item.slug === "automatizacion-solopreneurs-2026");
+const { Content } = pillar ? await pillar.render() : { Content: null };
+
+const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 ---
 
 <BaseLayout
-  title={pillar?.data.seoTitle ?? "Automatizacion para solopreneurs 2026"}
-  description={pillar?.data.seoDescription ?? "Guia principal para automatizar un negocio unipersonal en 2026."}
+  title={pillar?.data.seoTitle ?? "Automatización para negocios de servicios en 2026"}
+  description={pillar?.data.seoDescription ?? "Guía completa de automatización SaaS e IA para coaches, formadores y consultores B2B."}
 >
-  <h1>{pillar?.data.title ?? "Automatizacion para solopreneurs en 2026"}</h1>
-  <MascotImage
-    type="resultados"
-    class="page-mascot"
-    customAlt="Mapa del stack de automatizacion para solopreneurs con SaaS IA CRM y email"
-  />
-  <p>{pillar?.data.description}</p>
-  <ul>
-    {pillar?.data.sections.map((section) => <li>{section}</li>)}
-  </ul>
+  <article class="prose-page">
+    <p class="eyebrow">Guía pilar</p>
+    <h1>{pillar?.data.title ?? "Automatización para negocios de servicios en 2026"}</h1>
+    <MascotImage
+      type="resultados"
+      class="page-mascot"
+      customAlt="Mapa del stack de automatización para coaches, formadores y consultores B2B con SaaS e IA"
+    />
+
+    <div class="answer-box">
+      <strong>En esta guía:</strong> stack mínimo viable, herramientas por perfil, costes reales, flujos prioritarios y errores frecuentes. Sin promesas de ROI sin datos.
+    </div>
+
+    <nav class="toc" aria-label="Contenidos">
+      <p class="eyebrow">Índice</p>
+      <ol>
+        {pillar?.data.sections.map((section) => (
+          <li>{section}</li>
+        ))}
+      </ol>
+    </nav>
+
+    {Content ? <Content /> : (
+      <p>Contenido no disponible.</p>
+    )}
+
+    <section class="mt-12">
+      <div class="grid grid-3">
+        <article class="card card-accent">
+          <h3>Comparativa central</h3>
+          <p>n8n vs Make vs Zapier: coste, control y curva de aprendizaje.</p>
+          <a class="btn btn-secondary" href={withBase("comparativas/n8n-vs-make-vs-zapier/")}>Ver comparativa</a>
+        </article>
+        <article class="card card-accent">
+          <h3>Flujo de onboarding</h3>
+          <p>Automatiza altas, accesos y seguimiento tras cada venta.</p>
+          <a class="btn btn-secondary" href={withBase("guias/onboarding-automatizado-n8n-whatsapp/")}>Ver guía</a>
+        </article>
+        <article class="card card-accent">
+          <h3>Metodología del Lab</h3>
+          <p>Cómo evaluamos herramientas y qué datos necesitan validación externa.</p>
+          <a class="btn btn-secondary" href={withBase("lab/")}>Ver Lab</a>
+        </article>
+      </div>
+    </section>
+  </article>
 </BaseLayout>

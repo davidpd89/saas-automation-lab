@@ -1,5 +1,5 @@
 ---
-title: "Facturación y cobros automatizados con n8n: Reduce morosidad 40%"
+title: "Facturación y cobros automatizados con n8n: automatiza facturas, recordatorios y seguimiento de cobros"
 slug: "facturacion-automatizada-n8n"
 seoTitle: "Automatizar facturación y cobros con n8n 2026"
 seoDescription: "Guía completa para automatizar facturación, recordatorios de pago y gestión de morosidad con n8n, Stripe y WhatsApp."
@@ -340,7 +340,7 @@ const handleWriteOff = async (invoice, reason) => {
 
 ## Resumen de beneficios
 
-✅ **Reducción 40% de morosidad** con recordatorios automáticos  
+✅ **Menos morosidad** con recordatorios automáticos escalonados  
 ✅ **Ahorro 15+ horas mensuales** en tareas administrativas  
 ✅ **Cash flow predecible** con facturación consistente  
 ✅ **Mejor experiencia cliente** con comunicación proactiva  

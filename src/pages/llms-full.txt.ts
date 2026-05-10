@@ -10,9 +10,9 @@ export async function GET({ site }: { site: URL }) {
   const guides = await getCollection("guides");
 
   const lines = [
-    "# SaaS Automation Lab - llms-full",
+    "# Automatiza Sin Humo - llms-full",
     "",
-    "SaaS Automation Lab es un laboratorio editorial en espanol sobre automatizacion SaaS e IA para solopreneurs de servicios.",
+    "Automatiza Sin Humo es un laboratorio editorial en español sobre automatización SaaS e IA para negocios de servicios.",
     "Audiencias principales: coaches, formadores, consultores B2B, agencias pequenas y microequipos.",
     "Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacion, cobros, contenido SEO y seleccion de stack.",
     "",

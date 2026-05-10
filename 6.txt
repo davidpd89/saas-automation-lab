@@ -1,0 +1,43 @@
+# Pendientes de la investigación externa (2026-05-09)
+
+Todo el análisis de afiliados, SERP, precios, social listening y competidores del fichero original ya está implementado en el código. Lo que queda aquí requiere acción del usuario o decisión editorial.
+
+## Implementado desde esta investigación
+
+- Make como afiliado principal: URL real + promo en make-com.md, home, comparativas
+- Precios reales de n8n, Make y Zapier en fichas y comparativas
+- Claim "15-60x más barato" de Make vs Zapier corregido (ahora tiene contexto de escenario)
+- Comparativa n8n vs Make vs Zapier reescrita con "Respuesta directa", tabla de costes por escenario y tabla de mantenimiento
+- n8n: pricing actualizado (Starter 20€/2.500 ejecuciones, Pro 50€/10.000), estado afiliado = solicitud enviada, aviso de licencia self-hosted
+- Make posicionado primero en herramientas y home
+- Nota editorial sobre Zapier: no es afiliado abierto clásico
+
+## Pendiente del usuario
+
+### Afiliados
+- Confirmar aprobación de n8n PartnerStack y obtener URL real del dashboard
+- Confirmar aprobación de Kit, Webflow, Clientify, Blym
+- Decidir si Brevo vale la pena (exigen email de empresa)
+- Sustituir placeholders en `affiliateUrl` de cada tool cuando llegue la aprobación
+
+### Contenido editorial prioritario (basado en huecos SERP identificados)
+- Página: `n8n self-hosted: coste real, licencia y cuándo no compensa` — URL sugerida: `/n8n-self-hosted-coste-licencia/`
+- Página: `Calculadora Make: créditos por flujo y coste real` — URL sugerida: `/make-creditos-calculadora/`
+- Página: `Brevo vs Kit para formadores` — URL sugerida: `/brevo-vs-kit/`
+- Página: `Automatización para formadores: cursos, email y ventas evergreen` — URL sugerida: `/automatizacion-para-formadores/`
+- Página: `Automatización para consultores B2B` — URL sugerida: `/automatizacion-para-consultores/`
+
+### Lenguaje de copy a integrar (del social listening)
+Estos fragmentos deben entrar en fichas, comparativas y CTAs cuando se reescriban:
+- "¿Te compensa pagar más para no mantener servidores?"
+- "La herramienta barata sale cara si nadie la mantiene."
+- "Automatizar no es montar nodos: es sostener un proceso."
+- "Make es visual, pero no mágico: cada módulo cuesta."
+- "Zapier gana cuando la automatización debe estar lista hoy."
+- "No pagues por una lista grande si solo envías dos campañas al mes."
+
+### Recursos enlazables a crear (link building)
+- Calculadora coste manual vs automatización (ya existe RoiCalculator, pero necesita datos reales de precios validados)
+- Checklist n8n self-hosted seguro
+- Matriz RGPD/LSSI para automatizaciones
+- JSON importable n8n para onboarding (requiere workflow real del usuario)

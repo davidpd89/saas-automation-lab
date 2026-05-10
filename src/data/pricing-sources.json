@@ -1,0 +1,86 @@
+{
+  "make": {
+    "name": "Make",
+    "pricingModel": "credits",
+    "unit": "Crédito (1 módulo ejecutado = 1 crédito)",
+    "officialPricingUrl": "https://www.make.com/en/pricing",
+    "lastChecked": "2026-05-09",
+    "keyPlans": [
+      { "name": "Free", "price": "0 $/mes", "limit": "1.000 créditos/mes", "notes": "Para probar flujos" },
+      { "name": "Core", "price": "12 $/mes", "limit": "10.000 créditos/mes", "notes": "Escenarios activos ilimitados, ejecución hasta el minuto, API" },
+      { "name": "Pro", "price": "21 $/mes", "limit": "10.000 créditos/mes", "notes": "+ prioridad, variables, búsqueda full-text en logs" },
+      { "name": "Teams", "price": "38 $/mes", "limit": "10.000 créditos/mes", "notes": "+ multiusuario" }
+    ],
+    "editorialWarning": "Calcula los créditos por ejecución de tu escenario antes de elegir Make. Cada módulo ejecutado consume 1 crédito.",
+    "keyInsight": "Make parece barato si miras solo el plan. La pregunta real es cuántos créditos consume cada ejecución de tu escenario."
+  },
+  "n8n": {
+    "name": "n8n Cloud",
+    "pricingModel": "executions",
+    "unit": "Ejecución completa de workflow (no por paso)",
+    "officialPricingUrl": "https://n8n.io/pricing/",
+    "lastChecked": "2026-05-09",
+    "keyPlans": [
+      { "name": "Starter", "price": "20 €/mes (anual)", "limit": "2.500 ejecuciones/mes", "notes": "Usuarios, workflows e integraciones ilimitadas" },
+      { "name": "Pro", "price": "50 €/mes (anual)", "limit": "10.000 ejecuciones/mes", "notes": "Incluye todo lo de Starter" },
+      { "name": "Business", "price": "667 €/mes (anual)", "limit": "40.000 ejecuciones/mes", "notes": "SSO, entornos, escalado, version control" },
+      { "name": "Community (self-hosted)", "price": "Gratis (servidor a cargo tuyo)", "limit": "Sin límite de ejecuciones", "notes": "Licencia Sustainable Use; restricciones si redistribuyes como producto/servicio" }
+    ],
+    "editorialWarning": "n8n no cobra por paso sino por ejecución completa. Self-hosted no es 'gratis para todo': servidor, seguridad y mantenimiento corren por tu cuenta. La licencia Sustainable Use limita el uso si redistribuyes n8n como servicio para clientes.",
+    "keyInsight": "n8n favorece flujos largos (muchos pasos, un solo coste por ejecución). Pero no elimina el coste de mantenimiento si eliges self-hosted."
+  },
+  "zapier": {
+    "name": "Zapier",
+    "pricingModel": "tasks",
+    "unit": "Tarea (cada acción ejecutada en un Zap = 1 tarea)",
+    "officialPricingUrl": "https://zapier.com/pricing",
+    "lastChecked": "2026-05-09",
+    "keyPlans": [
+      { "name": "Free", "price": "0 $/mes", "limit": "100 tareas/mes", "notes": "Zaps de 2 pasos, polling cada 15 min, Tables y Forms incluidos" },
+      { "name": "Professional", "price": "Consultar web", "limit": "Escala por volumen de tareas", "notes": "Zaps multi-paso, webhooks, filtros avanzados" },
+      { "name": "Team", "price": "Consultar web", "limit": "Escala por volumen de tareas", "notes": "+ cuentas compartidas, permisos" }
+    ],
+    "editorialWarning": "Zapier cobra por tarea (cada acción = 1 tarea). Un flujo de 6 pasos con 50 clientes = 300 tareas. Verificar precio actualizado en la web oficial antes de comparar.",
+    "keyInsight": "Zapier gana en rapidez y facilidad. Pierde cuando el número de tareas crece y el flujo deja de ser simple."
+  },
+  "kit": {
+    "name": "Kit (ConvertKit)",
+    "pricingModel": "subscribers",
+    "unit": "Suscriptor",
+    "officialPricingUrl": "https://kit.com/pricing",
+    "lastChecked": "2026-05-09",
+    "keyPlans": [
+      { "name": "Newsletter", "price": "0 $/mes", "limit": "Hasta 10.000 suscriptores", "notes": "1 automatización básica, landing pages/forms ilimitados, broadcasts ilimitados" },
+      { "name": "Creator", "price": "Desde 33 $/mes (anual, hasta 1.000 suscriptores)", "limit": "Escala por suscriptores", "notes": "Automatizaciones visuales y secuencias ilimitadas" },
+      { "name": "Pro", "price": "Desde 66 $/mes (anual, hasta 1.000 suscriptores)", "limit": "Escala por suscriptores", "notes": "A/B testing, referral system, audiencias Facebook, soporte prioritario" }
+    ],
+    "editorialWarning": "Kit no compite por ser el email más barato; compite como sistema de audiencia, automatización y monetización para creadores y formadores.",
+    "keyInsight": "Kit tiene plan gratuito generoso hasta 10.000 suscriptores. El salto a Creator/Pro se justifica cuando necesitas automatizaciones visuales complejas o secuencias."
+  },
+  "brevo": {
+    "name": "Brevo",
+    "pricingModel": "emails_sent",
+    "unit": "Email enviado por mes",
+    "officialPricingUrl": "https://www.brevo.com/pricing/",
+    "lastChecked": "2026-05-09",
+    "keyPlans": [
+      { "name": "Free", "price": "0 €/mes", "limit": "300 emails/día", "notes": "Contactos ilimitados" },
+      { "name": "Starter", "price": "Desde 7 €/mes", "limit": "Desde 5.000 emails/mes", "notes": "Escala hasta 100.000+ emails/mes con niveles" },
+      { "name": "Business (Standard)", "price": "Desde 17 €/mes", "limit": "Desde 5.000 emails/mes", "notes": "Marketing automation, A/B testing, estadísticas avanzadas" }
+    ],
+    "editorialWarning": "Brevo cobra más por volumen de envíos que por tamaño de lista. Puede ser muy bueno para listas amplias con pocos envíos al mes.",
+    "keyInsight": "No pagues por una lista grande si solo envías dos campañas al mes."
+  },
+  "clientify": {
+    "name": "Clientify",
+    "pricingModel": "users_plus_contacts",
+    "unit": "Usuario + contactos de marketing",
+    "officialPricingUrl": "https://www.clientify.com/precios",
+    "lastChecked": "2026-05-09",
+    "keyPlans": [
+      { "name": "Plan base", "price": "Consultar web", "limit": "1 usuario, 1.000 contactos de marketing", "notes": "CRM, WhatsApp Business oficial, automatizaciones, chatbot IA, email, landing pages, lead scoring" }
+    ],
+    "editorialWarning": "Clientify incluye WhatsApp profesional en el plan, pero los costes de Meta por plantillas o conversaciones no están incluidos. Separar siempre coste de plataforma y coste de canal.",
+    "keyInsight": "Todo en uno con WhatsApp. El coste real incluye las tarifas de Meta que Clientify no controla."
+  }
+}

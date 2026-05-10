@@ -1,65 +1,61 @@
-# Necesidades de usuario para seguir mejorando SaaS Automation Lab
+# Necesidades de usuario para seguir mejorando Automatiza Sin Humo
 
-Fecha: 2026-05-08
+Fecha: 2026-05-09
 
-Este fichero separa lo que una IA puede proponer de lo que necesitamos que aportes tu para que el proyecto gane confianza real.
+Este fichero recoge solo lo que necesita acción humana. Lo que puede hacer la IA directamente ya está implementado o en el backlog de Claude Code.
 
-## Evidencia real del Lab
+---
 
-- Capturas reales de n8n, Make, Zapier, Clientify, Kit/MailerLite, Brevo, lemlist y Thinkific.
-- Capturas de flujos funcionando: configuracion, ejecucion, logs y resultado final.
-- Datos anonimizados de pruebas: numero de leads, alumnos, emails, tareas, ejecuciones o facturas.
-- Fechas de prueba y version aproximada de cada herramienta.
-- Errores reales encontrados y como se corrigieron.
+## Evidencia real del Lab (capturas y pruebas)
 
-## Accesos y registros
+- Capturas reales de n8n, Make, Zapier, Clientify, Kit, Brevo, lemlist y Thinkific.
+- Capturas de flujos funcionando: configuración, ejecución, logs y resultado final.
+- Datos anonimizados de pruebas: número de leads, alumnos, emails, tareas, ejecuciones o facturas.
+- Fechas de prueba y versión aproximada de cada herramienta.
+- Errores reales encontrados y cómo se corrigieron.
 
-- Verificar el dominio en GitHub Pages desde la cuenta `davidpd89` si GitHub lo sigue solicitando.
-- Pegar en Spaceship el TXT de verificacion que GitHub muestre, si aparece en la UI de Pages o Verified domains.
-- Confirmar en que programas de afiliacion tienes cuenta aprobada.
-- IDs reales de afiliado para sustituir los placeholders `tu-id`.
-- URL oficial de cada dashboard de afiliacion.
-- Condiciones confirmadas desde cada panel: comision, cookie, minimo de pago, restricciones y plataforma.
-- Decidir si Blym queda como herramienta prioritaria o en observacion hasta validacion oficial.
+Sin capturas propias no hay E-E-A-T real. Es la acción con mayor impacto editorial pendiente.
+
+---
+
+## Accesos y afiliados
+
+- Confirmar aprobación en los programas donde se ha solicitado: n8n (PartnerStack), Kit, Thinkific, Clientify, Brevo, lemlist, Blym.
+- Sustituir los `affiliateUrl` con valor provisional en cada ficha de herramienta por la URL real del dashboard.
+- Confirmar desde cada panel las condiciones exactas: comisión, cookie, mínimo de pago, restricciones y plataforma (ver prompts-pendientes #11).
+- Decidir si Blym queda como herramienta prioritaria o en observación.
+- Decidir si Brevo vale la pena dado que exigen email corporativo para solicitar acceso.
+
+---
 
 ## Identidad y autoridad
 
-- Bio real de David para la pagina "Quienes somos".
+- Bio real de David para la página "Quiénes somos": experiencia, proyectos, stacks reales, áreas donde no quieres posicionarte.
 - Foto real o imagen profesional si quieres reforzar E-E-A-T.
-- Perfiles `sameAs`: LinkedIn, GitHub, X/Twitter, YouTube, newsletter o portfolio.
-- Experiencia demostrable: proyectos, clientes anonimizados, stacks que has montado, anos de experiencia, areas donde no quieres posicionarte.
-- Politica editorial personal: que herramientas no recomendarias aunque paguen comision.
+- Perfiles `sameAs` para el schema Organization: LinkedIn, GitHub, X/Twitter, YouTube, newsletter o portfolio.
+- Política editorial personal: qué herramientas no recomendarías aunque paguen comisión.
 
-## Imagenes necesarias
+---
+
+## Producto y conversión (decisiones tuyas)
+
+- Decidir si el diagnóstico interactivo pedirá email en algún momento o será 100% libre.
+- Elegir herramienta de analítica: Plausible, GA4, Umami u otra. Hasta que lo decidas no hay eventos reales.
+- Definir eventos clave a medir: diagnóstico completado, guía visitada, click afiliado, descarga, email capturado.
+- Definir lead magnet principal: plantilla JSON n8n, checklist AI Act, calculadora ROI, mapa de stack o mini curso.
+
+---
+
+## Imágenes de marca
 
 - Captura hero real del Lab con un workflow propio abierto.
-- Capturas por categoria:
-  - Comparativas: pantalla con coste/operaciones o tabla propia.
-  - Guias: flujo paso a paso en n8n o Make.
-  - Herramientas: panel de cada SaaS probado.
-  - Nosotros/Lab: imagen real de trabajo o escritorio.
-  - Resultados: dashboard, hoja de calculo o medicion de ahorro.
-- Plantilla visual de marca para futuras capturas: marca de agua, fecha, titulo del test y nota de anonimizado.
+- Plantilla visual de marca para futuras capturas: marca de agua, fecha, título del test y nota de anonimizado.
+- Capturas por categoría: comparativas (tabla de costes propia), guías (flujo paso a paso), herramientas (panel del SaaS), resultados (dashboard o medición de ahorro).
 
-## Producto y conversion
+---
 
-- Decidir si el diagnostico interactivo pedira email en algun momento o sera 100% libre.
-- Confirmar si la calculadora ROI sera anonima o si mas adelante guardara eventos/respuestas.
-- Definir lead magnet principal: plantilla JSON, checklist AI Act, calculadora ROI, mapa de stack o mini curso.
-- Elegir herramienta de analitica: Plausible, GA4, Umami u otra.
-- Definir eventos clave: diagnostico completado, guia visitada, click afiliado, descarga, email capturado.
+## Legal y privacidad (cuando captures emails o implementes analítica)
 
-## Contenido que necesita criterio humano
-
-- Casos de uso que quieres priorizar: coaches, formadores, consultores B2B, agencias o e-commerce.
-- Nichos que no quieres tocar por riesgo legal o falta de experiencia.
-- Precios reales que pagas o pagarias por tus stacks.
-- Umbral de recomendacion: cuando una herramienta pasa de "mencionada" a "recomendada".
-- Promesas prohibidas: porcentajes de ROI, ahorro de horas, ingresos recuperados o claims que no quieres usar sin prueba.
-
-## Legal y privacidad
-
-- Texto final de politica de privacidad si vas a capturar emails o formularios.
-- Aviso legal si el diagnostico evoluciona a chatbot con IA.
-- Decidir si se guardaran respuestas del usuario o solo eventos anonimos.
-- Consentimiento para tracking si se integra analitica externa.
+- Texto final de política de privacidad si vas a capturar emails o formularios.
+- Aviso legal si el diagnóstico evoluciona a chatbot con IA (AI Act Art. 50, agosto 2026).
+- Decisión sobre consentimiento para tracking si se integra analítica externa.

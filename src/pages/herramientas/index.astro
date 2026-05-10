@@ -4,7 +4,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ToolCard from "../../components/ToolCard.astro";
 import MascotImage from "../../components/MascotImage.astro";
 
-const tools = await getCollection("tools");
+const allTools = await getCollection("tools");
+// Make primero (afiliado activo), luego n8n, resto por orden natural
+const priorityOrder = ["make-com", "n8n-cloud"];
+const tools = [
+  ...priorityOrder.map((id) => allTools.find((t) => t.data.toolId === id)).filter(Boolean),
+  ...allTools.filter((t) => !priorityOrder.includes(t.data.toolId))
+];
 const withBase = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 ---
 

@@ -1,0 +1,184 @@
+---
+interface AffiliateData {
+  status: string;
+  commissionPublic?: string;
+  platform?: string;
+  notes?: string;
+}
+
+interface PricingData {
+  pricingModel: string;
+  unit: string;
+  lastChecked: string;
+  editorialWarning?: string;
+  officialPricingUrl?: string;
+}
+
+interface LegalData {
+  risk: "low" | "medium" | "high";
+  warning?: string;
+  regulationRefs?: string[];
+}
+
+interface Props {
+  toolId?: string;
+  flowType?: string;
+  affiliate?: AffiliateData;
+  pricing?: PricingData;
+  legal?: LegalData;
+  evidenceLevel?: "tested" | "research" | "estimate";
+  lastUpdated?: string;
+}
+
+const {
+  toolId,
+  flowType,
+  affiliate,
+  pricing,
+  legal,
+  evidenceLevel,
+  lastUpdated
+} = Astro.props;
+
+const riskLabel = { low: "Bajo", medium: "Medio", high: "Alto" };
+const riskColor = { low: "var(--accent-green)", medium: "#f59e0b", high: "#ef4444" };
+const evidenceLabel = {
+  tested: "Evaluado en uso real",
+  research: "Basado en investigación y fuentes oficiales",
+  estimate: "Estimación editorial — verificar antes de actuar"
+};
+const statusLabel: Record<string, string> = {
+  active: "Afiliado activo",
+  applied: "Solicitud enviada",
+  validated_not_active: "Validado, pendiente de aprobación",
+  partner_only: "Sin afiliado abierto",
+  unknown: "No verificado"
+};
+---
+
+<aside class="editorial-data-box" aria-label="Datos editoriales">
+  {affiliate && (
+    <div class="edb-section">
+      <span class="edb-label">Programa afiliado</span>
+      <span class="edb-value">{statusLabel[affiliate.status] ?? affiliate.status}</span>
+      {affiliate.commissionPublic && (
+        <span class="edb-detail">Comisión: {affiliate.commissionPublic}</span>
+      )}
+      {affiliate.platform && (
+        <span class="edb-detail">Plataforma: {affiliate.platform}</span>
+      )}
+      {affiliate.notes && (
+        <span class="edb-note">{affiliate.notes}</span>
+      )}
+    </div>
+  )}
+
+  {pricing && (
+    <div class="edb-section">
+      <span class="edb-label">Precios verificados</span>
+      <span class="edb-detail">Unidad de cobro: {pricing.unit}</span>
+      <span class="edb-detail">Última verificación: {pricing.lastChecked}</span>
+      {pricing.editorialWarning && (
+        <span class="edb-warning">{pricing.editorialWarning}</span>
+      )}
+      {pricing.officialPricingUrl && (
+        <a class="edb-link" href={pricing.officialPricingUrl} rel="nofollow noopener" target="_blank">
+          Ver precios oficiales →
+        </a>
+      )}
+    </div>
+  )}
+
+  {legal && (
+    <div class="edb-section">
+      <span class="edb-label">
+        Riesgo legal del flujo:
+        <strong style={`color: ${riskColor[legal.risk]}`}>{riskLabel[legal.risk]}</strong>
+      </span>
+      {legal.warning && (
+        <span class="edb-warning">{legal.warning}</span>
+      )}
+      {legal.regulationRefs && legal.regulationRefs.length > 0 && (
+        <span class="edb-detail">Normativa: {legal.regulationRefs.join(", ")}</span>
+      )}
+    </div>
+  )}
+
+  {evidenceLevel && (
+    <div class="edb-section">
+      <span class="edb-label">Nivel de evidencia</span>
+      <span class="edb-detail">{evidenceLabel[evidenceLevel]}</span>
+    </div>
+  )}
+
+  {lastUpdated && (
+    <div class="edb-footer">Última actualización: {lastUpdated}</div>
+  )}
+</aside>
+
+<style>
+  .editorial-data-box {
+    background: color-mix(in srgb, var(--surface) 80%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .edb-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .edb-label {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .edb-value {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .edb-detail {
+    color: var(--text-secondary);
+  }
+
+  .edb-warning {
+    color: #f59e0b;
+    font-style: italic;
+    font-size: 0.82rem;
+  }
+
+  .edb-note {
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  .edb-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.82rem;
+  }
+
+  .edb-link:hover {
+    text-decoration: underline;
+  }
+
+  .edb-footer {
+    color: var(--text-muted, var(--text-secondary));
+    font-size: 0.78rem;
+    border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+  }
+</style>

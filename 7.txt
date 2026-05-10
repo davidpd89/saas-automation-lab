@@ -1,0 +1,45 @@
+# Pendientes operativos del usuario (de la investigación 2026-05-09)
+
+Todo el análisis de esta ronda (afiliados, precios, legal, Mermaid, calculadoras ROI) ya está implementado en el código:
+- src/data/affiliate-programs.json — tabla maestra de afiliados con estado, comisión, restricciones y notas
+- src/data/pricing-sources.json — precios verificados con unidad de cobro y avisos editoriales
+- src/data/legal-risk-matrix.json — matriz de riesgo legal por tipo de flujo
+- src/components/EditorialDataBox.astro — caja reutilizable para mostrar datos editoriales en fichas y guías
+- make-com.md actualizado: Core $12/mes, Pro $21/mes, Teams $38/mes
+
+## Lo que queda solo puede hacerlo el usuario
+
+### Dashboards de afiliado (al ser aprobado)
+
+Cuando se aprueben los programas pendientes (n8n, Kit, Thinkific, Clientify, Brevo, lemlist, Blym), confirmar desde cada panel:
+
+- Cookie real
+- Mínimo de pago
+- Método de pago
+- Países restringidos
+- Normas de marca
+- Prohibición de PPC con marca
+- Deep links permitidos
+- Si puedes publicar capturas o claims de los paneles
+
+Pegar resultados en `afiliados-dashboard-confirmados.md` y Claude Code actualizará affiliate-programs.json y las fichas.
+
+### Capturas reales (E-E-A-T)
+
+Sin capturas propias la web no tiene evidencia real. Ver necesidades-usuario.md.
+
+### Decisiones editoriales pendientes
+
+- Analítica: elegir Plausible, GA4 o Umami
+- Lead magnet: decidir cuál lanzar primero
+- Diagnóstico interactivo: ¿captura email o es 100% libre?
+- Blym: ¿herramienta prioritaria o en observación?
+- Brevo: ¿vale la pena dado que exigen email corporativo?
+
+### Primer template propio n8n
+
+Crear un workflow JSON propio (no copiado) para publicar en `/templates/n8n/onboarding-clientes/`. Estructura sugerida ya documentada en este fichero original.
+
+### Calculadora ROI
+
+Ver prompts-pendientes #9 para la especificación. Cuando esté validada la fórmula, Claude Code actualizará RoiCalculator.astro.

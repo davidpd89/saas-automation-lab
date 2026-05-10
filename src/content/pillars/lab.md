@@ -3,7 +3,7 @@ title: "Como probamos herramientas SaaS e IA: metodologia, escenarios y limites"
 slug: "lab"
 description: "Metodo de evaluacion para validar herramientas SaaS e IA con casos de uso, costes, limites y alternativas."
 seoTitle: "Como probamos herramientas SaaS e IA"
-seoDescription: "Metodologia de SaaS Automation Lab para evaluar herramientas de automatizacion: casos de uso, coste estimado, limites, alternativas y fecha de revision."
+seoDescription: "Metodología de Automatiza Sin Humo para evaluar herramientas de automatización: casos de uso, coste estimado, límites, alternativas y fecha de revisión."
 sections: ["metodologia", "criterios", "limitaciones", "resultados"]
 featured: true
 searchIntent: "informational"

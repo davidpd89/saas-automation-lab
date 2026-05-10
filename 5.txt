@@ -1,0 +1,54 @@
+# Pendientes de la auditoría externa (2026-05-09)
+
+Todo lo que se podía implementar directamente en código ya está hecho.
+Lo que queda aquí requiere acción del usuario o evidencia real.
+
+## Pendientes que dependen del usuario
+
+### Evidencia real (sin esto, los claims no se pueden sostener)
+- Capturas reales de workflows en n8n, Make, Zapier, Clientify, Brevo, Kit, lemlist y Thinkific.
+- Datos anonimizados de pruebas: número de leads, alumnos, emails, ejecuciones o facturas.
+- Fechas de prueba y versión aproximada de cada herramienta.
+- Captura hero real del Lab con un workflow propio abierto.
+
+### Identidad y autoridad (E-E-A-T)
+- Bio real de David para la página "Quiénes somos": experiencia, proyectos, clientes anonimizados, stacks montados.
+- Foto real o imagen profesional.
+- Perfiles sameAs: LinkedIn, GitHub, X/Twitter, YouTube, newsletter o portfolio.
+
+### Afiliación
+- IDs reales de afiliado para sustituir los placeholders `tu-id`.
+- Confirmar en qué programas tienes cuenta aprobada y condiciones reales.
+- Decidir si Blym queda como herramienta prioritaria o en observación.
+
+### Producto y conversión
+- Elegir herramienta de analítica: Plausible, GA4, Umami u otra.
+- Decidir si el diagnóstico pedirá email en algún momento o será 100% libre.
+- Definir lead magnet principal: plantilla JSON, checklist AI Act, calculadora ROI, mapa de stack o mini-curso.
+
+### SEO técnico (acceso externo necesario)
+- Enviar sitemap en Google Search Console.
+- Indexar manualmente las páginas prioritarias.
+- Medir Core Web Vitals cuando haya tráfico real.
+
+## Lo que ya está implementado y eliminado
+
+- Limpieza de marca: SaaS Automation Lab → Automatiza Sin Humo en toda la web (layouts, páginas, schemas, llms.txt).
+- Eliminación de referencias a Nano Banana.
+- Footer actualizado con nueva propuesta de valor.
+- Disclosure de afiliación mejorado (lenguaje humano, sin jerga técnica).
+- Texto eyebrow del hero: "Flujos reales, costes claros y decisiones con criterio".
+- Textos de los bloques persona (Coach, Formador, Consultor) más específicos y visuales.
+- H3 vacío del diagnóstico corregido con fallback de texto.
+- Figcaption de MascotImage corregida (tilde).
+- Título de la guía de facturación sin claim de 40% no probado.
+- Claim "Reducción 40% de morosidad" reemplazado por "Menos morosidad".
+- Página pilar expandida de 4 bullets vacíos a guía completa con stack, costes, perfiles y flujos.
+- Página .astro del pilar rediseñada para renderizar el contenido completo con índice y CTAs.
+- Página legal actualizada con fecha de última actualización.
+- Legal: título y descripción con marca correcta.
+- quienes-somos.astro: marca y descripción corregidas.
+- como-probamos.astro: descripción corregida.
+- llms.txt y llms-full.txt: nombre de la marca actualizado.
+- pillars/lab.md: seoDescription con marca correcta.
+- Tildes en textos visibles de la home.

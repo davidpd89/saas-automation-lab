@@ -1,0 +1,110 @@
+{
+  "client_onboarding": {
+    "label": "Onboarding de clientes",
+    "risk": "medium",
+    "personalData": true,
+    "aiGeneratedContent": false,
+    "profiling": false,
+    "humanReview": "recommended",
+    "logs": ["payment_event", "crm_creation", "welcome_message", "access_delivery"],
+    "regulationRefs": ["RGPD Art. 6", "LSSI"],
+    "warning": null,
+    "editorialNote": "Flujo habitual de bajo riesgo. Documenta base legal (contrato/interés legítimo) y conserva logs del evento de pago."
+  },
+  "billing_reminders": {
+    "label": "Recordatorios de facturación y cobros",
+    "risk": "low",
+    "personalData": true,
+    "aiGeneratedContent": false,
+    "profiling": false,
+    "humanReview": "optional",
+    "logs": ["invoice_sent", "reminder_sent", "payment_received"],
+    "regulationRefs": ["RGPD Art. 6(b)"],
+    "warning": null,
+    "editorialNote": "Comunicación relacionada con el contrato. Base legal sólida. Asegura que el cliente pueda responder o impugnar."
+  },
+  "newsletter_automation": {
+    "label": "Newsletter y email marketing",
+    "risk": "low",
+    "personalData": true,
+    "aiGeneratedContent": false,
+    "profiling": false,
+    "humanReview": "optional",
+    "logs": ["consent_date", "source", "unsubscribe_event"],
+    "regulationRefs": ["RGPD Art. 6(a)", "LSSI Art. 21"],
+    "warning": "Requiere consentimiento previo y explícito. Identifica la comunicación como 'PUBLICIDAD'. Permite baja en cada envío.",
+    "editorialNote": "Automatizable sin riesgo alto, pero el consentimiento debe estar documentado antes de importar contactos."
+  },
+  "lead_scoring": {
+    "label": "Lead scoring y priorización comercial",
+    "risk": "medium",
+    "personalData": true,
+    "aiGeneratedContent": false,
+    "profiling": true,
+    "humanReview": "required",
+    "logs": ["score_calculated", "criteria_used", "human_review_date", "decision_outcome"],
+    "regulationRefs": ["RGPD Art. 22", "EDPB Guidelines on ADM"],
+    "warning": "No uses este flujo para tomar decisiones automáticas con efectos relevantes sobre personas sin revisión humana y base legal adecuada.",
+    "editorialNote": "El scoring debe ser apoyo a una decisión humana, no la decisión en sí. Documenta qué criterios se usan y cómo se puede impugnar."
+  },
+  "cold_outreach": {
+    "label": "Prospección fría y cold email",
+    "risk": "high",
+    "personalData": true,
+    "aiGeneratedContent": true,
+    "profiling": true,
+    "humanReview": "required",
+    "logs": ["source", "lawful_basis", "message_sent", "unsubscribe", "response"],
+    "regulationRefs": ["RGPD Art. 6", "RGPD Art. 22", "LSSI Art. 21"],
+    "warning": "Antes de automatizar prospección: valida base legal, identifica la comunicación como publicidad, permite baja, documenta fuente de datos y evita enriquecimientos o scoring opacos.",
+    "editorialNote": "Una guía de prospección no puede parecer 'scrapea leads + manda emails'. Siempre incluye bloque legal obligatorio."
+  },
+  "whatsapp_campaigns": {
+    "label": "Campañas de WhatsApp",
+    "risk": "high",
+    "personalData": true,
+    "aiGeneratedContent": false,
+    "profiling": false,
+    "humanReview": "required",
+    "logs": ["consent_date", "template_used", "message_sent", "opt_out"],
+    "regulationRefs": ["RGPD Art. 6(a)", "LSSI Art. 21", "Meta Business Policy"],
+    "warning": "WhatsApp Business requiere consentimiento explícito para campañas. El coste de las plantillas y conversaciones lo cobra Meta, no la plataforma CRM. El opt-out debe ser inmediato.",
+    "editorialNote": "Clientify incluye WhatsApp en su plan, pero los costes de Meta son adicionales. Documenta siempre el consentimiento previo."
+  },
+  "ai_support_agent": {
+    "label": "Agente IA de soporte o atención",
+    "risk": "high",
+    "personalData": true,
+    "aiGeneratedContent": true,
+    "profiling": false,
+    "humanReview": "required",
+    "logs": ["query_received", "ai_response", "escalation_event", "resolution"],
+    "regulationRefs": ["RGPD Art. 22", "AI Act Art. 4", "AI Act Art. 50"],
+    "warning": "Los agentes IA que interactúan con clientes deben identificarse como IA (AI Act Art. 50, desde agosto 2026). Requieren supervisión humana y canal de escalado claro.",
+    "editorialNote": "Desde el 2 de agosto de 2026, la transparencia sobre el uso de IA en interacciones con usuarios es obligatoria bajo el AI Act. Documenta logs de todas las interacciones."
+  },
+  "crm_automation": {
+    "label": "Automatización de CRM y seguimiento comercial",
+    "risk": "low",
+    "personalData": true,
+    "aiGeneratedContent": false,
+    "profiling": false,
+    "humanReview": "optional",
+    "logs": ["contact_updated", "task_created", "deal_stage_changed"],
+    "regulationRefs": ["RGPD Art. 6(b)", "RGPD Art. 6(f)"],
+    "warning": null,
+    "editorialNote": "Automatización interna de bajo riesgo. Asegura que los contactos importados tienen base legal documentada."
+  },
+  "reporting_automation": {
+    "label": "Reporting y dashboards automatizados",
+    "risk": "low",
+    "personalData": false,
+    "aiGeneratedContent": false,
+    "profiling": false,
+    "humanReview": "optional",
+    "logs": ["report_generated", "data_source"],
+    "regulationRefs": [],
+    "warning": null,
+    "editorialNote": "Riesgo mínimo si los datos son agregados o anonimizados. Revisar si el informe incluye datos personales identificables."
+  }
+}

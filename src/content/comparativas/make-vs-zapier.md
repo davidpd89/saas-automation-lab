@@ -26,7 +26,7 @@ La elección entre Make y Zapier en 2026 depende principalmente de tu volumen de
 - **Plan Professional**: $49/mes = 2,000 tareas
 - **Coste por 100K tareas**: ~$2,500-6,000
 
-**Veredicto de costes**: Make es **15-60x más económico** a gran escala
+**Veredicto de costes**: Make puede ser significativamente más barato que Zapier a volumen alto. La diferencia real depende del número de módulos por flujo y la frecuencia de ejecución — calcula tu caso antes de decidir.
 
 ## Análisis por casos de uso
 

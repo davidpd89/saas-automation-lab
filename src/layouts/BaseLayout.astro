@@ -11,7 +11,7 @@ interface Props {
 
 const {
   title,
-  description = "Web de afiliacion SaaS e IA para solopreneurs.",
+  description = "Comparativas, guías y flujos reales de automatización SaaS e IA para negocios de servicios.",
   ogImage = defaultOgImage
 } = Astro.props;
 const basePath = import.meta.env.BASE_URL;
@@ -61,9 +61,9 @@ const breadcrumbSchema = {
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "SaaS Automation Lab",
+      name: "Automatiza Sin Humo",
       url: siteUrl,
-      description,
+      description: "Comparativas, guías y flujos reales de automatización SaaS e IA para negocios de servicios.",
       sameAs: ["https://github.com/davidpd89/saas-automation-lab"]
     })} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
@@ -88,7 +88,7 @@ const breadcrumbSchema = {
     </main>
     <footer>
       <div class="container">
-        <small>SaaS Automation Lab. Análisis de herramientas con enlaces de afiliado señalizados. <a href={withBase("criterios-evaluacion/")}>Criterios editoriales</a>.</small>
+        <small>Automatiza Sin Humo. Comparativas, guías y flujos reales de automatización SaaS e IA. Algunos enlaces pueden ser afiliados. <a href={withBase("criterios-evaluacion/")}>Criterios editoriales</a>.</small>
       </div>
     </footer>
     <script>

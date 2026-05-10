@@ -1,9 +1,9 @@
 export async function GET({ site }: { site: URL }) {
   const baseUrl = new URL(import.meta.env.BASE_URL, site).toString();
   const lines = [
-    "# SaaS Automation Lab",
+    "# Automatiza Sin Humo",
     "",
-    "Proyecto editorial en espanol sobre automatizacion SaaS e IA para solopreneurs de servicios.",
+    "Proyecto editorial en español sobre automatización SaaS e IA para negocios de servicios: coaches, formadores, consultores B2B y microequipos.",
     "",
     "## Secciones principales",
     `- Inicio: ${baseUrl}`,

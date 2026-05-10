@@ -1,30 +1,33 @@
-# Pendientes vivos de 2.txt
+# Estado de afiliados (actualizado 2026-05-09)
 
-Fecha de limpieza: 2026-05-08
+## Afiliado activo
 
-Todo lo que ya quedo implementado o absorbido se ha eliminado de este archivo. Lo pendiente se mantiene aqui, en `prompts-pendientes.md` o en `necesidades-usuario.md`.
+**Make**
+- URL real: https://www.make.com/en/register?pc=automatizasinhumo
+- Promo: 1 mes del plan Pro con 10.000 operaciones gratis para quien se registre con el enlace
+- Comisión: 35% durante 12 meses
+- Implementado en la web: sí (make-com.md, comparativas, home)
 
-## Pendiente por investigacion externa
+## Solicitud enviada — pendiente de aprobación
 
-- Validacion oficial de programas de afiliados: n8n, Make, Zapier, Clientify, Brevo, Kit/ConvertKit, lemlist, Webflow, Thinkific y Blym.
-- Benchmark SERP actualizado de comparativas `n8n vs Make vs Zapier` en Google.es.
-- Benchmark de precios y limites reales de n8n Cloud/self-hosted, Make, Zapier, Brevo y Kit.
-- Social listening en comunidades reales para extraer lenguaje, miedos y objeciones.
-- Competidores hispanos, huecos editoriales y oportunidades de link building.
+**n8n**
+- Dashboard PartnerStack: https://dash.partnerstack.com/benefits?company=n8n&group=affiliates2025&application=n8n&email=davidpd89@gmail.com&firstName=David&lastName=Porto+D%C3%ADaz&businessName=Automatizasinhumo
+- Cuando se apruebe: sustituir `n8n.partnerlinks.io/automatizasinhumo` por el enlace real del dashboard
+- Comisión confirmada: 30% durante 12 meses
 
-## Pendiente que depende del usuario
+**Blym** — solicitud enviada, pendiente
+**Webflow** — solicitud enviada, pendiente
+**Kit** — solicitud enviada, pendiente
+**Clientify** — solicitud enviada, pendiente
+**Zapier** — solicitud enviada (nota: Zapier no tiene afiliado abierto clásico, solo partner program aprobado)
 
-- IDs reales de afiliado.
-- Capturas reales de herramientas y workflows propios.
-- Bio, foto y perfiles profesionales del autor.
-- Herramienta de analitica y decision sobre captura de email.
+## No procede o pendiente de decisión
 
-## Implementado y eliminado del texto original
+**Brevo** — solicitud enviada pero piden email de empresa, probablemente no valga. Decisión pendiente del usuario.
+**Miro** — solicitud enviada, no es herramienta core de la web.
 
-- Arquitectura Astro con content collections, layouts, sitemap, robots y llms.
-- Schema base `SoftwareApplication`, `Review`, `FAQPage`, `HowTo`, `Organization` y breadcrumbs.
-- Disclosures de afiliacion cerca de CTAs.
-- Diagnostico interactivo de home.
-- Sistema visual oscuro de Automatiza Sin Humo.
-- Open Graph y Twitter cards.
-- Dominio propio `automatizasinhumo.com`.
+## Pendiente de implementar cuando se aprueben
+
+Cuando llegue aprobación de cada programa, sustituir los placeholders en:
+- `src/content/tools/[herramienta].md` → campo `affiliateUrl`
+- Verificar y actualizar comisión real desde el dashboard antes de publicarla
