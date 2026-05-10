@@ -1,6 +1,6 @@
-# SaaS Automation Lab - llms-full
+# Automatiza Sin Humo - llms-full
 
-SaaS Automation Lab es un laboratorio editorial en espanol sobre automatizacion SaaS e IA para solopreneurs de servicios.
+Automatiza Sin Humo es un laboratorio editorial en español sobre automatización SaaS e IA para negocios de servicios.
 Audiencias principales: coaches, formadores, consultores B2B, agencias pequenas y microequipos.
 Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacion, cobros, contenido SEO y seleccion de stack.
 
@@ -16,36 +16,36 @@ Problemas cubiertos: onboarding, prospeccion, nurturing, soporte RAG, facturacio
 - Blym: Contenido SEO optimizado con IA para 2026: https://automatizasinhumo.com/herramientas/blym/ - Plataforma de generación de contenido SEO optimizado con IA para escalar producción de artículos.
 - Brevo: https://automatizasinhumo.com/herramientas/brevo/ - Suite de email marketing, CRM ligero, SMS y automatizacion para negocios que priorizan comunicaciones multicanal.
 - Clientify: CRM con WhatsApp para coaches y consultores: https://automatizasinhumo.com/herramientas/clientify/ - CRM español con integración nativa de WhatsApp y automatización para solopreneurs.
+- Kit (formerly ConvertKit): Email marketing para creadores y formadores: https://automatizasinhumo.com/herramientas/convertkit/ - Plataforma de email marketing diseñada específicamente para creadores de contenido y formadores online, conocida historicamente como ConvertKit.
 - HubSpot: CRM integral para servicios B2B: https://automatizasinhumo.com/herramientas/hubspot/ - CRM y suite de marketing para solopreneurs que empiezan a convertir operaciones comerciales en sistema.
 - Instantly: prospeccion cold email a escala: https://automatizasinhumo.com/herramientas/instantly/ - Herramienta para escalar campanas de email frio con infraestructura, secuencias y control de entregabilidad.
-- Kit (formerly ConvertKit): Email marketing para creadores y formadores: https://automatizasinhumo.com/herramientas/convertkit/ - Plataforma de email marketing diseñada específicamente para creadores de contenido y formadores online, conocida historicamente como ConvertKit.
+- Jasper AI: copy y contenido asistido por IA: https://automatizasinhumo.com/herramientas/jasper-ai/ - Herramienta de generacion de copy y contenido de marca para equipos que necesitan volumen editorial con control.
 - lemlist: Prospección automatizada y email personalizado: https://automatizasinhumo.com/herramientas/lemlist/ - Herramienta líder en prospección B2B con personalización a escala y seguimiento automático.
 - MailerLite: email marketing sencillo para creadores: https://automatizasinhumo.com/herramientas/mailerlite/ - Plataforma de email marketing ligera para newsletters, automatizaciones basicas y embudos sencillos.
-- Make.com: automatizacion visual para ejecutar rapido: https://automatizasinhumo.com/herramientas/make-com/ - Make destaca por su interfaz visual para disenar escenarios complejos sin mucho codigo.
-- Jasper AI: copy y contenido asistido por IA: https://automatizasinhumo.com/herramientas/jasper-ai/ - Herramienta de generacion de copy y contenido de marca para equipos que necesitan volumen editorial con control.
-- n8n Cloud: automatizacion flexible para equipos pequenos: https://automatizasinhumo.com/herramientas/n8n-cloud/ - Analisis de n8n para crear flujos de negocio con control tecnico y buen coste.
+- Make: automatización visual para negocios que quieren ejecutar rápido: https://automatizasinhumo.com/herramientas/make-com/ - Make destaca por su interfaz visual para diseñar escenarios complejos sin código. Ideal para coaches, formadores y consultores que quieren flujos potentes sin curva técnica alta.
+- n8n Cloud: automatización flexible para consultores técnicos: https://automatizasinhumo.com/herramientas/n8n-cloud/ - n8n destaca por su control técnico, APIs personalizadas, self-hosting y coste contenido a escala. La opción más potente para consultores que no quieren depender de la nube de terceros.
 - Notion: base de conocimiento para sistemas y RAG: https://automatizasinhumo.com/herramientas/notion/ - Workspace y base documental para organizar procesos, SOPs y conocimiento reutilizable en automatizaciones.
 - Pipedrive: CRM de ventas para cerrar oportunidades: https://automatizasinhumo.com/herramientas/pipedrive/ - CRM centrado en pipeline comercial para equipos pequenos y consultores que necesitan visibilidad de cierres.
-- Reclaim.ai: agenda inteligente para solopreneurs: https://automatizasinhumo.com/herramientas/reclaim-ai/ - Herramienta de planificacion inteligente para proteger foco, reuniones y bloques de trabajo profundo.
 - Synthesia: video con avatares IA para formacion: https://automatizasinhumo.com/herramientas/synthesia/ - Plataforma de video IA para crear material formativo, onboarding y documentacion visual sin grabar desde cero.
+- Reclaim.ai: agenda inteligente para solopreneurs: https://automatizasinhumo.com/herramientas/reclaim-ai/ - Herramienta de planificacion inteligente para proteger foco, reuniones y bloques de trabajo profundo.
 - Thinkific: Plataforma para crear y vender cursos online: https://automatizasinhumo.com/herramientas/thinkific/ - Plataforma LMS completa para formadores que quieren vender cursos online con control total.
 - Webflow: Desarrollo web visual para sitios premium: https://automatizasinhumo.com/herramientas/webflow/ - Plataforma de diseño web visual para crear sitios profesionales sin código.
 - Zapier: conexiones rapidas para procesos estandar: https://automatizasinhumo.com/herramientas/zapier/ - Zapier permite automatizar procesos comunes de forma muy rapida para equipos no tecnicos.
 
 ## Comparativas
-- n8n vs Make vs Zapier en 2026: cual elegir segun tu caso real: https://automatizasinhumo.com/comparativas/n8n-vs-make-vs-zapier/ - n8n para escalado tecnico, Make para ejecucion visual y Zapier para rapidez inicial.
+- n8n vs Make vs Zapier en 2026: cuál elegir según tu caso real: https://automatizasinhumo.com/comparativas/n8n-vs-make-vs-zapier/ - Make para coaches y formadores que quieren ejecutar rápido. n8n para consultores técnicos que necesitan control y escala. Zapier solo si la automatización es puntual y simple.
 - Clientify vs Brevo 2026: El mejor CRM para mercado hispano: https://automatizasinhumo.com/comparativas/clientify-vs-brevo/ - Clientify es superior para negocios hispanos que priorizan WhatsApp y soporte en español, mientras que Brevo es mejor para empresas globales enfocadas principalmente en email marketing.
-- Clientify vs HubSpot 2026: CRM hispano o suite global: https://automatizasinhumo.com/comparativas/clientify-vs-hubspot/ - Clientify encaja mejor si WhatsApp y soporte hispano son claves; HubSpot si necesitas suite global y reporting avanzado.
-- lemlist vs Instantly 2026: prospeccion B2B y cold email: https://automatizasinhumo.com/comparativas/lemlist-vs-instantly/ - lemlist para campañas mas personalizadas; Instantly para volumen y control de infraestructura cold email.
 - ConvertKit vs MailerLite 2026: email marketing para creadores: https://automatizasinhumo.com/comparativas/convertkit-vs-mailerlite/ - ConvertKit para creadores con embudos avanzados; MailerLite para newsletters y automatizaciones simples.
+- lemlist vs Instantly 2026: prospeccion B2B y cold email: https://automatizasinhumo.com/comparativas/lemlist-vs-instantly/ - lemlist para campañas mas personalizadas; Instantly para volumen y control de infraestructura cold email.
+- Clientify vs HubSpot 2026: CRM hispano o suite global: https://automatizasinhumo.com/comparativas/clientify-vs-hubspot/ - Clientify encaja mejor si WhatsApp y soporte hispano son claves; HubSpot si necesitas suite global y reporting avanzado.
 - Make vs Zapier 2026: Cuál ahorra más dinero para tu negocio: https://automatizasinhumo.com/comparativas/make-vs-zapier/ - Make es más rentable para volúmenes altos de automatización, mientras que Zapier es mejor para principiantes y empresas que priorizan facilidad de uso sobre coste.
 - n8n vs Make 2026: Automatización técnica vs visual: https://automatizasinhumo.com/comparativas/n8n-vs-make/ - n8n es superior para automatizaciones técnicas complejas y control total, mientras que Make brilla en velocidad de implementación visual y facilidad de uso.
 
 ## Guias
 - Como crear un agente de soporte IA con documentacion propia: https://automatizasinhumo.com/guias/agente-ia-soporte-24-7/ - Soporte tecnico y preventa con documentacion propia
-- Facturación y cobros automatizados con n8n: Reduce morosidad 40%: https://automatizasinhumo.com/guias/facturacion-automatizada-n8n/ - Un consultor pierde 15 horas/mes gestionando facturas y tiene 20% de morosidad
-- Prospección automatizada con lemlist: De email frío a llamada agendada: https://automatizasinhumo.com/guias/prospeccion-automatizada-lemlist/ - Un consultor B2B necesita prospectar 50 empresas mensuales pero solo tiene tiempo para 10 llamadas
 - Onboarding automatizado con n8n y WhatsApp: guia paso a paso: https://automatizasinhumo.com/guias/onboarding-automatizado-n8n-whatsapp/ - Un coach vende cursos online y quiere reducir tareas manuales despues del pago
+- Facturación y cobros automatizados con n8n: automatiza facturas, recordatorios y seguimiento de cobros: https://automatizasinhumo.com/guias/facturacion-automatizada-n8n/ - Un consultor pierde 15 horas/mes gestionando facturas y tiene 20% de morosidad
+- Prospección automatizada con lemlist: De email frío a llamada agendada: https://automatizasinhumo.com/guias/prospeccion-automatizada-lemlist/ - Un consultor B2B necesita prospectar 50 empresas mensuales pero solo tiene tiempo para 10 llamadas
 
 ## Nota de precision
 Precios, comisiones, cookies y condiciones comerciales deben verificarse con fuentes oficiales antes de citarse como datos definitivos.

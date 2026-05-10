@@ -1,6 +1,6 @@
-# SaaS Automation Lab
+# Automatiza Sin Humo
 
-Proyecto editorial en espanol sobre automatizacion SaaS e IA para solopreneurs de servicios.
+Proyecto editorial en español sobre automatización SaaS e IA para negocios de servicios: coaches, formadores, consultores B2B y microequipos.
 
 ## Secciones principales
 - Inicio: https://automatizasinhumo.com/
